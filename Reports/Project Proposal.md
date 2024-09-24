@@ -119,14 +119,14 @@ gantt
     title Timeline
     dateFormat  YYYY-MM-DD
     section Section
-    Stakeholder meeting         2024-09-12, 1d
-    Project proposal draft       2024-09-09, 7d
-    Finalizing details with advisor and customer 2024-09-12, 1d
-    Project proposal final      2024-09-24, 7d
-    Product research            2024-09-12, 30d
-    Conceptual design           2024-10-01, 27d
-    Detailed design             2024-10-28, 32d
-    Final presentation          2024-10-28, 32d
+    Stakeholder meeting      :   2024-09-12, 1d
+    Project proposal draft   :    2024-09-09, 7d
+    Finalizing details with advisor and customer :  2024-09-12, 1d
+    Project proposal final   :   2024-09-24, 7d
+    Product research         :   2024-09-12, 30d
+    Conceptual design        :   2024-10-01, 27d
+    Detailed design          :   2024-10-28, 32d
+    Final presentation       :   2024-10-28, 32d
 ``` 
 
 ### Contributions 
