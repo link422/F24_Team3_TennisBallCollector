@@ -116,14 +116,17 @@ The project will be done with the project by May 25th, 2025
 
 ```mermaid
 gantt
-    title A Gantt Diagram
+    title Timeline
     dateFormat  YYYY-MM-DD
     section Section
-    A task           :a1, 2014-01-01, 30d
-    Another task     :after a1  , 20d
-    section Another
-    Task in sec      :2014-01-12  , 12d
-    another task      : 24d
+    Stakeholder meeting         2024-09-12, 1d
+    Project proposal draft       2024-09-09, 7d
+    Finalizing details with advisor and customer 2024-09-12, 1d
+    Project proposal final      2024-09-24, 7d
+    Product research            2024-09-12, 30d
+    Conceptual design           2024-10-01, 27d
+    Detailed design             2024-10-28, 32d
+    Final presentation          2024-10-28, 32d
 ``` 
 
 ### Contributions 
