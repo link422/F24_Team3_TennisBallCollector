@@ -72,8 +72,7 @@ This vehicle should also have the option to become a manual for the customer’s
 
 ### Resources 
 
-In order to make a cost effective fully autonomous tennis ball collector that is efficient it will take a solid understanding of robotics and autonomous solutions as well as knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as cameras, infrared, and bumper is needed for this robot. For software, one possible solution for running autonomous software is ROS which is a robot operating system that allows for multiple nodes (python files in our case) to run in parallel and send data to and from each other. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. On top of prototyping costs, funding will be needed for software and creating the finished build so an estimated $2,000 dollars will be required in total. 
-
+To make a cost-effective, portable, remote controlled tennis ball collector efficient, it will take a solid understanding of remote controls and RF and knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as infrared is needed for this robot. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. This number will not be passed due to the individual components being used for prototyping being cheap. On top of prototyping costs, funding will be needed for CAD software and creating the finished build therefore $2,000 dollars shall be enough to meet the customer’s needs. 
  
 
 ### Personnel 
