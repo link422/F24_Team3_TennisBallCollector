@@ -70,13 +70,13 @@ This vehicle should also have the option to become a manual for the customer’s
 
  
 
-Resources 
+### Resources 
 
 In order to make a cost effective fully autonomous tennis ball collector that is efficient it will take a solid understanding of robotics and autonomous solutions as well as knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as cameras, infrared, and bumper is needed for this robot. For software, one possible solution for running autonomous software is ROS which is a robot operating system that allows for multiple nodes (python files in our case) to run in parallel and send data to and from each other. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. On top of prototyping costs, funding will be needed for software and creating the finished build so an estimated $2,000 dollars will be required in total. 
 
  
 
-Personnel 
+### Personnel 
 
 Carter Brady- Has worked with autonomous vehicle simulations including ROS. Has strong software background. 
 
@@ -92,7 +92,7 @@ Maxwell Wynne- Has experience with languages C/C++, python, and assembly. Also h
 
  
 
-Timeline 
+### Timeline 
 
 Initial meeting with stakeholder 09/12, declaring the first set of draft specifications 
 
@@ -126,7 +126,7 @@ gantt
     another task      : 24d
 ``` 
 
-Contributions 
+### Contributions 
 
 Carter Brady – Worked on resources, personnel, and timeline 
 
