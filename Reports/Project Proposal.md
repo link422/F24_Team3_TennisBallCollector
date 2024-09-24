@@ -42,7 +42,7 @@ On the market, there is a robotic tennis ball collector that collects balls on c
 
  
 
-Unknown obstacles 
+### Unknown obstacles 
 
 The process of customizing computer chips for design and having the hardware behave functionally as expected. 
 
@@ -52,7 +52,7 @@ Response of the autonomous vehicle to differing weather conditions including but
 
 Response of the autonomous vehicle to electromagnetic interference brought by other devices or external sources. 
 
-Measure of Success 
+### Measure of Success 
 
 The customer is satisfied with the final product or progression toward the final product. 
 
@@ -64,7 +64,7 @@ The device is able to withstand all types of mild weather conditions preserving 
 
 The innerworkings of the device are able to be easily accessible to fix hardware issues or software bugs. 
 
-Broader Implications/Ethics 
+### Broader Implications/Ethics 
 
 This vehicle should also have the option to become a manual for the customer’s stakeholders (Tennis Team) so that the vehicle will not replace their responsibilities. 
 
