@@ -14,7 +14,7 @@ Tennis is a time-honored game that can be dated back to the 11th century, played
 
 ### Formulating the Problem 
 
-The Tennessee Tech Tennis team is currently using an older model of a ball collector similar to Playmate’s Ball Mower. This manual device is limited to only being used in the indoor courts due to its bulky size and is liable to jam when collecting a large volume of tennis balls. Due to these issues, team 3 strives to make a more efficient tennis ball collector that is autonomous and will manage around 50-100 balls at a time while being able to be used year-round indoor or outdoor.  
+Collecting Tennis Balls at the end of a long day at practice is a daunting task for players who have been running for hours on end. Having to go and pick up each ball one by one is not only a waste of the players' time, but energy as well. To aid in this task, companies have created push devices that collect balls into a cart. While these devices provided a solution to the bigger problem, they raised concerns for more. After taking in many tennis balls, these machines can jam, halting the process. Along with that, these devices can move for their given purpose but cannot be easily transported from court to court. With teams having indoor and outdoor courts at different locations this is crucial.  
 
  
 
