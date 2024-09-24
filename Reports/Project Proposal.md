@@ -66,9 +66,15 @@ The innerworkings of the device are able to be easily accessible to fix hardware
 
 ### Broader Implications/Ethics 
 
-This vehicle should also have the option to become a manual for the customer’s stakeholders (Tennis Team) so that the vehicle will not replace their responsibilities. 
+This project will act as a means of improving the current tennis team’s training efficiency, device accessibility, and facility maintenance.   
 
- 
+In reference to the IEEE Code of Ethics, the tennis ball collection project team ennobles a high ethical and professional conduct by: 
+
+1. Actively strategize an ethical solution, executing it in a sustainable manner.  
+
+2. Maintain a product produced from the latest of our technical competence in pursuit of improving the common good in the tennis community. 
+
+3. Establish a constant tenacity concerning the development of our product secured in expansive knowledge and notion. 
 
 ### Resources 
 
