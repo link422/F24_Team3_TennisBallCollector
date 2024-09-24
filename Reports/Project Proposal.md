@@ -1,6 +1,6 @@
-#Tennis Ball Collector# 
+# Tennis Ball Collector
 
-#Team 3#
+# Team 3
 
 ECE 4961-001 
 
