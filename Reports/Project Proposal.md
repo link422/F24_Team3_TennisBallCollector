@@ -1,24 +1,24 @@
-## Tennis Ball Collector
+# Tennis Ball Collector
 
-### Team 3
+## Team 3
 
 ECE 4961-001 
 
  
 
-Introduction 
+### Introduction 
 
 Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling in the of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make an autonomous Tennis Ball Collector that can provide an effective alternative to this cleanup process.  
 
  
 
-Formulating the Problem 
+### Formulating the Problem 
 
 The Tennessee Tech Tennis team is currently using an older model of a ball collector similar to Playmate’s Ball Mower. This manual device is limited to only being used in the indoor courts due to its bulky size and is liable to jam when collecting a large volume of tennis balls. Due to these issues, team 3 strives to make a more efficient tennis ball collector that is autonomous and will manage around 50-100 balls at a time while being able to be used year-round indoor or outdoor.  
 
  
 
-Specifications and Constraints 
+### Specifications and Constraints 
 
 Our stakeholder desires an operating model of tennis ball collector that is autonomous in collecting and managing 50-100 balls at a time and capable of operation year-round. The product should be versatile on both indoor and outdoor tennis courts. Initiating at a user input, but self-functioning in execution. When comparing to the competitors, Tennibot and Playmate’s Ball-Mower, our product remains effective in usage while being lightweight, compact, and cost efficient.  
 
@@ -28,17 +28,17 @@ Our stakeholder desires an operating model of tennis ball collector that is auto
 
  
 
-Survey of Solutions 
+### Survey of Solutions 
 
 On the market, there is a robotic tennis ball collector that collects balls on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. Yet not everyone can attain one unless they have roughly $3,000 to afford it. Tennis is already an expensive sport that should not require additional spending to pick up tennis balls. There are other manual tennis ball collectors, like the machine the Tennessee Tech Tennis team is using. The issue, as previously stated, is limited to the kind of court, the number of tennis balls it can collect, and the weight of the big tennis ball mower. Also, depending on which manual mower, the price can vary, and our school cannot even purchase a recent mower.  
 
  
 
-Summarizing the Problem 
+### Summarizing the Problem 
 
  
 
-Looking Down the Path Toward Solution 
+### Looking Down the Path Toward Solution 
 
  
 
