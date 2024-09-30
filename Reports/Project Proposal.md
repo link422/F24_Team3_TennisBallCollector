@@ -20,11 +20,23 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
 ### Specifications and Constraints 
 
-Our stakeholder desires an operating model of tennis ball collector that is autonomous in collecting and managing 50-100 balls at a time and capable of operation year-round. The product should be versatile on both indoor and outdoor tennis courts. Initiating at a user input, but self-functioning in execution. When comparing to the competitors, Tennibot and Playmate’s Ball-Mower, our product remains effective in usage while being lightweight, compact, and cost efficient.  
+Specifications 
 
- 
+1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
 
- 
+2. The product shall be versatile on both indoor and outdoor tennis courts.  
+
+3. The device shall operate year-round on rainy or dry courts. 
+
+4. The product shall remain operational after a duration of time while being easy to carry including modifications.  
+
+5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.   
+
+Standards
+
+IEEE 802.15.1 -- This IEEE standard details bluetooth specifications for wireless communication of low energy consumption requirement devices. Assuming a battery powered remote controller connecting to a microprocessor within the modified tennis ball collector, this mechanism fits the low energy consumption requirement for this specification. 
+
+IEEE 802.11 -- This IEEE standard details the wireless LAN standard used for communication between two devices. This standard relates to the design of the modified tennis ball collector because of the wireless communication between the remote controller and the ball collector. This standard limits the frequency band able to be used for communication. 
 
  
 
