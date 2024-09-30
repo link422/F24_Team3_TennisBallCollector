@@ -32,13 +32,13 @@ Specifications
 
 5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.   
 
-Standards
+Constraints
 
-IEEE 802.15.1 -- This IEEE standard details bluetooth specifications for wireless communication of low energy consumption requirement devices. Assuming a battery powered remote controller connecting to a microprocessor within the modified tennis ball collector, this mechanism fits the low energy consumption requirement for this specification. 
+IEEE 1872 – This standard provides a framework for representing knowledge in robotics and automation. This constraint ensures that the autonomous tennis ball collector shall operate effectively and safely.
+IEEE 1028 – This standard outlines the processes for conducting software reviews and audits. This constraint requires verifying software components that compose the autonomy of the tennis ball collector.
+IEEE 29119 – This series of standards provides guidelines for software testing. This constraint ensures the reliability and performance of the software controlling your autonomous tennis ball collector.
 
-IEEE 802.11 -- This IEEE standard details the wireless LAN standard used for communication between two devices. This standard relates to the design of the modified tennis ball collector because of the wireless communication between the remote controller and the ball collector. This standard limits the frequency band able to be used for communication. 
-
- 
+The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces.
 
 ### Survey of Solutions 
 
@@ -48,7 +48,7 @@ On the market, there is a robotic tennis ball collector that collects balls on c
 
 ### Summarizing the Problem 
 
- 
+ The objective of this solution is to refine or modify the existing tennis ball collector to work as if the product was bought new. 
 
 ### Looking Down the Path Toward Solution 
 
