@@ -57,11 +57,7 @@ Response of the autonomous vehicle to electromagnetic interference brought by ot
 
 ### Measure of Success 
 
-The project shall build upon the already established tennis ball collector used by Tennessee Tech.  With consecutive testing of these 3 designs, the project shall be deemed successful: 
-
-1. For compact effectiveness and mobility, the customer shall test the mobility by having the project being used during practice. 
-
-2. For transparency of cost, the customer shall compare the costs of the project to the cost of replacing equipment. 
+The project shall build upon the already established tennis ball collector used by Tennessee Tech. The project shall enhance the ball collector by adding a counter to ensure complete collection of balls, add a vibrating function to eliminate blockage, and add hinges to help with the mobility on different terrain.
 
 ### Broader Implications/Ethics 
 This project will act as a means of improving the current tennis team’s training efficiency, device accessibility, and facility maintenance. Globally, considering the demand for this product, it could contribute to resource depletion. Economically, this product could save TN Tech funding as we are modifying the existing model instead of purchasing a new one. From an environmental perspective, the process of designing our product could contribute to global waste and energy consumption. Socially, this product could create disparities between well-funded sports facilities and underprivileged communities. We are adament to developing a solution that is within health and safety regulations,  mindful of resource usage.  
