@@ -20,19 +20,31 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
 ### Specifications and Constraints 
 
-Our stakeholder desires an operating model of tennis ball collector that is autonomous in collecting and managing 50-100 balls at a time and capable of operation year-round. The product should be versatile on both indoor and outdoor tennis courts. Initiating at a user input, but self-functioning in execution. When comparing to the competitors, Tennibot and Playmate’s Ball-Mower, our product remains effective in usage while being lightweight, compact, and cost efficient.  
+Specifications 
 
- 
+1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
 
+2. The product shall be versatile on both indoor and outdoor tennis courts.  
 
- 
+3. The device shall operate year-round on rainy or dry courts. 
+
+4. The product shall remain operational after a duration of time while being easy to carry including modifications.  
+
+5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.   
+
+Constraints
+
+IEEE 1872 – This standard provides a framework for representing knowledge in robotics and automation. This constraint ensures that the autonomous tennis ball collector shall operate effectively and safely.
+IEEE 1028 – This standard outlines the processes for conducting software reviews and audits. This constraint requires verifying software components that compose the autonomy of the tennis ball collector.
+IEEE 29119 – This series of standards provides guidelines for software testing. This constraint ensures the reliability and performance of the software controlling your autonomous tennis ball collector.
+
+The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces.
 
 ### Survey of Solutions 
 
 On the market, there is a robotic tennis ball collector that collects balls on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. Yet not everyone can attain one unless they have roughly $3,000 to afford it. Tennis is already an expensive sport that should not require additional spending to pick up tennis balls. There are other manual tennis ball collectors, like the machine the Tennessee Tech Tennis team is using. The issue, as previously stated, is limited to the kind of court, the number of tennis balls it can collect, and the weight of the big tennis ball mower. Also, depending on which manual mower, the price can vary, and our school cannot even purchase a recent mower.  
 
  
-
 ### Unknown obstacles 
 
 The process of customizing computer chips for design and having the hardware behave functionally as expected. 
@@ -56,7 +68,7 @@ This project will act as a means of improving the current tennis team’s traini
 
 ### Resources 
 
-To make a cost-effective, portable, remote controlled tennis ball collector efficient, it will take a solid understanding of remote controls and RF and knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as infrared is needed for this robot. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. This number will not be passed due to the individual components being used for prototyping being cheap. On top of prototyping costs, funding will be needed for CAD software and creating the finished build therefore $2,000 dollars shall be enough to meet the customer’s needs. 
+To make a cost-effective, portable, remote controlled tennis ball collector efficient, it will take a solid understanding of remote controls and RF and knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as infrared is needed for this robot. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. This number comes from the cost of all components mentioned above plus some extra because components may become damaged while working with them. This number will not be passed due to the individual components being used for prototyping being inexpensive for the most part. On top of prototyping costs, funding will be needed for CAD software and creating the finished build which will add at least $500 dollars based on softwares currently on the market so $1,500 will be enough to meet the customer’s needs. 
  
 
 ### Personnel 
