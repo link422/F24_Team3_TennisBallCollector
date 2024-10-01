@@ -24,21 +24,12 @@ Our stakeholder desires an operating model of tennis ball collector that is auto
 
  
 
- 
 
  
 
 ### Survey of Solutions 
 
 On the market, there is a robotic tennis ball collector that collects balls on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. Yet not everyone can attain one unless they have roughly $3,000 to afford it. Tennis is already an expensive sport that should not require additional spending to pick up tennis balls. There are other manual tennis ball collectors, like the machine the Tennessee Tech Tennis team is using. The issue, as previously stated, is limited to the kind of court, the number of tennis balls it can collect, and the weight of the big tennis ball mower. Also, depending on which manual mower, the price can vary, and our school cannot even purchase a recent mower.  
-
- 
-
-### Summarizing the Problem 
-
- 
-
-### Looking Down the Path Toward Solution 
 
  
 
@@ -61,16 +52,7 @@ The project shall build upon the already established tennis ball collector used 
 2. For transparency of cost, the customer shall compare the costs of the project to the cost of replacing equipment. 
 
 ### Broader Implications/Ethics 
-
-This project will act as a means of improving the current tennis team’s training efficiency, device accessibility, and facility maintenance.   
-
-In reference to the IEEE Code of Ethics, the tennis ball collection project team ennobles a high ethical and professional conduct by: 
-
-1. Actively strategize an ethical solution, executing it in a sustainable manner.  
-
-2. Maintain a product produced from the latest of our technical competence in pursuit of improving the common good in the tennis community. 
-
-3. Establish a constant tenacity concerning the development of our product secured in expansive knowledge and notion. 
+This project will act as a means of improving the current tennis team’s training efficiency, device accessibility, and facility maintenance. Globally, considering the demand for this product, it could contribute to resource depletion. Economically, this product could save TN Tech funding as we are modifying the existing model instead of purchasing a new one. From an environmental perspective, the process of designing our product could contribute to global waste and energy consumption. Socially, this product could create disparities between well-funded sports facilities and underprivileged communities. We are adament to developing a solution that is within health and safety regulations,  mindful of resource usage.  
 
 ### Resources 
 
