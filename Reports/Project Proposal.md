@@ -28,17 +28,19 @@ Specifications
 
 3. The device shall operate year-round on rainy or dry courts. 
 
-4. The product shall remain operational after a duration of time while being easy to carry including modifications.  
+4. The product shall remain operational after a duration of time estimated to be 2 to 3 years while being easy to carry for a single person with two hands including modifications.  
 
-5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.   
+5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+
+6. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with currently ongoing activities.    
 
 Constraints
 
-IEEE 1872 – This standard provides a framework for representing knowledge in robotics and automation. This constraint ensures that the autonomous tennis ball collector shall operate effectively and safely.
-IEEE 1028 – This standard outlines the processes for conducting software reviews and audits. This constraint requires verifying software components that compose the autonomy of the tennis ball collector.
-IEEE 29119 – This series of standards provides guidelines for software testing. This constraint ensures the reliability and performance of the software controlling your autonomous tennis ball collector.
+IEEE 1872.1-2024 – This standard provides a framework for representing knowledge about robotics and automation. This standard shall be addressed in the conceptual and detailed design where appropriate robotics and automation vocabulary that is defined by the standard will be used. 
 
-The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces.
+IEEE 1028-2008 – This standard outlines the processes for conducting software reviews and audits. This standard shall be address when completing the conceptual and detailed designs through following the software audit process defined by this standard.
+
+The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces. The product shall adhere to electrical safety standards specifically for maintainance and preventing electrical exposure to individuals near the product. The concise labelling of components shall be done to clarify which parts are to be used in the design. The product shall be tested in environments where, a group is congregated around the robot, no human activity, obstacles such as potholes, or objects that do not ressemble tennis balls.  
 
 ### Survey of Solutions 
 
