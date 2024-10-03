@@ -24,23 +24,19 @@ Specifications
 
 1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
 
-2. The product shall be versatile on both indoor and outdoor tennis courts.  
+2. The product shall be operational year-round and be versatile on both indoor and outdoor tennis courts.  
 
-3. The device shall operate year-round on rainy or dry courts. 
+3. The product shall be easy to carry for a single person with two hands including modifications.  
 
-4. The product shall remain operational after a duration of time estimated to be 2 to 3 years while being easy to carry for a single person with two hands including modifications.  
+4. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
 
-5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
-
-6. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with currently ongoing activities.    
+5. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with ongoing activities within operating range.
 
 Constraints
 
-IEEE 1872.1-2024 – This standard provides a framework for representing knowledge about robotics and automation. This standard shall be addressed in the conceptual and detailed design where appropriate robotics and automation vocabulary that is defined by the standard will be used. 
+1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
 
-IEEE 1028-2008 – This standard outlines the processes for conducting software reviews and audits. This standard shall be address when completing the conceptual and detailed designs through following the software audit process defined by this standard.
-
-The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces. The product shall adhere to electrical safety standards specifically for maintainance and preventing electrical exposure to individuals near the product. The concise labelling of components shall be done to clarify which parts are to be used in the design. The product shall be tested in environments where, a group is congregated around the robot, no human activity, obstacles such as potholes, or objects that do not ressemble tennis balls.  
+2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior (damaging property or injuring individuals) which abides by specification #5.
 
 ### Survey of Solutions 
 
