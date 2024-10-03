@@ -36,7 +36,7 @@ Constraints
 
 1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
 
-2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior (damaging property or injuring individuals) which abides by specification #5.
+2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior to humans or property.
 
 ### Survey of Solutions 
 
