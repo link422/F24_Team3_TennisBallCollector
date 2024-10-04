@@ -18,25 +18,17 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
  
 
-### Specifications and Constraints 
+### Specifications
 
-Specifications 
+1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a sensor indicating the number of balls that go into the collector.
 
-1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
+2. Any modifications to the tennis ball collector shall not impact its pre-existing performance of collecting and managing 50-100 balls at a time on indoor and outdoor courts.
 
-2. The product shall be operational year-round and be versatile on both indoor and outdoor tennis courts.  
+3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property.
 
-3. The product shall be easy to carry for a single person with two hands including modifications.  
+4. The improved version of the tennis ball collector shall be easy to carry for a single person with two hands including modifications.  
 
-4. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
-
-5. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with ongoing activities within operating range.
-
-Constraints
-
-1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
-
-2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior to humans or property.
+5. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
 
 ### Survey of Solutions 
 
