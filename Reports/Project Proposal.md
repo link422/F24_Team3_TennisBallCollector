@@ -4,13 +4,10 @@
 
 ECE 4961-001 
 
- 
-
 ### Introduction 
 
-Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling in the of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make an autonomous Tennis Ball Collector that can provide an effective alternative to this cleanup process.  
+Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling in the of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make improvements to the current Tennis Ball Collector with our new design ideas to help make the cleanup process more effective.  
 
- 
 
 ### Formulating the Problem 
 
@@ -18,42 +15,49 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
  
 
-### Specifications
+### Specifications and Constraints 
 
-1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a sensor indicating the number of balls that go into the collector.
+Specifications 
 
-2. Any modifications to the tennis ball collector shall not impact its pre-existing performance of collecting and managing 50-100 balls at a time on indoor and outdoor courts.
+1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
 
-3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property.
+2. The product shall be operational year-round and be versatile on both indoor and outdoor tennis courts.  
 
-4. The improved version of the tennis ball collector shall be easy to carry for a single person with two hands including modifications.  
+3. The product shall be easy to carry for a single person with two hands including modifications.  
 
-5. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+4. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+
+5. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with ongoing activities within operating range.
+
+Constraints
+
+1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
+
+2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior to humans or property.
 
 ### Survey of Solutions 
 
-The tennis ball collector will be a manual, user-friendly tool enhanced with sensors, foldability, and improved mechanical features. It will be an updated tennis ball collector that the Tennessee Tech Tennis team currently uses. Unlike autonomous collectors on the market—which can cover entire clay courts, including hard-to-reach areas like the net, fence, and corners, but often cost upwards of $3,000—this collector will remain budget-friendly and accessible. Tennis is already a costly sport, and high expenses for equipment like ball collectors add an unnecessary financial burden. While there are various manual ball mowers available, the current model used by the team faces limitations related to court type, ball capacity, and weight, and even the most recent models can be too costly for school budgets. This redesign will address these issues by enhancing the team’s existing collector to make it easier to use and transport without the need for full autonomy, making tennis practice more efficient without adding significant expense.  
+On the market, there is a robotic tennis ball collector that collects balls on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. Yet not everyone can attain one unless they have roughly $3,000 to afford it. Tennis is already an expensive sport that should not require additional spending to pick up tennis balls. There are other manual tennis ball collectors, like the machine the Tennessee Tech Tennis team is using. The issue, as previously stated, is limited to the kind of court, the number of tennis balls it can collect, and the weight of the big tennis ball mower. Also, depending on which manual mower, the price can vary, and our school cannot even purchase a recent mower.  
 
  
 ### Unknown obstacles 
 
 The process of customizing computer chips for design and having the hardware behave functionally as expected. 
 
-Response of the autonomous vehicle to obstacles such as poles, fences, other balls, and human interference. 
+Response of the sensors of the counter to ensure foreign objects aren't counted. 
 
-Response of the autonomous vehicle to differing weather conditions including but not limited to heavy rainfall, snow, and thunderstorms. 
+Potential damage to hardware applied to vehicle from differing weather conditions including but not limited to heavy rainfall, snow, and thunderstorms. 
 
-Response of the autonomous vehicle to electromagnetic interference brought by other devices or external sources. 
+Response of Software and Hardware to electromagnetic interference brought by other devices or external sources. 
 
 ### Measure of Success 
 
-The project shall build upon the already established tennis ball collector used by Tennessee Tech. The project shall enhance the ball collector by adding a counter to ensure complete collection of balls, add a vibrating function to eliminate blockage, and add hinges to help with the mobility on different terrain.
+The project shall build upon the already established tennis ball collector used by Tennessee Tech. The project shall enhance the ball collector by adding a counter to ensure complete collection of balls, add a vibrating function to eliminate blockage, and add hinges to help with the mobility on different terrain. With consecutive testing of these 3 designs, the project shall be deemed successful by: Compact effectiveness and mobility, the customer shall test the mobility by having the project being used during practice. Eliminating blockage, the customer shall test the vibrating function with actual tennis balls to see its effectiveness. Finally for adding a counter having different sensors to detect the difference of the balls and foreign objects shall provide effective results.
 
 ### Broader Implications/Ethics 
 This project will act as a means of improving the current tennis team’s training efficiency, device accessibility, and facility maintenance. Globally, considering the demand for this product, it could contribute to resource depletion. Economically, this product could save TN Tech funding as we are modifying the existing model instead of purchasing a new one. From an environmental perspective, the process of designing our product could contribute to global waste and energy consumption. Socially, this product could create disparities between well-funded sports facilities and underprivileged communities. We are adament to developing a solution that is within health and safety regulations,  mindful of resource usage.  
 
 ### Resources 
-
 To make a cost-effective, portable, remote controlled tennis ball collector efficient, it will take a solid understanding of remote controls and RF and knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as infrared is needed for this robot. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. This number comes from the cost of all components mentioned above plus some extra because components may become damaged while working with them. This number comes from the cost of some components being added together with a small amount of overhead. Some of the more expensive components are the battery and charger which will range somewhere between $100-200 for a lithium-ion battery with high capacity, a raspberry-pi 5 is $80 dollars and we will also need a case and cables for it, and other various sensors together will cost around $200 dollars. This number will not be passed due to the individual components being used for prototyping being inexpensive for the most part. On top of prototyping costs, funding will be needed for CAD softwares and creating the finished build which will add at least $500 dollars based on softwares currently on the market so $1,500 will be enough to meet the customer’s needs.
  
 
