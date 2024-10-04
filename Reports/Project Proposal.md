@@ -24,21 +24,19 @@ Specifications
 
 1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
 
-2. The product shall be versatile on both indoor and outdoor tennis courts.  
+2. The product shall be operational year-round and be versatile on both indoor and outdoor tennis courts.  
 
-3. The device shall operate year-round on rainy or dry courts. 
+3. The product shall be easy to carry for a single person with two hands including modifications.  
 
-4. The product shall remain operational after a duration of time while being easy to carry including modifications.  
+4. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
 
-5. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.   
+5. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with ongoing activities within operating range.
 
 Constraints
 
-IEEE 1872 – This standard provides a framework for representing knowledge in robotics and automation. This constraint ensures that the autonomous tennis ball collector shall operate effectively and safely.
-IEEE 1028 – This standard outlines the processes for conducting software reviews and audits. This constraint requires verifying software components that compose the autonomy of the tennis ball collector.
-IEEE 29119 – This series of standards provides guidelines for software testing. This constraint ensures the reliability and performance of the software controlling your autonomous tennis ball collector.
+1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
 
-The US Product Consumer Product Safety Commission also imposes constraints relating to the electrical safety of the device, concise labeling of components, and regulations in regarding to testing this product in public spaces.
+2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior to humans or property.
 
 ### Survey of Solutions 
 
