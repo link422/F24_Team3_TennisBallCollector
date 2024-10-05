@@ -18,7 +18,9 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
  
 
-### Specifications
+### Specifications and Constraints
+
+Specifications
 
 1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a sensor indicating the number of balls that go into the collector.
 
@@ -29,6 +31,14 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 4. The improved version of the tennis ball collector shall be easy to carry for a single person with two hands including modifications.  
 
 5. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+
+Constraints
+
+1. If the design uses lithium ion batteries for powering the circuitry within the tennis ball collector, the batteries and its casing shall comply with 49 CFR 173.185 to prevent short-circuits,damage caused by the shifting of components within a device, and accidental activation of equipment. 
+
+2. If using alkaline or dry cell batteries in the design, the modifications shall comply with the U.S. Hazardous Materials Regulations for dry cell batteries.
+   
+3. If the sensors implemented in the tennis ball collector operate at a radio frequency greater than 9kHz, the device shall comply with FCC part 15 under the classification of an unintentional radiator.
 
 ### Survey of Solutions 
 
