@@ -13,27 +13,28 @@ Tennis is a time-honored game that can be dated back to the 11th century, played
 
 Collecting Tennis Balls at the end of a long day at practice is a daunting task for players who have been running for hours on end. Having to go and pick up each ball one by one is not only a waste of the players' time, but energy as well. To aid in this task, companies have created push devices that collect balls into a cart. While these devices provided a solution to the bigger problem, they raised concerns for more. After taking in many tennis balls, these machines can jam, halting the process. Along with that, these devices can move for their given purpose but cannot be easily transported from court to court. With teams having indoor and outdoor courts at different locations this is crucial.  
 
- 
 
-### Specifications and Constraints 
+### Specifications and Constraints
 
-Specifications 
+Specifications
 
-1. The revised model of the tennis ball collector shall fulfill the duty of collecting and managing 50-100 balls at a time.  
+1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a sensor indicating the number of balls that go into the collector.
 
-2. The product shall be operational year-round and be versatile on both indoor and outdoor tennis courts.  
+2. Any modifications to the tennis ball collector shall not impact its pre-existing performance of collecting and managing 50-100 balls at a time on indoor and outdoor courts.
 
-3. The product shall be easy to carry for a single person with two hands including modifications.  
+3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property.
 
-4. The product shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+4. The improved version of the tennis ball collector shall be easy to carry for a single person with two hands including modifications.  
 
-5. The robot shall be autonomous with the ability to interact with its environment including human interaction posing little interference with ongoing activities within operating range.
+5. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
 
 Constraints
 
-1. UL 3100 section 6.1 - If the robot utilizes a charging port, the robot shall not be capable of being energized in a manner that would allow movement of the system that would strain connections to the charger or cause the connection to break.
+1. If the design uses lithium ion batteries for powering the circuitry within the tennis ball collector, the batteries and its casing shall comply with 49 CFR 173.185 to prevent short-circuits,damage caused by the shifting of components within a device, and accidental activation of equipment. 
 
-2. IEEE Global Initiative on Ethics of Autonomous and Intelligent Systems Principle 5 (Transparency) - The robot shall have a “why did you do that button” which, when pressed, causes the robot to explain the action it just took. This is done to identify preventative hazards including unsafe behavior to humans or property.
+2. If using alkaline or dry cell batteries in the design, the modifications shall comply with the U.S. Hazardous Materials Regulations for dry cell batteries.
+   
+3. If the sensors implemented in the tennis ball collector operate at a radio frequency greater than 9kHz, the device shall comply with FCC part 15 under the classification of an unintentional radiator.
 
 ### Survey of Solutions 
 
