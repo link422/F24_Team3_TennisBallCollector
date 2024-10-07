@@ -38,7 +38,7 @@ Constraints
 
 ### Survey of Solutions 
 
-On the market, there is a robotic tennis ball collector that collects balls on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. Yet not everyone can attain one unless they have roughly $3,000 to afford it. Tennis is already an expensive sport that should not require additional spending to pick up tennis balls. There are other manual tennis ball collectors, like the machine the Tennessee Tech Tennis team is using. The issue, as previously stated, is limited to the kind of court, the number of tennis balls it can collect, and the weight of the big tennis ball mower. Also, depending on which manual mower, the price can vary, and our school cannot even purchase a recent mower.  
+On the market, there is an autonomous robotic tennis ball collector, called Tennibot [1]. That collects up to 40 balls a minute on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. However due to it's high price of $3,000, customers could have trouble committing to such a purchase. Tennis is already an expensive sport that should not require additional spendings to pick up tennis balls. There are other manual tennis ball collectors, such as Playmates Ball Mower [2], that are similar to Tennessee Tech's use of a collector. Although the price of the manual collector is cheaper sitting at $595, the quality reported by the customer can be lacking. With these different designs in mind, the project wants to combat the problem of pricing with the autonomous competitors. As well as, adding more quality to the collector compared to the manual competitors.
 
  
 ### Unknown obstacles 
