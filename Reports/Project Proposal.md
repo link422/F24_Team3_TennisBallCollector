@@ -18,7 +18,7 @@ Collecting Tennis Balls at the end of a long day at practice is a daunting task 
 
 Specifications
 
-1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a sensor indicating the number of balls that go into the collector.
+1. The improved version of the tennis ball collector shall not be autonomous but will have improved features such as a ball counter and remote control capability.
 
 2. Any modifications to the tennis ball collector shall not impact its pre-existing performance of collecting and managing 50-100 balls at a time on indoor and outdoor courts.
 
