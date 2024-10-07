@@ -24,7 +24,7 @@ Specifications
 
 3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property. 
 
-4. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+4. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $595 [1].
 
 Constraints
 
@@ -36,7 +36,7 @@ Constraints
 
 ### Survey of Solutions 
 
-On the market, there is an autonomous robotic tennis ball collector, called Tennibot [1]. That collects up to 40 balls a minute on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. However due to it's high price of $3,000, customers could have trouble committing to such a purchase. Tennis is already an expensive sport that should not require additional spendings to pick up tennis balls. There are other manual tennis ball collectors, such as Playmates Ball Mower [2], that are similar to Tennessee Tech's use of a collector. Although the price of the manual collector is cheaper sitting at $595, the quality reported by the customer can be lacking. With these different designs in mind, the project wants to combat the problem of pricing with the autonomous competitors. As well as, adding more quality to the collector compared to the manual competitors.
+On the market, there is an autonomous robotic tennis ball collector, called Tennibot [2]. That collects up to 40 balls a minute on clay courts, on the entire court including the net, fence, and corners, and it weighs approximately 25 lbs. However due to it's high price of $3,000, customers could have trouble committing to such a purchase. Tennis is already an expensive sport that should not require additional spendings to pick up tennis balls. There are other manual tennis ball collectors, such as Playmates Ball Mower [1], that are similar to Tennessee Tech's use of a collector. Although the price of the manual collector is cheaper sitting at $595, the quality reported by the customer can be lacking. With these different designs in mind, the project wants to combat the problem of pricing with the autonomous competitors. As well as, adding more quality to the collector compared to the manual competitors.
 
  
 ### Unknown obstacles 
