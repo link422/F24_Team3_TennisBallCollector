@@ -22,11 +22,9 @@ Specifications
 
 2. Any modifications to the tennis ball collector shall not impact its pre-existing performance of collecting and managing 50-100 balls at a time on indoor and outdoor courts.
 
-3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property.
+3. Any modifications to the tennis ball collector shall not pose damage or injury risk to individuals, operators or property. 
 
-4. The improved version of the tennis ball collector shall be easy to carry for a single person with two hands including modifications.  
-
-5. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
+4. The improved version of the tennis ball collector shall be cost-efficient with costs no more than 33% more than the customer’s alternative option, Playmate’s ball mower valued at $695.
 
 Constraints
 
