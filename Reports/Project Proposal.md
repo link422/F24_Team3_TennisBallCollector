@@ -61,9 +61,15 @@ To make a cost-effective, portable, remote controlled tennis ball collector effi
 
 | Part name  | Est. Price | Link |
 | ------------- | ------------- | ------------- |
-| RC transmitter  | 50-100  | TBD  |
-| RC reciver  | 50-100  | TBD  |
+| RC transmitter  | 50-100  | N/A  |
+| RC reciver  | 50-100  | N/A  |
 | Arduino UNO R4   | 30  | [Click](https://store.arduino.cc/products/uno-r4-wifi )  | 
+| Battery  | 30-50  | [Click](https://www.digikey.com/en/products/detail/adafruit-industries-llc/5035/14625568?s=N4IgjCBcoMw1oDGUBmBDANgZwKYBoQB7KAbRAHYYxyAGEAXQIAcAXKEAZRYCcBLAOwDmIAL4EALGABMCEMkjps%2BIqRAwAbAFYqmhszaROPAcJFiQMyGQy8WAC14BXALYACXoX4MRQA )  | 
+| Charger   | 30-70  | [Click](https://www.digikey.com/en/products/filter/battery-chargers/85?s=N4IgjCBcoCxgTFUBjKAzAhgGwM4FMAaEAeygG0QBmANgFZKxaQBdIgBwBcoQBlDgJwCWAOwDmIAL4SiiSBSyCOAC0EBXALYACQcWGbkSjP1F5%2BLCUA )  | 
+| LCD display   | 10  | [Click](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710 )  | 
+| Vibration motor   | 5-10  | [Click](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917 )  | 
+| Wheels   | 50  | [Click](https://www.studica.com/studica-robotics-brand/125mm-all-terrain-wheel-set )  | 
+| Servos   | 100  | [Click](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1142/5154658 )  | 
 
 ### Personnel 
 
