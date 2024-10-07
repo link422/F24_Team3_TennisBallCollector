@@ -70,6 +70,7 @@ To make a cost-effective, portable, remote controlled tennis ball collector effi
 | Vibration motor   | 5-10  | [Click](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917 )  | 
 | Wheels   | 50  | [Click](https://www.studica.com/studica-robotics-brand/125mm-all-terrain-wheel-set )  | 
 | Servos   | 100  | [Click](https://www.digikey.com/en/products/detail/adafruit-industries-llc/1142/5154658 )  | 
+| Sensors | 77 | [Click](https://stack-light.com/products/diffuse-photo-sensors?variant=44817176461531&currency=USD&gad_source=1&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YZnyGzIxWyyUjUTWbqxsLxM_eVRJhUGIMK7RvBAOAtBdTkI59_Xu8YaAmwzEALw_wcB) |
 
 ### Personnel 
 
