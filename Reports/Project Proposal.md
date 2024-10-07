@@ -129,4 +129,8 @@ Ashli Watkins- Specification and Contributions, Timeline
 
 Cindy Escobar- Survey of Solutions, Personnel, Timeline 
 
- 
+
+ ### References
+
+ [1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/ (accessed Oct. 7,             2024). 
+[2] “Tennibot ,” Tennibot, https://www.tennibot.com/buy/ (accessed Oct. 7, 2024). 
