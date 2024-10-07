@@ -58,7 +58,12 @@ This project will act as a means of improving the current tennis team’s traini
 
 ### Resources 
 To make a cost-effective, portable, remote controlled tennis ball collector efficient, it will take a solid understanding of remote controls and RF and knowledge of parts necessary for the robot. A processor that can handle multiple sensors such as infrared is needed for this robot. Lab equipment such as oscilloscopes and computers to interface with the processor will be needed. It is expected that it will take $1,000 dollars for prototyping to get the desired results. This number comes from the cost of all components mentioned above plus some extra because components may become damaged while working with them. This number comes from the cost of some components being added together with a small amount of overhead. Some of the more expensive components are the battery and charger which will range somewhere between $100-200 for a lithium-ion battery with high capacity, a raspberry-pi 5 is $80 dollars and we will also need a case and cables for it, and other various sensors together will cost around $200 dollars. This number will not be passed due to the individual components being used for prototyping being inexpensive for the most part. On top of prototyping costs, funding will be needed for CAD softwares and creating the finished build which will add at least $500 dollars based on softwares currently on the market so $1,500 will be enough to meet the customer’s needs.
- 
+
+| Part name  | Est. Price | Link |
+| ------------- | ------------- | ------------- |
+| RC transmitter  | 50-100  | TBD  |
+| RC reciver  | 50-100  | TBD  |
+| Arduino UNO R4   | 30  | [Click](https://store.arduino.cc/products/uno-r4-wifi )  | 
 
 ### Personnel 
 
