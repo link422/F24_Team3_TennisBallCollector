@@ -105,7 +105,73 @@ MERMAID CODE HERE
 
 # Operational Flow Chart 
 
-MERMAID CODE HERE
+```mermaid 
+
+graph LR 
+
+A[Remote Controller Ready] -->B(Start Button) 
+
+    B --> C{Device Active?} 
+
+    C -->|Yes| D[Disable tennis ball collector] 
+
+    C -->|No| E[Enable tennis ball collector] 
+
+    D --> A 
+
+    E --> A 
+
+A -->F(Joystick) 
+
+    F --> G{Device Active?} 
+
+    G -->|Yes| H{Right or Left} 
+
+    G -->|No| I[Do Nothing] 
+
+    I --> A 
+
+    H -->|Right| J{Up or Down} 
+
+    H -->|Left| K{Up or Down} 
+
+    H -->|Neither| L{Up or Down} 
+
+    J -->|Up| M[Move Collector Up and Right] 
+
+    J -->|Down| N[Move Collector Down and Right] 
+
+    J -->|Neither| O[Move Collector Right] 
+
+    M --> A 
+
+    N --> A 
+
+    O --> A 
+
+    K -->|Up| P[Move Collector Up and Left] 
+
+    K -->|Down| Q[Move Collector Down and Left] 
+
+    K -->|Neither| R[Move Collector Left] 
+
+    P --> A 
+
+    Q --> A 
+
+    R --> A 
+
+    L -->|Up| S[Move Collector Up] 
+
+    L -->|Down| T[Move Collector Down] 
+
+    L -->|Neither| I 
+
+    S --> A 
+
+    T --> A 
+
+``` 
 
 # Atomic Subsystem Specifications 
 
