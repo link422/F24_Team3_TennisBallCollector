@@ -107,7 +107,7 @@ MERMAID CODE HERE
 
 ```mermaid 
 
-graph LR 
+flowchart LR 
 
 A[Remote Controller Ready] -->B(Start Button) 
 
