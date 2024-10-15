@@ -1,12 +1,10 @@
 # Introduction 
 
-  Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling in the of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make improvements to the current Tennis Ball Collector by adding remote control capability and an accurate ball counter to help make the cleanup process more effective. 
+  Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make improvements to the current Tennis Ball Collector by adding remote control capability and an accurate ball counter to help make the cleanup process more effective. 
 
 # Restating the Fully Formulated Problem 
 
-  
 
-  The fully formulated problem is the overall objective and scope complete with the set of shall statements. This was part of the project proposal. However, it may be that the scope has changed. So, state the fully formulated problem in the introduction of the conceptual design and planning document. For each of the constraints, explain the origin of the constraint (customer specification, standards, ethical concern, broader implication concern, etc.). 
 
 The updated machine of our project: 
  
@@ -50,41 +48,9 @@ When Team 3 began developing solutions for the tennis ball collector, they first
 
   “Have all the balls been collected for the day?” is a question that shouldn’t have to be asked. If the customer uses a select amount of tennis balls at practice, they should have a mechanic to keep count of how many they have collected so far. The proposed solution to this was to implement a counter device in the form of a seven-segment display that works in tandem with sensor. This solution proved to be viable since the addition of a photoelectric sensor and seven segments both provide a challenge to the team while being budget friendly. 
 
-  Finally, the most crucial aspect of the whole project is the funding  
-
-The problems: 
-
- - Mobility 
-
-   * Manual –Heavy, Time-Consuming 
-
-   * Autonomous –Productive, Challenging 
-
-   * Remote Control—Semi-Productive, Achievable in Time Constraint 
-
- - Jamming 
-
-   * Vaccuum Collection—Efficiency Improvement, Lessen Completion Time 
-
-   * Vibration Mechanic—Solution to Current Customer Errors 
-
- - Data 
-
-   * Sensor Detection –Counter, Active Time Factor 
-
-   * Loss Potential—Notification for Missing Balls 
-
- - Funding 
-
-   * Price of Tennibot –Very Expensive, impractical 
-
-   * Price of New Playmate –Reasonable, Low Feature 
+  Finally, the most crucial aspect of the whole project is the funding. New collection devices are already out on the market, but unfortunately for the customer the funding for said devices isn’t there. A device called the Tennibot, that is a fully automated collector that functions similar to a Roomba but for a tennis court, is available but is marketed at a hefty price of $2,995. This is well out of the customer's budget, making it an unrealistic solution. On the cheaper side of the market is the purchase of a new Playmate collector, listed at $595. Although this is immensely cheaper than the Tennibot, the customer still does not want to purchase a new machine. So, to face the issue of funding for the project, Team 3 chose to adjust the customer’s current device to fit their needs with a practical budget in mind.
 
 # High-Level Solution 
-
-  
-
-  This section presents a comprehensive, high-level solution aimed at efficiently fulfilling all specified requirements and constraints. The solution is designed to maximize stakeholder goal attainment, adhere to established constraints, minimize risks, and optimize resource utilization. Please elaborate on how your design accomplishes these objectives. 
 
  
 
@@ -209,15 +175,7 @@ A -->F(Joystick)
 
  - Expectation: While the Entire system is running the vibration system shall also run and help with disrupting the collection of balls 
 
- 
 
-## Flowchart
-
-  For all subsystems, formulate detailed "shall" statements. Ensure these statements are comprehensive enough so that an engineer who is unfamiliar with your project can design the subsystem based on your specifications. Assume the role of the customer in this context to provide clear and precise requirements. 
-
-  
-
-  
 
 # Ethical, Professional, and Standards Considerations 
 
@@ -248,7 +206,7 @@ A -->F(Joystick)
 
  - SAE J1939 (Communication protocols in vehicles, which may be used in advanced RC systems) 
 
- - FCC (Federal Communications Commission) 
+## FCC (Federal Communications Commission) 
 
  - FCC Part 15 (Regulates unlicensed radio-frequency devices, including RC transmitters and receivers) 
 
@@ -263,21 +221,18 @@ A -->F(Joystick)
 # Resources 
  
 
-  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Arduino UNO R4, battery, LCD display, vibration motor, servos, wheels, and sensors such as the photelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
+  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Arduino UNO R4, battery, LCD, vibration motor, servos, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
 
   The software resources include CAD software for designing the final version of the collector. Additionally, developmental environments for programming Arduino and any RF control system testing will be essential. The software resources will be used to design, simulate, and test the functionality of the tennis ball collector.  
 
 # Budget 
 
-  Develop a budget proposal with justifications for expenses associated with each subsystem. Note that the total of this budget proposal can also serve as a specification for each subsystem. After creating the budgets for individual subsystems, merge them to create a comprehensive budget for the entire solution. 
-
- 
 
   The budget proposal covers the key subsystems of the tennis ball collector, with a total of $2,000 for the entire project: 
 
-## CAD Software ($300 - $500) 
+### CAD Software ($300 - $500) 
 
-## Prototyping ($431.9- $596.9): 
+### Prototyping ($431.9- $596.9): 
 
 | Part name | Cost |
 | ---------- | --------- |
@@ -300,24 +255,35 @@ A -->F(Joystick)
 
   First, conduct a thorough analysis of the skills currently available within the team, and then compare these skills to the specific requirements of each subsystem. Based on this analysis, assign each team member to oversee the development of a particular subsystem. Additionally, appoint a different team member to take the specifications and generate a corresponding solution. Ensure that the assignments are structured in such a way that no single team member is simultaneously managing and being managed by the same person. If there are more team members than subsystems, consider further subdividing the solutions into smaller tasks or components, thereby allowing each team member the opportunity to manage and design a subsystem. 
 
-Ashli: 
+Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. RC Subsystem.
 
-Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs 
+Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs. RC Subsystem Lead.
 
-Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. 
+Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. Vibration Subsystem.
 
-Gabriel: 
+Gabriel: Worked with Arduino coding, Microcontrollers, PLCs and generally coding languages. Counting Subsystem lead.
 
-Maxwell: 
+Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. Counting Subsystem.
 
-Tate: 
+Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. Vibration Subsystem Lead.
  
-
-  
 
 # Timeline 
 
-  
+  ```mermaid
+gantt
+    title Timeline
+    dateFormat  YYYY-MM-DD
+    section Section
+    Stakeholder meeting      :   2024-09-12, 1d
+    Project proposal draft   :    2024-09-09, 7d
+    Finalizing details with advisor and customer :  2024-09-12, 1d
+    Project proposal final   :   2024-09-24, 7d
+    Product research         :   2024-09-12, 30d
+    Conceptual design        :   2024-10-01, 27d
+    Detailed design          :   2024-10-28, 32d
+    Final presentation       :   2024-10-28, 32d
+``` 
 
 # References 
 [1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/ (accessed Oct. 7, 2024). 
