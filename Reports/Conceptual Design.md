@@ -66,7 +66,46 @@ What we plan to add:
 
 # Hardware Block Diagram 
 
-MERMAID CODE HERE
+
+```mermaid
+graph TD
+    A[Tennis Ball Collector]
+    B[Remote Control]
+
+    A1[Fully Enclosed Basket]
+    A2[Subsystem Anti-Jamming Mechanism]
+    A3[Motors]
+    A4[Subsystem Ball Counter]
+    A5[Charge Mechanism]
+    A6[Transmitter]
+    A51[Battery]
+    A52[Port]
+
+    B1[Subsystem RC]
+    B2[Receiver]
+
+    A --> A1
+    A --> A2
+    A --> A3
+    A --> A4
+    A --> A5
+    A --> A6
+    A5 --> A51
+    A5 --> A52
+   
+    B --> B1
+    B --> B2
+
+    A6 --> |Wireless Communication|B2
+
+    click A1 "Fully Enclosed Basket for storing the Tennis Balls collected. "
+    click A2 "If tennis ball gets stuck, activate mechanism and indicate to operator."
+    click A3 "Used for syncing the 4 wheels with RC."
+    click A4 "Sensor that counts the number of balls going into the basket."
+    click A51 "Circuitry connecting battery to charging mechanism."
+    click A52 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
+    click B1 "This system will need to have a transmitter and a receiver to the tennis ball collector."
+```
   
 
 # Operational Flow Chart 
