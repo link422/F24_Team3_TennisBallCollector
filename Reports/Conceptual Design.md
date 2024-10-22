@@ -22,7 +22,7 @@ The updated machine of our project:
 
  - Shall collect and manage up to 100 balls at a time 
 
- - Shall be cost-efficient, no more than 33% more than customer’s alternative option 
+ - Shall be cost-efficient, not exceeding $1,500 for total  
 
    * Playmaker's Manual Ball Mower valued at $595 
 
@@ -54,16 +54,21 @@ When Team 3 began developing solutions for the tennis ball collector, they first
 
  
 
-What we plan to add: 
+What we plan to implement: 
 
- - Vibrating motors to help with jamming of Tennis Balls 
+ - Shall use an Arduino Base as the main system of controll for hardware and software system.
+   
+ - Vibration motors shall be installed into the collector section of the Tennis Ball collector to help with jamming of Tennis Balls.
+   
+ - Scanner to capture data from tennis ball intake.
+ 
+ - Seven Segment display shall be used to show collected data from the scanner.
 
- - Counter for general improvement on cleanup count 
+ - Power system hardware connection 
 
  - RC motors for RC Control 
 
   
-
 # Hardware Block Diagram 
 
 
@@ -290,9 +295,6 @@ A -->F(Joystick)
 
 # Skills 
 
-  
-
-  First, conduct a thorough analysis of the skills currently available within the team, and then compare these skills to the specific requirements of each subsystem. Based on this analysis, assign each team member to oversee the development of a particular subsystem. Additionally, appoint a different team member to take the specifications and generate a corresponding solution. Ensure that the assignments are structured in such a way that no single team member is simultaneously managing and being managed by the same person. If there are more team members than subsystems, consider further subdividing the solutions into smaller tasks or components, thereby allowing each team member the opportunity to manage and design a subsystem. 
 
 Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. RC Subsystem.
 
