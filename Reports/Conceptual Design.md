@@ -64,9 +64,13 @@ What we plan to implement:
  
  - Seven Segment display shall be used to show collected data from the scanner.
 
- - Power system hardware connection 
+ - Power system used for hardware connections
 
- - RC motors for RC Control 
+ - Hardware protection shall be used to cover exposed pieces
+
+ - Bluetooth Connection shall be used for the control of the motors
+
+ - Servo motors to help navigate the tennis ball collector
 
   
 # Hardware Block Diagram 
