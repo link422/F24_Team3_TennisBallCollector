@@ -120,99 +120,92 @@ graph TD
 # Operational Flow Chart 
 
 ```mermaid 
-
+ 
 flowchart LR 
+ 
+A[Device is off, start state] --> B{Turn on Device?}
+ 
+    B --> |Yes| C(Press Start Button on Controller, device off)
+ 
+    B --> |No| A
+ 
+    C --> On(Device is on)
+ 
+    On --> D{Turn Device off?}
+ 
+    D --> |Yes| K(Press Start Button on Controller, device on)
+ 
+    K --> A
+ 
+    D --> |No| E(Move the joystick on Controller in any direction)
+ 
+    E --> F{Direction?}
+ 
+    F --> |Up| G(Move the joystick up from idle position)
+ 
+    F --> |Down| H(Move the joystick down from idle position)
+ 
+    F --> |Left| I(Move the joystick left from idle position)
+ 
+    F --> |Right| J(Move the joystick right from idle position)
+ 
+    F --> |No Direction| D
+ 
+    G --> D
+ 
+    H --> D
+ 
+    I --> D
+ 
+    J --> D
+ 
+```
 
-A[Remote Controller Ready] -->B(Start Button) 
-
-    B --> C{Device Active?} 
-
-    C -->|Yes| D[Disable tennis ball collector] 
-
-    C -->|No| E[Enable tennis ball collector] 
-
-    D --> A 
-
-    E --> A 
-
-A -->F(Joystick) 
-
-    F --> G{Device Active?} 
-
-    G -->|Yes| H{Right or Left} 
-
-    G -->|No| I[Do Nothing] 
-
-    I --> A 
-
-    H -->|Right| J{Up or Down} 
-
-    H -->|Left| K{Up or Down} 
-
-    H -->|Neither| L{Up or Down} 
-
-    J -->|Up| M[Move Collector Up and Right] 
-
-    J -->|Down| N[Move Collector Down and Right] 
-
-    J -->|Neither| O[Move Collector Right] 
-
-    M --> A 
-
-    N --> A 
-
-    O --> A 
-
-    K -->|Up| P[Move Collector Up and Left] 
-
-    K -->|Down| Q[Move Collector Down and Left] 
-
-    K -->|Neither| R[Move Collector Left] 
-
-    P --> A 
-
-    Q --> A 
-
-    R --> A 
-
-    L -->|Up| S[Move Collector Up] 
-
-    L -->|Down| T[Move Collector Down] 
-
-    L -->|Neither| I 
-
-    S --> A 
-
-    T --> A 
-
-``` 
 
 # Atomic Subsystem Specifications 
 
-  Based on the high-level design, provide a comprehensive description of the functions each subsection will perform. 
-
 ## Subsystems 
 
-### RC receiver and transmitter / Motors Systems 
+### RC Controller
 
- - Signal Type: Wireless Communication, Power Signal 
+ - Signal Type: Wireless Communication 
 
- - Signal Direction: Input for Transmitter / Output for Receiver and RC Motors 
+ - Signal Direction: Input for Transmitter
+
+ - Communication Protocols: Bluetooth 
+
+ - Expectation: The Controller shall send inputs to the Motors for movement  
+
+### Motors Systems 
+
+ - Signal Type: Power Signal 
+
+ - Signal Direction: Output for Receiver and RC Motors 
 
  - Communication Protocols: PPM for Receiver 
 
- - Expectation: What shall be used is a simple Transmitter and Receiver to control the motors rotation for RC control  
-
+ - Expectation: Continuely control the movement of the tennis ball collector
+   
 ### Counting Sensors Systems 
 
- - Signal Type: Serial Communication 
+ - Signal Type: Digital Signal
 
- - Signal Direction: Input for Sensors / Output for Seven Segments 
+ - Signal Direction:  Output for Seven Segments 
 
  - Communication Protocols: BCD 
 
  - Expectation: While the entire system runs, this sensor system shall detect and keep track of the counted and collected balls.  
 
+### Counting Display Systems 
+
+ - Signal Type: Serial Communication 
+
+ - Signal Direction: Output for Seven Segments 
+
+ - Communication Protocols: BCD 
+
+ - Expectation: Display the collected data of the amount of collected tennis balls
+   
 ### Vibration Systems 
 
  - Signal Type: Power Signal 
@@ -223,7 +216,15 @@ A -->F(Joystick)
 
  - Expectation: While the Entire system is running the vibration system shall also run and help with disrupting the collection of balls 
 
+### Power Supply Systems 
 
+ - Signal Type: Electric Power 
+
+ - Signal Direction: Output 
+
+ - Communication Protocols: Electricty 
+
+ - Expectation: Power 
 
 # Ethical, Professional, and Standards Considerations 
 
@@ -300,17 +301,17 @@ A -->F(Joystick)
 # Skills 
 
 
-Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. RC Subsystem.
+Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. 
 
-Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs. RC Subsystem Lead.
+Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs. 
 
-Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. Vibration Subsystem.
+Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. 
 
-Gabriel: Worked with Arduino coding, Microcontrollers, PLCs and generally coding languages. Counting Subsystem lead.
+Gabriel: Worked with Arduino coding, Soldering, Microcontrollers, PLCs and generally coding languages. 
 
-Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. Counting Subsystem.
+Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. 
 
-Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. Vibration Subsystem Lead.
+Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. 
  
 
 # Timeline 
@@ -361,16 +362,16 @@ gantt
 
   
 
-Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram 
+Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram, Counting Display Subsystem
 
-Cindy Escobar – Resources, Budget, References  
+Cindy Escobar – Resources, Budget, References, Vibration Subsystem
 
-Gabriel Dubose – High Level Solutions, comparative solutions, introductions 
+Gabriel Dubose – High Level Solutions, comparative solutions, introductions, Power Subsystem 
 
-Carter Brady – Comparative analysis of potential solutions, Operational flow chart, Ethical, Professional, and standards considerations 
+Carter Brady – Comparative analysis of potential solutions, Operational flow chart, Ethical, Professional, and standards considerations, RC Subsystem 
 
-Ashli Watkins – Ethics, Professional, and Standards Considerations section 
+Ashli Watkins – Ethics, Professional, and Standards Considerations section, Motor Subsystem 
 
-Maxwell Wynne – fully formulated problem, comparative analysis of potential solutions 
+Maxwell Wynne – fully formulated problem, comparative analysis of potential solutions, Counting Sensor Subsystem
 
  
