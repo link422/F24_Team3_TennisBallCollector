@@ -40,7 +40,7 @@ The updated machine of our project:
 
 # Comparative Analysis of Potential Solutions 
 
- A potential solution for the issue of balls jamming the collector would be to add vibration motors near the collector that would ensure the balls are always moving and not able to get caught in one spot. To solve the problem of users tiring out after pushing the cart around we will add remote control capabilities to the tennis ball collector. To address the problem of device cost we are making the tennis all collector remote controlled rather than autonomous. 
+The current device used by the Tennessee Tech Tennis team is the Playmate Ball Mower. The machine has an enlarged rolling pin attached to the wheels inside a metal casing that when moved, takes the balls from the ground around to the top into a collection basket. So, in order for the machine to operate as intended, it must be in motion at a speed high enough to transport the balls through the casing into the basket.
 
 When Team 3 began developing solutions for the tennis ball collector, they first had to address the problems at hand. Said issues were mobility, jamming, data, and funding. The thought process of the Team is as follows: 
 
