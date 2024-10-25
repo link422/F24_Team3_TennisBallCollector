@@ -79,43 +79,58 @@ What we plan to implement:
 
 
 ```mermaid
-graph TD
-    A[Tennis Ball Collector]
-    B[Remote Control]
-
+flowchart TD
     A1[Fully Enclosed Basket]
-    A2[Subsystem Anti-Jamming Mechanism]
-    A3[Motors]
-    A4[Subsystem Ball Counter]
-    A5[Charge Mechanism]
-    A6[Transmitter]
-    A51[Battery]
-    A52[Port]
+    A2[Subsystem Ball Counter Sensor]
+    A3[Wheels]
+    A21[Subsystem Vibration Mechanism]
+    A22[Subsystem Motors]
+    A23[Subsystem Ball Counter Display]
+    A24[Transmitter]
+    A25[Battery]
+    A26[Port]
 
-    B1[Subsystem RC]
-    B2[Receiver]
+    B1[Joystick]
+    B2[Start Button]
+    B3[Receiver]
 
-    A --> A1
-    A --> A2
-    A --> A3
-    A --> A4
-    A --> A5
-    A --> A6
-    A5 --> A51
-    A5 --> A52
-   
-    B --> B1
-    B --> B2
+    subgraph TennisBallCollector
+    A1 --> |Attached|MechanicalCasing
+    A1 --> |Read Balls Going In|A2
+    A2 --> |Increment|A23
+    subgraph MechanicalCasing
+    A21 --> |Interrupt Process|A22
+    A24 --> |Control Activation|A22
+    SubsystemPower --> |Power Supply|A21
+    SubsystemPower --> |Power Supply|A22
+    SubsystemPower --> |Power Supply|A23
+    SubsystemPower --> |Power Supply|A24
+    subgraph SubsystemPower
+    A26 --> |Store Energy|A25
+    end
+    end
+    A3 --> |Attached|MechanicalCasing
+    A22 --> |Control Speed|A3
+    end
 
-    A6 --> |Wireless Communication|B2
+    subgraph SubsystemRemoteController
+    B1 --> |Send Input Signal|B3
+    B2 --> |Send Input Signal|B3
+    end
+
+    B3 --> |Wireless Communication|A24
 
     click A1 "Fully Enclosed Basket for storing the Tennis Balls collected. "
-    click A2 "If tennis ball gets stuck, activate mechanism and indicate to operator."
-    click A3 "Used for syncing the 4 wheels with RC."
-    click A4 "Sensor that counts the number of balls going into the basket."
-    click A51 "Circuitry connecting battery to charging mechanism."
-    click A52 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
-    click B1 "This system will need to have a transmitter and a receiver to the tennis ball collector."
+    click A2 "Goal is to sense the balls going into the basket and communicate to counter."
+    click A21 "If tennis ball gets stuck, activate mechanism and indicate to operator."
+    click A22 "Used for self propelling the wheels of the Tennis Ball Collector."
+    click A23 "Increment ball counter and display on LCD like disply located on the surface of mechanical casing"
+    click A24 "Receive signals sent by the remote Controller."
+    click A25 "Lithium ion battery used to supply the electronics in the system with energy."
+    click A26 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
+    click B1 "Control used to control the direction of the Tennis Ball Collector."
+    click B2 "Control used to turn on/off of the Tennis Ball Collector remotely."
+    click B3 "Send signals to Tennis Ball Collector to control Mechanism."
 ```
   
 
