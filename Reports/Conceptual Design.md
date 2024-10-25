@@ -1,6 +1,6 @@
 # Introduction 
 
-  Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The main objective of this Capstone Design is to make improvements to the current Tennis Ball Collector by adding remote control capability and an accurate ball counter to help make the cleanup process more effective. 
+  Tennis is a time-honored game that can be dated back to the 11th century, played by all ages all around the world. When you think of tennis you think of the intense competition, the player’s personalities, and the feeling of your favorite team winning. What is not talked about however is the cleanup process, after an intense match there is a lot of preparation that goes into getting the next match ready. When consulting the customer, they explained that their current tennis ball collecting method was outdated and broken. The current model is operated by manually pushing the machine, this sometimes caused balls to jam inside the machine from not pushing hard enough. The main objective of this Capstone Design is to make improvements to the current Tennis Ball Collector by adding remote control capability and an accurate ball counter to help make the cleanup process more effective.  
 
 # Restating the Fully Formulated Problem 
 
@@ -8,7 +8,7 @@
 
 The updated machine of our project: 
  
- - Shall be remote control operated 
+ - Shall be remote control operated using an arduino base
 
    * Customer wants easier mobility of device 
 
@@ -16,7 +16,9 @@ The updated machine of our project:
 
  - Shall include a charging port for powering the electronics within the system 
 
- - Shall include motors for controlling the wheels of the system 
+ - Shall include motors for controlling the wheels of the system
+
+   * The connection of the RC motors will cause the self propulsion of the machine
 
  - Shall include a tennis ball anti-jamming system 
 
