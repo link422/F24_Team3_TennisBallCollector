@@ -373,5 +373,4 @@ Carter Brady – Comparative analysis of potential solutions, Operational flow c
 Ashli Watkins – Ethics, Professional, and Standards Considerations section, Motor Subsystem 
 
 Maxwell Wynne – fully formulated problem, comparative analysis of potential solutions, Counting Sensor Subsystem
-
  
