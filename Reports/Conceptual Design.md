@@ -379,13 +379,13 @@ gantt
 
   
 
-Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram, Counting Display Subsystem
+Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram, Operational flow chart, Counting Display Subsystem
 
 Cindy Escobar – Resources, Budget, References, Vibration Subsystem
 
 Gabriel Dubose – High Level Solutions, comparative solutions, introductions, Power Subsystem 
 
-Carter Brady – Comparative analysis of potential solutions, Operational flow chart, Ethical, Professional, and standards considerations, RC Subsystem 
+Carter Brady – Comparative analysis of potential solutions, Ethical, Professional, and standards considerations, RC Subsystem 
 
 Ashli Watkins – Ethics, Professional, and Standards Considerations section, Motor Subsystem 
 
