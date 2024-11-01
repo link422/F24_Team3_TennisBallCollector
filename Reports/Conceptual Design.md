@@ -191,7 +191,7 @@ A[Device is off, start state] --> B{Turn on Device?}
 
  - Signal Direction: Input for Transmitter
 
- - Communication Protocols: Bluetooth 
+ - Communication Protocols: 2.4 GHz USB nano reciver 
 
  - Expectation: The Controller shall send inputs to the Motors for movement  
 
