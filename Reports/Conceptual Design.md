@@ -199,7 +199,7 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ### RC Controller
 
- - Signal Type: Wireless Communication 
+ - The RC Controller shall operate  Wireless Communication 
 
  - Signal Direction: Input for Transmitter
 
@@ -265,7 +265,7 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
 | Charger | 15-30 | [Click me](https://www.digikey.com/en/products/detail/dfrobot/DFR0208/6579347) |
 | LCD display | 15 | [Click me](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710) |
 | Vibration motor | 5-10 | [Click me](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917) |
-| Wheels  NEED LINK | 50 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| Wheels  | 11 | [Click me]([https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html](https://www.amazon.com/Electric-Magnetic-Gearbox-Plastic-Yeeco/dp/B07DQGX369/ref=asc_df_B07DQGX369/?tag=hyprod-20&linkCode=df0&hvadid=693410589815&hvpos=&hvnetw=g&hvrand=140461963650541489&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1025954&hvtargid=pla-487856373581&psc=1&mcid=cc37f360a4953c96869ec648b48c0bbf)) |
 | DC Motors | 100 | [Click me](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE30R2NTCD/6021451) |
 | TSL1401 Linescan Camera Module (Optical/Infrared Array Sensor)| 83.04 | [Click me](https://www.amazon.com/CJMCU-1401-TSL1401CL-Linear-Ultra-Wide-Angle-Tracking/dp/B0CP77QJ8R) |
 | TSL140TFmini-S Micro Lidar Module (Optical/Infrared Array Sensor)| 42.99 | [Click me](https://www.amazon.com/MakerFocus-Single-Point-Ranging-Pixhawk-Compatible/dp/B075V5TZRY?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1N6DLY3NQK2VM) |
@@ -277,7 +277,7 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
 
 Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. Working on Motor Subsystem 
 
-Carter: Experience with RC cars, DC motors, vibration motors, programing, microcomputers, FPGAs. 
+Carter: Experience with RC cars, DC motors, vibration motors, programing, microcomputers, FPGAs. Working on RC Subsystem 
 
 Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. Working on Vibration Subsystem
 
@@ -343,7 +343,7 @@ Cindy Escobar – Resources, Budget, References
 
 Gabriel Dubose – High Level Solutions, comparative solutions, introductions, 
 
-Carter Brady – Comparative analysis of potential solutions, Ethical, Professional, and standards considerations, RC Subsystem 
+Carter Brady – Comparative analysis of potential solutions, Ethical, Professional, and standards considerations
 
 Ashli Watkins – Ethics, Professional, and Standards Considerations section
 
