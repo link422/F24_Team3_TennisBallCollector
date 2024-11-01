@@ -351,27 +351,28 @@ gantt
 ``` 
 
 # References 
-[1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/ (accessed Oct. 7, 2024). 
+[1] “Ball Mower 2.0,” PLAYMATE Tennis, <https://www.playmatetennis.com/ball-mower-2/> (accessed Oct. 7, 2024). 
 
-[2] “Tennibot ,” Tennibot, https://www.tennibot.com/buy/ (accessed Oct. 7, 2024). 
+[2] “Tennibot ,” Tennibot, <https://www.tennibot.com/buy/> (accessed Oct. 7, 2024). 
 
-[3] “Arduino® Uno R4 WIFI,” Arduino Official Store, https://store.arduino.cc/products/uno-r4-wifi (accessed Oct. 7, 2024). 
+[3] “Arduino® Uno R4 WIFI,” Arduino Official Store, <https://store.arduino.cc/products/uno-r4-wifi> (accessed Oct. 7, 2024). 
 
-[4] “5035,” DigiKey Electronics, https://www.digikey.com/en/products/detail/adafruit-industries-llc/5035/14625568?s=N4IgjCBcoMw1oDGUBmBDANgZwKYBoQB7KAbRAHYYxyAGEAXQIAcAXKEAZRYCcBLAOwDmIAL4EALGABMCEMkjps%2BIqRAwAbAFYqmhszaROPAcJFiQMyGQy8WAC14BXALYACXoX4MRQA (accessed Oct. 7, 2024). 
+[4] “5035,” DigiKey Electronics, <https://www.digikey.com/en/products/detail/adafruit-industries-llc/5035/14625568?s=N4IgjCBcoMw1oDGUBmBDANgZwKYBoQB7KAbRAHYYxyAGEAXQIAcAXKEAZRYCcBLAOwDmIAL4EALGABMCEMkjps%2BIqRAwAbAFYqmhszaROPAcJFiQMyGQy8WAC14BXALYACXoX4MRQA> (accessed Oct. 7, 2024). 
 
-[5] DigiKey - electronic components distributor, https://www.digikey.com/ (accessed Oct. 7, 2024). 
+[5] DigiKey - electronic components distributor, <https://www.digikey.com/> (accessed Oct. 7, 2024). 
 
-[6] “DigiKey Home,” DigiKey, https://www.digikey.com/ (accessed Oct. 7, 2024). 
+[6] “DigiKey Home,” DigiKey, <https://www.digikey.com/> (accessed Oct. 7, 2024). 
 
-[7] “EA DOGM132L-5,” DigiKey Electronics, https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710 (accessed Oct. 7, 2024). 
+[7] “EA DOGM132L-5,” DigiKey Electronics, <https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710> (accessed Oct. 7, 2024). 
 
-[8] “VZ4KC1B1051202,” DigiKey Electronics, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917 (accessed Oct. 7, 2024). 
+[8] “VZ4KC1B1051202,” DigiKey Electronics, <https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917> (accessed Oct. 7, 2024). 
 
-[9] “125mm all-terrain robotics wheel set,” Studica, https://www.studica.com/studica-robotics-brand/125mm-all-terrain-wheel-set (accessed Oct. 7, 2024). 
+[9] “125mm all-terrain robotics wheel set,” Studica, <https://www.studica.com/studica-robotics-brand/125mm-all-terrain-wheel-set> (accessed Oct. 7, 2024). 
 
-[10] “Servos 1142,” DigiKey Electronics, https://www.digikey.com/en/products/detail/adafruit-industries-llc/1142/5154658 (accessed Oct. 7, 2024). 
+[10] “Servos 1142,” DigiKey Electronics, <https://www.digikey.com/en/products/detail/adafruit-industries-llc/1142/5154658> (accessed Oct. 7, 2024). 
 
-[11] “Photo sensors - diffuse,” Stack, https://stack-light.com/products/diffuse-photo-sensors?variant=44817176461531&currency=USD&gad_source=1&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YZnyGzIxWyyUjUTWbqxsLxM_eVRJhUGIMK7RvBAOAtBdTkI59_Xu8YaAmwzEALw_wcB (accessed Oct. 7, 2024). 
+[11] “Photo sensors - diffuse,” Stack, <https://stack-light.com/products/diffuse-photo-sensors?variant=44817176461531&currency=USD&gad_source=1&gclid=Cj0KCQjwjY64BhCaARIsAIfc7YZnyGzIxWyyUjUTWbqxsLxM_eVRJhUGIMK7RvBAOAtBdTkI59_Xu8YaAmwzEALw_wcB> (accessed Oct. 7, 2024). 
+ 
 
  
 
