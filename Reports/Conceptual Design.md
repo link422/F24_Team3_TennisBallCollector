@@ -310,7 +310,8 @@ A[Device is off, start state] --> B{Turn on Device?}
 | Vibration motor | 5-10 | [Click me](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917) |
 | Wheels  NEED LINK | 50 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
 | DC Motors | 100 | [Click me](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE30R2NTCD/6021451) |
-| Diffused Beam Photoelectric Sensor NEED LINK | 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| --need link TSL1401 Linescan Camera Module (Optical/Infrared Array Sensor)| 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| --need link TSL140TFmini-S Micro Lidar Module (Optical/Infrared Array Sensor)| 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
 
  
 
