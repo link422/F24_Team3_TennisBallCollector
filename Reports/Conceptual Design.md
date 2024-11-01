@@ -18,17 +18,17 @@ The updated machine of our project:
 
  - Shall include motors for controlling the wheels of the system
 
-   * The connection of the RC motors will cause the self propulsion of the machine
-
  - Shall include a tennis ball anti-jamming system 
 
  - Shall collect and manage up to 100 balls at a time 
 
- - Shall be cost-efficient, not exceeding $1,500 for total  
-
-   * Playmaker's Manual Ball Mower valued at $595 
-
-   * Tennibot Rover Autonomous Tennis Assistant [Collector] valued at $2995 
+ - Shall be cost-efficient compared to other high priced competitors such as the Tennibot
+   
+   * Tennibot Rover Autonomous Tennis Assistant [Collector] valued at $2995
+     
+ - Shall implement remote control functions as an alternative to a new machine such as Playmaker
+     
+  * Playmaker's Manual Ball Mower valued at $595 
 
  - Shall comply with 49 CFR 173.185 to prevent short-circuits damage 
 
@@ -58,22 +58,19 @@ When Team 3 began developing solutions for the tennis ball collector, they first
 
 What we plan to implement: 
 
- - Shall use a Raspberry Pi as the main system of controll for hardware and software system.
+ - Shall use a Raspberry Pi as the main system of control for hardware and software system.
    
  - Vibration motors shall be installed into the collector section of the Tennis Ball collector to help with jamming of Tennis Balls.
    
- - Scanner to capture data from tennis ball intake.
+ - Scanner implemented in the area the balls deposit to capture data from tennis ball intake.
  
- - Seven Segment display shall be used to show collected data from the scanner.
+ - Seven Segment display shall be placed on the machine and shall be used to show collected data from the scanner.
 
- - Power system used for hardware connections
+ - Power system used for hardware connections shall go be placed on the machine for easier connection.
 
- - Hardware protection shall be used to cover exposed pieces
+ - Hardware protection shall be installed to cover exposed pieces such as the Rasberry Pi
 
- - Bluetooth Connection shall be used for the control of the motors
-
- - DC motors to help navigate the tennis ball collector
-
+ - DC motors to help navigate the Tennis Ball Collector installed on the wheels
   
 # Hardware Block Diagram 
 
