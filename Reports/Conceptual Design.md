@@ -72,7 +72,7 @@ What we plan to implement:
 
  - Bluetooth Connection shall be used for the control of the motors
 
- - Servo motors to help navigate the tennis ball collector
+ - DC motors to help navigate the tennis ball collector
 
   
 # Hardware Block Diagram 
@@ -256,15 +256,15 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ## ISO 
 
- - ISO 25119 (Safety for control systems in machinery, including RC and servo-driven systems) 
+ - ISO 25119 (Safety for control systems in machinery, including RC and DC-motor-driven systems) 
 
  - ISO 10303 (Automation systems and integration, relevant for computer-controlled RC systems) 
 
 ## IEC 
 
- - IEC 60034 (Standards for electric motors, which includes servo motors) 
+ - IEC 60034 (Standards for electric motors, which includes DC motors) 
 
- - IEC 60730 (Automatic electrical controls, important for automated RC and servo systems) 
+ - IEC 60730 (Automatic electrical controls, important for automated RC and DC systems) 
 
  
 
@@ -289,7 +289,7 @@ A[Device is off, start state] --> B{Turn on Device?}
 # Resources 
  
 
-  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Raspberry Pi 4B, battery, LCD, vibration motor, servos, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
+  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Raspberry Pi 4B, battery, LCD, vibration motor, DC motors, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
 
   The software resources include CAD software for designing the final version of the collector. Additionally, developmental environments for programming Raspberry Pi and any RF control system testing will be essential. The software resources will be used to design, simulate, and test the functionality of the tennis ball collector.  
 
@@ -302,18 +302,17 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ### Prototyping ($431.9- $596.9): 
 
-| Part name | Cost |
-| ---------- | --------- |
-| RC transmitter | 50-100 |
-|  RC receiver | 50-100 |
-| Raspberry Pi 4B | 30 |
-| battery | 30-50 |
-| Charger | 30-70 |
-| LCD display | 10 |
-| Vibration motor | 5-10 |
-| Wheels | 50 |
-| Servos | 100 |
-| Diffused Beam Photoelectric Sensor | 76.90 |
+| Part name | Cost | Link |
+| ---------- | --------- | --------- |
+| RC transmitter/receiver | 50-100 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| Raspberry Pi 4B | 45 | [Click me](https://www.adafruit.com/product/4292?src=raspberrypi) |
+| battery | 20-50 | [Click me](https://www.digikey.com/en/products/detail/jauch-quartz/LP906090JH-PCM-2-WIRES-70MM/9560999) |
+| Charger | 15-30 | [Click me](https://www.digikey.com/en/products/detail/dfrobot/DFR0208/6579347) |
+| LCD display | 15 | [Click me](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710) |
+| Vibration motor | 5-10 | [Click me](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917) |
+| Wheels  NEED LINK | 50 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| DC Motors | 100 | [Click me](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE30R2NTCD/6021451) |
+| Diffused Beam Photoelectric Sensor NEED LINK | 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
 
  
 
@@ -322,7 +321,7 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. 
 
-Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs. 
+Carter: Experience with RC cars, DC motors, vibration motors, programing, microcomputers, FPGAs. 
 
 Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. 
 
