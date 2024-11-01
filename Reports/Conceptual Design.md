@@ -114,13 +114,14 @@ flowchart TD
     A21 --> |Interrupt Process|A22
     A24 --> |Interpret Controller inputs|A27
     A27 --> |Control Activation|A22
-    SubsystemPower --> |Power Supply no estimate|A21
+    SubsystemPower --> |3.0V Voltage Supply|A21
     SubsystemPower --> |12V Voltage Supply|A22
-    SubsystemPower --> |5V Voltage Supply|A23
+    SubsystemPower --> |3.0V Voltage Supply|A23
     SubsystemPower --> |Power Supply no estimate|A24
-    SubsystemPower --> |1V Approximate Supply|A27
+    SubsystemPower --> |5V 3A Approximate Supply|A27
+    SubsystemPower --> |Between 3.0 to 5.0V depending on sensor used|A2
     subgraph SubsystemPower
-    A26 --> |Store 20V at 3A|A25
+    A26 --> |3.7V flowing at 500mA per hour|A25
     end
     end
     A22 --> |Control Speed|A3
@@ -141,7 +142,7 @@ flowchart TD
     click A24 "Receive the signals sent by the Remote Controller."
     click A25 "Lithium ion battery used to power the electronics in the system."
     click A26 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
-    click A27 "Provide communication between systems to interpret data."
+    click A27 "Provide communication between systems to interpret data. See [3]"
     click B1 "Mechanism used to control the direction of the Tennis Ball Collector."
     click B2 "Mechanism used to turn on/off of the Tennis Ball Collector remotely."
     click B3 "Send signals to the Tennis Ball Collector to control."
