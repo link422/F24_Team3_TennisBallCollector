@@ -197,53 +197,23 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ### Motors Systems 
 
- - Signal Type: Power Signal 
-
- - Signal Direction: Output for Receiver and RC Motors 
-
- - Communication Protocols: PPM for Receiver 
-
- - Expectation: Continuely control the movement of the tennis ball collector
+The Motor Systems shall operate as a Power Signal, having the Receiver and RC Motors as outputs. The communication protocol will be PPM for the Receiver. It shall be expected to continuely control the movement of the tennis ball collector in conjenction of the controller.
    
 ### Counting Sensors Systems 
 
- - Signal Type: Digital Signal
-
- - Signal Direction:  Output for Seven Segments 
-
- - Communication Protocols: BCD 
-
- - Expectation: While the entire system runs, this sensor system shall detect and keep track of the counted and collected balls.  
+The Counting Sensor System shall have a digital signal having the sensor as an input. The communication protocol will be BCD for the sensors. It shall be expected to detect and keep track of the counted and collected balls while the entire system runs.  
 
 ### Counting Display Systems 
 
- - Signal Type: Serial Communication 
-
- - Signal Direction: Output for Seven Segments 
-
- - Communication Protocols: BCD 
-
- - Expectation: Display the collected data of the amount of collected tennis balls
+The Counting Display Systems shall operate with Serial Communication, having the seven segments as outputs. The communication protocol will be BCD for the seven segments. It shall be expected to display the collected data of the amount of collected tennis balls.
    
 ### Vibration Systems 
 
- - Signal Type: Power Signal 
-
- - Signal Direction: Output 
-
- - Communication Protocols: PWM motor 
-
- - Expectation: While the Entire system is running the vibration system shall also run and help with disrupting the collection of balls 
+The Motor Systems shall operate as a Power Signal, having the motors as outputs. The communication protocol will be with a PWM motor. The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs. 
 
 ### Power Supply Systems 
 
- - Signal Type: Electric Power 
-
- - Signal Direction: Output 
-
- - Communication Protocols: Electricty 
-
- - Expectation: Power 
+ The Power Supply Systems shall operate as a Electric Power signal, having the power as an output to the other systems. It will be powered with power, expected to power the hardware of the entire system.
 
 # Ethical, Professional, and Standards Considerations 
 
@@ -320,17 +290,17 @@ A[Device is off, start state] --> B{Turn on Device?}
 # Skills 
 
 
-Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. 
+Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. Working on Motor Subsystem 
 
 Carter: Experience with RC cars, servos, vibration motors, programing, microcomputers, FPGAs. 
 
-Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. 
+Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. Working on Vibration Subsystem
 
-Gabriel: Worked with Arduino coding, Soldering, Microcontrollers, PLCs and generally coding languages. 
+Gabriel: Worked with Arduino coding, Soldering, Microcontrollers, PLCs and generally coding languages. Working on Power Subsystem. 
 
-Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. 
+Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. Working on Counting Sensor Subsystem
 
-Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. 
+Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. Working on Counting Display Subsystem
  
 
 # Timeline 
@@ -381,15 +351,15 @@ gantt
 
   
 
-Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram, Operational flow chart, Counting Display Subsystem
+Tate Finley – Fully Formulated Problem (shall statements), hardware block diagram, Operational flow chart
 
-Cindy Escobar – Resources, Budget, References, Vibration Subsystem
+Cindy Escobar – Resources, Budget, References 
 
-Gabriel Dubose – High Level Solutions, comparative solutions, introductions, Power Subsystem 
+Gabriel Dubose – High Level Solutions, comparative solutions, introductions, 
 
 Carter Brady – Comparative analysis of potential solutions, Ethical, Professional, and standards considerations, RC Subsystem 
 
-Ashli Watkins – Ethics, Professional, and Standards Considerations section, Motor Subsystem 
+Ashli Watkins – Ethics, Professional, and Standards Considerations section
 
-Maxwell Wynne – fully formulated problem, comparative analysis of potential solutions, Counting Sensor Subsystem
+Maxwell Wynne – fully formulated problem, comparative analysis of potential solutions
  
