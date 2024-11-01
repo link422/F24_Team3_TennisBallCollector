@@ -267,8 +267,8 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
 | Vibration motor | 5-10 | [Click me](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917) |
 | Wheels  NEED LINK | 50 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
 | DC Motors | 100 | [Click me](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE30R2NTCD/6021451) |
-| --need link TSL1401 Linescan Camera Module (Optical/Infrared Array Sensor)| 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
-| --need link TSL140TFmini-S Micro Lidar Module (Optical/Infrared Array Sensor)| 76.90 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| TSL1401 Linescan Camera Module (Optical/Infrared Array Sensor)| 83.04 | [Click me](https://www.amazon.com/CJMCU-1401-TSL1401CL-Linear-Ultra-Wide-Angle-Tracking/dp/B0CP77QJ8R) |
+| TSL140TFmini-S Micro Lidar Module (Optical/Infrared Array Sensor)| 42.99 | [Click me](https://www.amazon.com/MakerFocus-Single-Point-Ranging-Pixhawk-Compatible/dp/B075V5TZRY?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1N6DLY3NQK2VM) |
 
  
 
