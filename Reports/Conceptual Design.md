@@ -262,42 +262,17 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 # Ethical, Professional, and Standards Considerations 
 
+1. IEEE (Institute of Electrical and Electronics Engineers)
+  a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller. 
+  b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication 
 
-## IEEE 
+2. IEC (International Electrotechnical Commission)
+  a. IEC 60034 : International standards concerning the performance and safety for rotating electrical machines, which will apply to our usage of servo motor
+  b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
+  c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
 
- - IEEE 802.15.4 (Low-rate wireless personal area networks, useful for RC communications) 
-
- - IEEE 1451 (Standards for smart transducers, relevant for sensor integration with servos) 
-
-## ISO 
-
- - ISO 25119 (Safety for control systems in machinery, including RC and DC-motor-driven systems) 
-
- - ISO 10303 (Automation systems and integration, relevant for computer-controlled RC systems) 
-
-## IEC 
-
- - IEC 60034 (Standards for electric motors, which includes DC motors) 
-
- - IEC 60730 (Automatic electrical controls, important for automated RC and DC systems) 
-
- 
-
-## SAE International (Society of Automotive Engineers) 
-
- - SAE AS-5684 (Control system servomechanisms) 
-
- - SAE J1939 (Communication protocols in vehicles, which may be used in advanced RC systems) 
-
-## FCC (Federal Communications Commission) 
-
- - FCC Part 15 (Regulates unlicensed radio-frequency devices, including RC transmitters and receivers) 
-
- - FCC Part 97 (Amateur radio service, for RC enthusiasts using specialized frequencies) 
-
- 
-
-   If we add specifications/constraints based on the standards we read, address the reason we considered to add them 
+ 3. SAE
+    a. SAE J1772 : Specifies electrical and mechanical requirements for AC charging connectors that can be applied to powering our project
 
  
 
