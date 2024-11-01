@@ -8,7 +8,7 @@
 
 The updated machine of our project: 
  
- - Shall be remote control operated using an arduino base
+ - Shall be remote control operated using an Raspberry Pi
 
    * Customer wants easier mobility of device 
 
@@ -58,7 +58,7 @@ When Team 3 began developing solutions for the tennis ball collector, they first
 
 What we plan to implement: 
 
- - Shall use an Arduino Base as the main system of controll for hardware and software system.
+ - Shall use a Raspberry Pi as the main system of controll for hardware and software system.
    
  - Vibration motors shall be installed into the collector section of the Tennis Ball collector to help with jamming of Tennis Balls.
    
@@ -289,9 +289,9 @@ A[Device is off, start state] --> B{Turn on Device?}
 # Resources 
  
 
-  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Arduino UNO R4, battery, LCD, vibration motor, servos, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
+  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Raspberry Pi 4B, battery, LCD, vibration motor, servos, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
 
-  The software resources include CAD software for designing the final version of the collector. Additionally, developmental environments for programming Arduino and any RF control system testing will be essential. The software resources will be used to design, simulate, and test the functionality of the tennis ball collector.  
+  The software resources include CAD software for designing the final version of the collector. Additionally, developmental environments for programming Raspberry Pi and any RF control system testing will be essential. The software resources will be used to design, simulate, and test the functionality of the tennis ball collector.  
 
 # Budget 
 
@@ -306,7 +306,7 @@ A[Device is off, start state] --> B{Turn on Device?}
 | ---------- | --------- |
 | RC transmitter | 50-100 |
 |  RC receiver | 50-100 |
-| Arduino UNO R4 | 30 |
+| Raspberry Pi 4B | 30 |
 | battery | 30-50 |
 | Charger | 30-70 |
 | LCD display | 10 |
@@ -355,7 +355,7 @@ gantt
 
 [2] “Tennibot ,” Tennibot, <https://www.tennibot.com/buy/> (accessed Oct. 7, 2024). 
 
-[3] “Arduino® Uno R4 WIFI,” Arduino Official Store, <https://store.arduino.cc/products/uno-r4-wifi> (accessed Oct. 7, 2024). 
+[3] “Raspberry Pi 4 Model B,” Adafruit Official Store, <https://www.adafruit.com/product/4292?src=raspberrypi> (accessed Nov. 1, 2024). 
 
 [4] “5035,” DigiKey Electronics, <https://www.digikey.com/en/products/detail/adafruit-industries-llc/5035/14625568?s=N4IgjCBcoMw1oDGUBmBDANgZwKYBoQB7KAbRAHYYxyAGEAXQIAcAXKEAZRYCcBLAOwDmIAL4EALGABMCEMkjps%2BIqRAwAbAFYqmhszaROPAcJFiQMyGQy8WAC14BXALYACXoX4MRQA> (accessed Oct. 7, 2024). 
 
