@@ -296,11 +296,9 @@ A[Device is off, start state] --> B{Turn on Device?}
 # Budget 
 
 
-  The budget proposal covers the key subsystems of the tennis ball collector, with a total of $2,000 for the entire project: 
+  The budget proposal covers the key subsystems of the tennis ball collector, with a total of $1,500 for the entire project: 
 
-### CAD Software ($300 - $500) 
-
-### Prototyping ($431.9- $596.9): 
+### Prototyping ($376.90- $486.90): 
 
 | Part name | Cost | Link |
 | ---------- | --------- | --------- |
