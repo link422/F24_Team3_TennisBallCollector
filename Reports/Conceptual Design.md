@@ -77,7 +77,6 @@ What we plan to implement:
   
 # Hardware Block Diagram 
 
-
 ```mermaid
 flowchart TD
     A1[Fully Enclosed Basket]
@@ -86,30 +85,32 @@ flowchart TD
     A21[Subsystem Vibration Mechanism]
     A22[Subsystem Motors]
     A23[Subsystem Ball Counter Display]
-    A24[Transmitter]
+    A24[Reciever]
     A25[Battery]
     A26[Port]
+    A27[Microprocessor]
 
     B1[Joystick]
     B2[Start Button]
-    B3[Receiver]
+    B3[Transmitter]
 
     subgraph TennisBallCollector
-    A1 --> |Attached|MechanicalCasing
     A1 --> |Read Balls Going In|A2
-    A2 --> |Increment|A23
+    A2 --> |Send Data|A27
+    A27 --> |Increment counter by interpretting sensor data|A23
     subgraph MechanicalCasing
     A21 --> |Interrupt Process|A22
-    A24 --> |Control Activation|A22
-    SubsystemPower --> |Power Supply|A21
-    SubsystemPower --> |Power Supply|A22
-    SubsystemPower --> |Power Supply|A23
-    SubsystemPower --> |Power Supply|A24
+    A24 --> |Interpret Controller inputs|A27
+    A27 --> |Control Activation|A22
+    SubsystemPower --> |Power Supply no estimate|A21
+    SubsystemPower --> |12V Voltage Supply|A22
+    SubsystemPower --> |5V Voltage Supply|A23
+    SubsystemPower --> |Power Supply no estimate|A24
+    SubsystemPower --> |1V Approximate Supply|A27
     subgraph SubsystemPower
-    A26 --> |Store Energy|A25
+    A26 --> |Store 20V at 3A|A25
     end
     end
-    A3 --> |Attached|MechanicalCasing
     A22 --> |Control Speed|A3
     end
 
@@ -121,16 +122,17 @@ flowchart TD
     B3 --> |Wireless Communication|A24
 
     click A1 "Fully Enclosed Basket for storing the Tennis Balls collected. "
-    click A2 "Goal is to sense the balls going into the basket and communicate to counter."
-    click A21 "If tennis ball gets stuck, activate mechanism and indicate to operator."
+    click A2 "Goal is to sense the balls going into the basket and communicate to counter via the microprocessor"
+    click A21 "If tennis ball gets stuck, activate mechanism and recollect jammed tennis balls."
     click A22 "Used for self propelling the wheels of the Tennis Ball Collector."
-    click A23 "Increment ball counter and display on LCD like disply located on the surface of mechanical casing"
-    click A24 "Receive signals sent by the remote Controller."
-    click A25 "Lithium ion battery used to supply the electronics in the system with energy."
+    click A23 "Increment ball counter and display on LCD like disply located on the surface of mechanical casing. Can't implement on controller because controller used shall be kept minimally modified from original design (Not making controller from scratch)."
+    click A24 "Receive the signals sent by the Remote Controller."
+    click A25 "Lithium ion battery used to power the electronics in the system."
     click A26 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
-    click B1 "Control used to control the direction of the Tennis Ball Collector."
-    click B2 "Control used to turn on/off of the Tennis Ball Collector remotely."
-    click B3 "Send signals to Tennis Ball Collector to control Mechanism."
+    click A27 "Provide communication between systems to interpret data."
+    click B1 "Mechanism used to control the direction of the Tennis Ball Collector."
+    click B2 "Mechanism used to turn on/off of the Tennis Ball Collector remotely."
+    click B3 "Send signals to the Tennis Ball Collector to control."
 ```
   
 
