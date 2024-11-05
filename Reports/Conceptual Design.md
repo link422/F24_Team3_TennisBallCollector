@@ -22,13 +22,9 @@ The updated machine of our project:
 
  - Shall collect and manage up to 100 balls at a time 
 
- - Shall be cost-efficient compared to other high priced competitors such as the Tennibot
-   
-   * Tennibot Rover Autonomous Tennis Assistant [Collector] valued at $2995
-     
- - Shall implement remote control functions as an alternative to a new machine such as Playmaker
-     
-  * Playmaker's Manual Ball Mower valued at $595 
+ - Shall be cost-efficient compared to other high priced competitors such as the Tennibot [1]
+
+ - Shall implement the use of a remote controller to operate the machine as an alternative to a new machine such as Playmaker [2]
 
  - Shall comply with 49 CFR 173.185 to prevent short-circuits damage 
 
@@ -78,7 +74,7 @@ Finally, the most crucial aspect of the whole project is the funding. New collec
 
 What we plan to implement: 
 
- - Shall use a Raspberry Pi as the main system of control for hardware and software system.
+ - Installing a Raspberry Pi on the base of the collector to control the hardware and software of the system.
    
  - Vibration motors shall be installed into the collector section of the Tennis Ball collector to help with jamming of Tennis Balls.
    
@@ -205,33 +201,27 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ### RC Controller
 
- - The RC Controller shall operate  Wireless Communication 
-
- - Signal Direction: Input for Transmitter
-
- - Communication Protocols: 2.4 GHz USB nano reciver 
-
- - Expectation: The Controller shall send inputs to the Motors for movement  
+The RC Controller System section shall focus using a wireless connection to operate the dc motors attached on the collector. The raspberry pi shall have a  2.4 GHz USB nano reciever connection that will accept inputs from the controller. The coding in this section will properly allow the collector to move foward, in reverse, and turn left or right.  
 
 ### Motors Systems 
 
-The Motor Systems shall operate as a Power Signal, having the Receiver and RC Motors as outputs. The communication protocol will be PPM for the Receiver. It shall be expected to continuely control the movement of the tennis ball collector in conjenction of the controller.
+The Motor Systems subsystem section shall focus on the mobility of the DC motors. Ensuring the connections between the raspberry and the dc motors are correct. The rotation of the motors shall be place on the wheels controlling the movement of the collector without any manual help. The dc motors will be recieving input form the RC controller system. THe motor will be connected to the Raspberry Pi via PWM connection. It shall be expected to continuely control the movement of the tennis ball collector in conjenction of the controller.
    
 ### Counting Sensors Systems 
 
-The Counting Sensor System shall have a digital signal having the sensor as an input. The communication protocol will be BCD for the sensors. It shall be expected to detect and keep track of the counted and collected balls while the entire system runs.  
+The Counting Sensor System section shall be expected to detect and keep track of the counted and collected balls while the entire system runs. The sensors shall have a digital signal connected to the raspberry pi, causing the sensor to act as an input for the digital display. The Sensor will be connected via GPIO pins on the raspberry pi.
 
 ### Counting Display Systems 
 
-The Counting Display Systems shall operate with Serial Communication, having the seven segments as outputs. The communication protocol will be BCD for the seven segments. It shall be expected to display the collected data of the amount of collected tennis balls.
+The Counting Display Systems section will focus on implementing the seven segments that are expected to display the collected data of the amount of collected tennis balls. They will be connected to the raspberry pi and programmed to work in sync with the COunting sensor. Since they  with Serial Communication, having the seven segments as outputs. The communication protocol will be BCD for the seven segments. It shall display an accurate account of collected balls throughout the entire collection process.
    
 ### Vibration Systems 
 
-The Motor Systems shall operate as a Power Signal, having the motors as outputs. The communication protocol will be with a PWM motor. The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs. 
+The Vibration Motor Systems section will focus on intergrating the vibration motor in a way that dirupts cluttered tennis balls in the roller. The communication protocol will be with a PWM motor that will be directly connected to a battery for full expected use. The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs. 
 
 ### Power Supply Systems 
 
- The Power Supply Systems shall operate as a Electric Power signal, having the power as an output to the other systems. It will be powered with power, expected to power the hardware of the entire system.
+The Power Supply Systems section will focus on powering the system and making proper connections for hardware such as the DC motors, vibrating motors, display, and sensors. The battery will be expected to power the hardware of the entire system. It will be rechargable so it can be used anytime as long as it has charge.
 
 # Ethical, Professional, and Standards Considerations 
 
@@ -252,7 +242,7 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
 # Resources 
  
 
-  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Raspberry Pi 4B, battery, LCD, vibration motor, DC motors, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000.  
+  The project requires hardware and software resources to create and efficient, portable, and cost-effective remote-controlled tennis ball collector. Key hardware includes the RC transmitter, receiver, Raspberry Pi 4B, battery, LCD, vibration motor, DC motors, wheels, and sensors such as the photoelectric sensor for ball detection. Additionally, lab equipment like oscilloscopes and computers for interfacing with the processor will be necessary for testing. The components for prototyping are relatively inexpensive, and the total estimated cost for prototyping is $1,000. This cost allows for testing of components in case they break
 
   The software resources include CAD software for designing the final version of the collector. Additionally, developmental environments for programming Raspberry Pi and any RF control system testing will be essential. The software resources will be used to design, simulate, and test the functionality of the tennis ball collector.  
 
@@ -271,7 +261,7 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
 | Charger | 15-30 | [Click me](https://www.digikey.com/en/products/detail/dfrobot/DFR0208/6579347) |
 | LCD display | 15 | [Click me](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710) |
 | Vibration motor | 5-10 | [Click me](https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917) |
-| Wheels  | 11 | [Click me]([https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html](https://www.amazon.com/Electric-Magnetic-Gearbox-Plastic-Yeeco/dp/B07DQGX369/ref=asc_df_B07DQGX369/?tag=hyprod-20&linkCode=df0&hvadid=693410589815&hvpos=&hvnetw=g&hvrand=140461963650541489&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1025954&hvtargid=pla-487856373581&psc=1&mcid=cc37f360a4953c96869ec648b48c0bbf)) |
+| Wheels  | 11 | [Click me](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html](https://www.amazon.com/Electric-Magnetic-Gearbox-Plastic-Yeeco/dp/B07DQGX369/ref=asc_df_B07DQGX369/?tag=hyprod-20&linkCode=df0&hvadid=693410589815&hvpos=&hvnetw=g&hvrand=140461963650541489&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1025954&hvtargid=pla-487856373581&psc=1&mcid=cc37f360a4953c96869ec648b48c0bbf)) |
 | DC Motors | 100 | [Click me](https://www.digikey.com/en/products/detail/nmb-technologies-corporation/SE30R2NTCD/6021451) |
 | TSL1401 Linescan Camera Module (Optical/Infrared Array Sensor)| 83.04 | [Click me](https://www.amazon.com/CJMCU-1401-TSL1401CL-Linear-Ultra-Wide-Angle-Tracking/dp/B0CP77QJ8R) |
 | TSL140TFmini-S Micro Lidar Module (Optical/Infrared Array Sensor)| 42.99 | [Click me](https://www.amazon.com/MakerFocus-Single-Point-Ranging-Pixhawk-Compatible/dp/B075V5TZRY?source=ps-sl-shoppingads-lpcontext&ref_=fplfs&psc=1&smid=A1N6DLY3NQK2VM) |
@@ -312,9 +302,9 @@ gantt
 ``` 
 
 # References 
-[1] “Ball Mower 2.0,” PLAYMATE Tennis, <https://www.playmatetennis.com/ball-mower-2/> (accessed Oct. 7, 2024). 
+[1] “Tennibot ,” Tennibot, <https://www.tennibot.com/buy/> (accessed Oct. 7, 2024).
 
-[2] “Tennibot ,” Tennibot, <https://www.tennibot.com/buy/> (accessed Oct. 7, 2024). 
+[2]  “Ball Mower 2.0,” PLAYMATE Tennis, <https://www.playmatetennis.com/ball-mower-2/> (accessed Oct. 7, 2024).
 
 [3] “Raspberry Pi 4 Model B,” Adafruit Official Store, <https://www.adafruit.com/product/4292?src=raspberrypi> (accessed Nov. 1, 2024). 
 
@@ -347,7 +337,7 @@ Tate Finley – Fully Formulated Problem (shall statements), hardware block diag
 
 Cindy Escobar – Resources, Budget, References 
 
-Gabriel Dubose – High Level Solutions, comparative solutions, introductions, 
+Gabriel Dubose – High Level Solutions, comparative solutions, introductions, Atomic Subsystems
 
 Carter Brady – Comparative analysis of potential solutions, Ethical, Professional, and standards considerations
 
