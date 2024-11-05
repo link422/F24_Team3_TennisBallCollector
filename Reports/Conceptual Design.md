@@ -225,22 +225,25 @@ The Power Supply Systems section will focus on powering the system and making pr
 
 # Ethical, Professional, and Standards Considerations 
 
-1. IEEE (Institute of Electrical and Electronics Engineers)
-  a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller.
+### 1. IEEE (Institute of Electrical and Electronics Engineers)
+
+a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller.
   - Shall operates primarily in the 2.4 GHz ISM band, with optional sub-GHz bands in the 915 MHz (North America) ranges
   - Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
   - Shall support both 16-bit short addresses and 64-bit extended addresses for unique device identification
   - Shall includes encryption, message integrity, and access control using AES-128 bit encryption
   - Shall provides options for secure key management and protection of both MAC and PHY layers
-  b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
+
+b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
     - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
     - Shall enable seamless communication between transducers and the central microprocessor or other connected digital systems
     - Shall enable remote communication, configuration, and management of transducers over different network protocols
     - Each transducer shall include mechanisms to detect and report errors, faults, or malfunctions
     - Shall manage power efficiently to support remote and low-power transducer operation; including sleep modes and power-saving mechanisms, extending the battery life in battery-operated applications
 
-3. IEC (International Electrotechnical Commission)
-  a. IEC 60034 : International standards concerning the performance and safety for rotating electrical machines, which will apply to our usage of servo motor
+### 2. IEC (International Electrotechnical Commission)
+
+a. IEC 60034 : International standards concerning the performance and safety for rotating electrical machines, which will apply to our usage of servo motor
   - Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
   - The temperature rise of the machine shall not exceed the specified limits for the insulation class when operating under rated conditions
   - Motors and generators shall meet or exceed minimum efficiency levels as defined by IEC 60034-30-1 for specific classes of machines
@@ -252,7 +255,8 @@ The Power Supply Systems section will focus on powering the system and making pr
   - Noise levels shall be measured using standard methods, and machines shall not exceed the specified dB limits when operating under rated conditions
   -  Machines shall meet the specified vibration limits to avoid damage or excessive wear. Measurements shall be taken at both no-load and rated load conditions to ensure compliance
   -  Machines shall undergo vibration testing under standardized conditions to verify that they fall within permissible vibration levels for their class
-  b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
+
+b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
   -  Controls shall provide protection against electric shock, with enclosures and insulation to prevent users from accidental contact with live parts
   -  Automatic controls shall have a dielectric strength sufficient to withstand voltage stresses specified by IEC 60730, tested under simulated normal operating and fault conditions
   -  The leakage current of the control shall not exceed specified limits to prevent electrical hazards
@@ -265,7 +269,8 @@ The Power Supply Systems section will focus on powering the system and making pr
   -   Software in controls shall include error-handling routines to detect and respond to faults or abnormal conditions, ensuring continued safe operation or shutdown
   -   Controls shall be accompanied by installation and user instructions, providing necessary details for safe setup, operation, and maintenance by end users and installers
   -   Controls shall undergo all required tests in IEC 60730, with results documented to verify compliance with each relevant safety, performance, and reliability requirement
-  c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
+
+c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
   -  Cells and batteries shall be constructed in a way that minimizes risks of leakage, rupture, explosion, and fire during intended and foreseeable misuse
   -  Batteries shall incorporate protective devices to prevent overcharging, over-discharge, and overheating, with reliable mechanisms to limit voltage and current to safe levels
   -  Batteries shall include mechanisms to prevent over-discharge, which can lead to cell damage, swelling, or rupture, particularly in lithium-ion batteries
