@@ -136,17 +136,17 @@ flowchart TD
     B3 --> |Wireless Communication|A24
 
     click A1 "Fully Enclosed Basket for storing the Tennis Balls collected. "
-    click A2 "Goal is to sense the balls going into the basket and communicate to counter via the microprocessor"
-    click A21 "If tennis ball gets stuck, activate mechanism and recollect jammed tennis balls."
-    click A22 "Used for self propelling the wheels of the Tennis Ball Collector."
-    click A23 "Increment ball counter and display on LCD like disply located on the surface of mechanical casing. Can't implement on controller because controller used shall be kept minimally modified from original design (Not making controller from scratch)."
-    click A24 "Receive the signals sent by the Remote Controller."
-    click A25 "Lithium ion battery used to power the electronics in the system."
-    click A26 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers."
+    click A2 "Goal is to sense the balls going into the basket and communicate to counter via the microprocessor. Component is [10-11] with designed voltage amplifier circuit from battery"
+    click A21 "If tennis ball gets stuck, activate mechanism and recollect jammed tennis balls. Component is [8] with designed voltage divider circuit from battery"
+    click A22 "Used for self propelling the wheels of the Tennis Ball Collector. See DC motor link in budget section. Include voltage amplifier circuit from battery"
+    click A23 "Increment ball counter and display on LCD [7] like display located on the surface of mechanical casing. Can't implement on controller because controller used shall be kept minimally modified from original design (Not making controller from scratch)."
+    click A24 "Receive the signals sent by the Remote Controller. Microcontroller [3] has the necessary components to receive data from the controller. Construct voltage amplifier/divider if necessary"
+    click A25 "Lithium ion battery used to power the electronics in the system. See Battery link in budget section for battery used. Construct voltage divider to interpret voltage coming in from the port."
+    click A26 "Mechanism whether USB-A, USB-C, or micro-cable that is capatable with existing chargers. Assume voltage delivered to port is 20V."
     click A27 "Provide communication between systems to interpret data. See [3]"
-    click B1 "Mechanism used to control the direction of the Tennis Ball Collector."
-    click B2 "Mechanism used to turn on/off of the Tennis Ball Collector remotely."
-    click B3 "Send signals to the Tennis Ball Collector to control."
+    click B1 "Mechanism used to control the direction of the Tennis Ball Collector. See RC transmitter/receiver link in budget section."
+    click B2 "Mechanism used to turn on/off of the Tennis Ball Collector remotely. See RC transmitter/receiver link in budget section."
+    click B3 "Send signals to the Tennis Ball Collector to control. See RC transmitter/receiver link in budget section."
 ```
   
 
