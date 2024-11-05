@@ -235,11 +235,11 @@ a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-rang
   - Shall provides options for secure key management and protection of both MAC and PHY layers
 
 b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
-    - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
-    - Shall enable seamless communication between transducers and the central microprocessor or other connected digital systems
-    - Shall enable remote communication, configuration, and management of transducers over different network protocols
-    - Each transducer shall include mechanisms to detect and report errors, faults, or malfunctions
-    - Shall manage power efficiently to support remote and low-power transducer operation; including sleep modes and power-saving mechanisms, extending the battery life in battery-operated applications
+  - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
+  - Shall enable seamless communication between transducers and the central microprocessor or other connected digital systems
+  - Shall enable remote communication, configuration, and management of transducers over different network protocols
+  - Each transducer shall include mechanisms to detect and report errors, faults, or malfunctions
+  - Shall manage power efficiently to support remote and low-power transducer operation; including sleep modes and power-saving mechanisms, extending the battery life in battery-operated applications
 
 ### 2. IEC (International Electrotechnical Commission)
 
