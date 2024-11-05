@@ -244,8 +244,8 @@ The Motor Systems shall operate as a Power Signal, having the motors as outputs.
   b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
   c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
 
- 3. SAE
-    a. SAE J1772 : Specifies electrical and mechanical requirements for AC charging connectors that can be applied to powering our project
+ 3. SAE (Society of Automotive Engineers)
+  a. SAE J1772 : Specifies electrical and mechanical requirements for AC charging connectors that can be applied to powering our project
 
  
 
