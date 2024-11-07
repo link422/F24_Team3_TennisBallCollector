@@ -197,60 +197,85 @@ A[Device is off, start state] --> B{Turn on Device?}
 
 ### RC Controller
 
-The RC Controller System section shall focus using a wireless connection to operate the dc motors attached on the collector. The raspberry pi shall have a  2.4 GHz USB nano reciever connection that will accept inputs from the controller. The coding in this section will properly allow the collector to move foward, in reverse, and turn left or right.  
-
+The RC Controller System section shall use a wireless controller to operate the DC motors and Dual Shaft wheels attached on the collector.
+- Shall use a Gamepad as a wireless controller.
+- Shall utilize a 2.4 GHz USB nano reciever to communicate to the Raspberry Pi.
+- Shall properly allow the collector to move foward, to move in reverse, and be able to turn left or right.
+- Shall includes encryption, message integrity, and access control using AES-128 bit encryption
+- Controls shall undergo enderance, environmental conditioning, and fault condition test to demonstrate its safety and resiliance
+- Controls shall undergo all required tests in IEC 60730, with results documented to verify compliance with each relevant safety, performance, and reliability requirement
+  
 ### Motors Systems 
 
-The Motor Systems subsystem section shall focus on the mobility of the DC motors. Ensuring the connections between the raspberry and the dc motors are correct. The rotation of the motors shall be place on the wheels controlling the movement of the collector without any manual help. The dc motors will be recieving input form the RC controller system. THe motor will be connected to the Raspberry Pi via PWM connection. It shall be expected to continuely control the movement of the tennis ball collector in conjenction of the controller.
-   
+The Motor Systems subsystem section shall increase the mobility of the Tennis Ball Collector by adding DC motors to the already established wheels.
+- The DC motors [4] shall be connected to the power supply and Raspberry Pi.
+- THe Dual Shaft Wheels [5] shall be connected by the Raspberry Pi.
+- The rotation of the motors shall control the movement of the collector without any manual help.
+- The DC motors shall recieve it's directions from the RC controller system.
+- Shall continuely control the movement of the tennis ball collector.
+- Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
+- Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
+
 ### Counting Sensors Systems 
 
-The Counting Sensor System section shall be expected to detect and keep track of the counted and collected balls while the entire system runs. The sensors shall have a digital signal connected to the raspberry pi, causing the sensor to act as an input for the digital display. The Sensor will be connected via GPIO pins on the raspberry pi.
+The Counting Sensor System section shall be expected to detect and keep track of the counted and collected balls while the entire system runs. 
+- The Lidar range finder sensor [7] shall have a digital signal connected to the Raspberry Pi.
+- The Sensor shall take an accurate measurement of ball and display this data onto the LCD Display.
+- The Sensor shall be connected via GPIO pins on the Raspberry Pi.
+- Shall enable seamless communication between transducers and the central microprocessor or other connected digital systems.
+- Shall enable remote communication, configuration, and management of transducers over different network protocols.
 
 ### Counting Display Systems 
 
-The Counting Display Systems section will focus on implementing the seven segments that are expected to display the collected data of the amount of collected tennis balls. They will be connected to the raspberry pi and programmed to work in sync with the COunting sensor. Since they  with Serial Communication, having the seven segments as outputs. The communication protocol will be BCD for the seven segments. It shall display an accurate account of collected balls throughout the entire collection process.
+The Counting Display Systems section shall implement a LCD Display that will display the amount of collected tennis balls.
+- The LCD display shall will be connected to the Raspberry Pi and use Serial Communication pins to display collected amounts.
+- LCD display shall be programmed to work in sync with the Counting sensors.
+- It shall display an accurate account of collected balls throughout the entire collection process.
    
 ### Vibration Systems 
 
-The Vibration Motor Systems section will focus on intergrating the vibration motor in a way that dirupts cluttered tennis balls in the roller. The communication protocol will be with a PWM motor that will be directly connected to a battery for full expected use. The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs. 
+The Vibration Motor Systems section shall intergrate the vibration motor in a way that dirupts cluttered tennis balls in the roller. 
+- The DC Vibration Motor [6] shall get it's power directly from the Lithium Polymer Battery.
+- The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs.
+- The methods for measuring and calculating various losses (iron losses, copper losses, etc.) shall be standardized to maintain accuracy and repeatability.
+- Machines mounted according to specified configurations shall maintain compliance with vibration limits to ensure operational stability
+- Machines shall comply with noise limits specified in IEC 60034-9 to reduce environmental noise and meet workplace safety regulations
+- Noise levels shall be measured using standard methods, and machines shall not exceed the specified dB limits when operating under rated conditions
+- Machines shall meet the specified vibration limits to avoid damage or excessive wear. Measurements shall be taken at both no-load and rated load conditions to ensure compliance
+- Machines shall undergo vibration testing under standardized conditions to verify that they fall within permissible vibration levels for their class
 
 ### Power Supply Systems 
 
-The Power Supply Systems section will focus on powering the system and making proper connections for hardware such as the DC motors, vibrating motors, display, and sensors. The LP906090JH+PCM+2  battery will be expected to power the hardware of the entire system [12]. It will be rechargable so it can be used anytime as long as it has charge.
-
+The Power Supply Systems section will focus on powering the system and making proper connections for hardware such as the DC motors, vibrating motors, display, and sensors. 
+- The 3.7 V Lithium Polymer Rechargeable Battery [12] shall power the hardware of the entire system, including the Raspberry Pi, DC motors, and Vibration motors.
+- The Lithium Rechargeable Battery shall use an Open Frame Battery Charger [3] to gain charge.
+- Batteries shall be rechargable so it can be used anytime as long as it has charge.
+- Batteries shall include mechanisms to prevent over-discharge, which can lead to cell damage, swelling, or rupture, particularly in lithium-ion batteries.
+- Batteries shall be subjected to mechanical shock, vibration, and thermal cycling tests, ensuring they withstand environmental stresses encountered in transport and use.
+- Cells and batteries shall be constructed in a way that minimizes risks of leakage, rupture, explosion, and fire during intended and foreseeable misuse.
+  
 # Ethical, Professional, and Standards Considerations 
 
 ### 1. IEEE (Institute of Electrical and Electronics Engineers)
 
 a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller.
   - Shall operates primarily in the 2.4 GHz ISM band, with optional sub-GHz bands in the 915 MHz (North America) ranges
-  - Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
   - Shall support both 16-bit short addresses and 64-bit extended addresses for unique device identification
-  - Shall includes encryption, message integrity, and access control using AES-128 bit encryption
   - Shall provides options for secure key management and protection of both MAC and PHY layers
 
 b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
   - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
-  - Shall enable seamless communication between transducers and the central microprocessor or other connected digital systems
-  - Shall enable remote communication, configuration, and management of transducers over different network protocols
   - Each transducer shall include mechanisms to detect and report errors, faults, or malfunctions
   - Shall manage power efficiently to support remote and low-power transducer operation; including sleep modes and power-saving mechanisms, extending the battery life in battery-operated applications
 
 ### 2. IEC (International Electrotechnical Commission)
 
 a. IEC 60034 : International standards concerning the performance and safety for rotating electrical machines, which will apply to our usage of servo motor
-  - Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
   - The temperature rise of the machine shall not exceed the specified limits for the insulation class when operating under rated conditions
   - Motors and generators shall meet or exceed minimum efficiency levels as defined by IEC 60034-30-1 for specific classes of machines
-  -  The methods for measuring and calculating various losses (iron losses, copper losses, etc.) shall be standardized to maintain accuracy and repeatability
   - Machines shall be classified based on cooling methods, which shall be identified using standardized codes to describe cooling types such as self-cooled (IC 411) or forced air cooling (IC 416)
   - Cooling system shall be capable of maintaining the machine’s temperature within the specified range to prevent overheating under rated operating conditions
-  - Machines mounted according to specified configurations shall maintain compliance with vibration limits to ensure operational stability
-  - Machines shall comply with noise limits specified in IEC 60034-9 to reduce environmental noise and meet workplace safety regulations
-  - Noise levels shall be measured using standard methods, and machines shall not exceed the specified dB limits when operating under rated conditions
-  -  Machines shall meet the specified vibration limits to avoid damage or excessive wear. Measurements shall be taken at both no-load and rated load conditions to ensure compliance
-  -  Machines shall undergo vibration testing under standardized conditions to verify that they fall within permissible vibration levels for their class
+
 
 b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
   -  Controls shall provide protection against electric shock, with enclosures and insulation to prevent users from accidental contact with live parts
@@ -261,15 +286,12 @@ b. IEC 60730 : International standards focused on safety and performance require
   -  Controls shall enter a safe shutdown mode if they detect conditions that could lead to unsafe operation, such as excessive temperature or a failure in the control circuit
   -   Controls with an automatic reset feature shall do so only when it is safe and within specific parameters defined in IEC 60730, avoiding unintended restarts under unsafe conditions
   -   If a control includes a lockout function to prevent hazardous conditions, it shall activate and maintain lockout until the fault is corrected
-  -   Controls shall undergo enderance, environmental conditioning, and fault condition test to demonstrate its safety and resiliance
   -   Software in controls shall include error-handling routines to detect and respond to faults or abnormal conditions, ensuring continued safe operation or shutdown
   -   Controls shall be accompanied by installation and user instructions, providing necessary details for safe setup, operation, and maintenance by end users and installers
-  -   Controls shall undergo all required tests in IEC 60730, with results documented to verify compliance with each relevant safety, performance, and reliability requirement
+
 
 c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
-  -  Cells and batteries shall be constructed in a way that minimizes risks of leakage, rupture, explosion, and fire during intended and foreseeable misuse
   -  Batteries shall incorporate protective devices to prevent overcharging, over-discharge, and overheating, with reliable mechanisms to limit voltage and current to safe levels
-  -  Batteries shall include mechanisms to prevent over-discharge, which can lead to cell damage, swelling, or rupture, particularly in lithium-ion batteries
   -  Batteries shall operate safely within specified temperature ranges, with no risk of rupture, fire, or explosion due to temperature stress
   -  Batteries shall resist moisture and humidity, especially in environments where exposure to water or condensation may be likely, to prevent corrosion and leakage
   -  Batteries shall be subjected to mechanical shock, vibration, and thermal cycling tests, ensuring they withstand environmental stresses encountered in transport and use
