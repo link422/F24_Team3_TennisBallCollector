@@ -260,34 +260,17 @@ The Power Supply Systems section will focus on powering the system and making pr
 
 ### 1. IEEE (Institute of Electrical and Electronics Engineers)
 
-a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller.
-  - Shall operates primarily in the 2.4 GHz ISM band, with optional sub-GHz bands in the 915 MHz (North America) ranges
-  - Shall support both 16-bit short addresses and 64-bit extended addresses for unique device identification
-  - Shall provides options for secure key management and protection of both MAC and PHY layers 
-
-b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
+a. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
   - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
   - Each transducer shall include mechanisms to detect and report errors, faults, or malfunctions
   - Shall manage power efficiently to support remote and low-power transducer operation; including sleep modes and power-saving mechanisms, extending the battery life in battery-operated applications
 
 ### 2. IEC (International Electrotechnical Commission)
 
-a. IEC 60034 : International standards concerning the performance and safety for rotating electrical machines, which will apply to our usage of servo motor
-  - The temperature rise of the machine shall not exceed the specified limits for the insulation class when operating under rated conditions
-  - Motors and generators shall meet or exceed minimum efficiency levels as defined by IEC 60034-30-1 for specific classes of machines
-  - Machines shall be classified based on cooling methods, which shall be identified using standardized codes to describe cooling types such as self-cooled (IC 411) or forced air cooling (IC 416)
-  - Cooling system shall be capable of maintaining the machine’s temperature within the specified range to prevent overheating under rated operating conditions
-
-
-b. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
+a. IEC 60730 : International standards focused on safety and performance requirements for automatic control devices which can be applied to considered sensors and RC devices
   -  Controls shall provide protection against electric shock, with enclosures and insulation to prevent users from accidental contact with live parts
-  -  Automatic controls shall have a dielectric strength sufficient to withstand voltage stresses specified by IEC 60730, tested under simulated normal operating and fault conditions
   -  The leakage current of the control shall not exceed specified limits to prevent electrical hazards
-  -  Mechanical components of automatic controls shall be durable enough to withstand normal operation, ensuring they do not degrade or fail prematurely
-  -  Controls shall withstand mechanical shock and vibration within specified limits, maintaining operational integrity and preventing failure in environments with normal levels of shock and vibration
   -  Controls shall enter a safe shutdown mode if they detect conditions that could lead to unsafe operation, such as excessive temperature or a failure in the control circuit
-  -   Controls with an automatic reset feature shall do so only when it is safe and within specific parameters defined in IEC 60730, avoiding unintended restarts under unsafe conditions
-  -   If a control includes a lockout function to prevent hazardous conditions, it shall activate and maintain lockout until the fault is corrected
   -   Software in controls shall include error-handling routines to detect and respond to faults or abnormal conditions, ensuring continued safe operation or shutdown
   -   Controls shall be accompanied by installation and user instructions, providing necessary details for safe setup, operation, and maintenance by end users and installers
 
@@ -295,10 +278,7 @@ b. IEC 60730 : International standards focused on safety and performance require
 c. IEC 62133 : Covers safety requirements for lithium-ion and lithium polymer batteries that can be applied to powering our project
   -  Batteries shall incorporate protective devices to prevent overcharging, over-discharge, and overheating, with reliable mechanisms to limit voltage and current to safe levels
   -  Batteries shall operate safely within specified temperature ranges, with no risk of rupture, fire, or explosion due to temperature stress
-  -  Batteries shall resist moisture and humidity, especially in environments where exposure to water or condensation may be likely, to prevent corrosion and leakage
-  -  Batteries shall be subjected to mechanical shock, vibration, and thermal cycling tests, ensuring they withstand environmental stresses encountered in transport and use
   -  Any protection circuitry within the battery pack shall function reliably under all operational conditions, including overcharge, over-discharge, and short circuit scenarios
-  -  Batteries shall be accompanied by safety information and warnings regarding their safe usage, storage, and disposal, including handling precautions to avoid short circuits and fire risks
  
 
 # Resources 
