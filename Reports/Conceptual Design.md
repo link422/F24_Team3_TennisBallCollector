@@ -201,9 +201,11 @@ The RC Controller System section shall use a wireless controller to operate the 
 - Shall use a Gamepad as a wireless controller.
 - Shall utilize a 2.4 GHz USB nano reciever to communicate to the Raspberry Pi.
 - Shall properly allow the collector to move foward, to move in reverse, and be able to turn left or right.
-- Shall includes encryption, message integrity, and access control using AES-128 bit encryption
-- Controls shall undergo enderance, environmental conditioning, and fault condition test to demonstrate its safety and resiliance
-- Controls shall undergo all required tests in IEC 60730, with results documented to verify compliance with each relevant safety, performance, and reliability requirement
+- Shall allow for variable speed control of the DC motors.
+- Shall include an emergency stop function to immediately halt all motor operations.
+- Shall use an intuitive button layout so that controlling is easy.
+
+
   
 ### Motors Systems 
 
