@@ -263,7 +263,7 @@ The Power Supply Systems section will focus on powering the system and making pr
 a. IEEE 802.15.4 : Wireless specifications as a guideline for simple, short-range, and low-powered wireless connection to use for our RC communications between motor and controller.
   - Shall operates primarily in the 2.4 GHz ISM band, with optional sub-GHz bands in the 915 MHz (North America) ranges
   - Shall support both 16-bit short addresses and 64-bit extended addresses for unique device identification
-  - Shall provides options for secure key management and protection of both MAC and PHY layers
+  - Shall provides options for secure key management and protection of both MAC and PHY layers 
 
 b. IEEE 1451 : Family of standards covering smart transducer development and integration which can be applied to sensor-device communication
   - Each smart transducer shall incorporate a Transducer Interface Module (TIM) that connects to the networked system
