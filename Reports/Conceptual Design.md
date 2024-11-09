@@ -248,13 +248,13 @@ The Vibration Motor Systems section shall intergrate the vibration motor in a wa
 
 ### Power Supply Systems 
 
-The Power Supply Systems section will focus on powering the system and making proper connections for hardware such as the DC motors, vibrating motors, display, and sensors. 
-- The 3.7 V Lithium Polymer Rechargeable Battery [12] shall power the hardware of the entire system, including the Raspberry Pi, DC motors, and Vibration motors.
+The Power Supply Systems section will focus on powering the system and for the hardware such as the DC motors, vibrating motors, display, and sensors. 
+- The 3.7 V Lithium Polymer Rechargeable Battery [12] shall power the hardware of the entire system, including the Raspberry Pi
+- Lithium battery will supply atleast 8 amps to DC motors, and Vibration motors.
 - The Lithium Rechargeable Battery shall use an Open Frame Battery Charger [3] to gain charge.
 - Batteries shall be rechargable so it can be used anytime as long as it has charge.
-- Batteries shall include mechanisms to prevent over-discharge, which can lead to cell damage, swelling, or rupture, particularly in lithium-ion batteries.
-- Batteries shall be subjected to mechanical shock, vibration, and thermal cycling tests, ensuring they withstand environmental stresses encountered in transport and use.
-- Cells and batteries shall be constructed in a way that minimizes risks of leakage, rupture, explosion, and fire during intended and foreseeable misuse.
+- Batteries shall be subjected to vibration tests, to test combatibility with vibration motor the team will test the battery while the vibration motor acts at the same time.
+- Cells and batteries shall be constructed in a way that minimizes overcomplication of wiring.
   
 # Ethical, Professional, and Standards Considerations 
 
