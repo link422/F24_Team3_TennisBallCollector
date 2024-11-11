@@ -230,9 +230,9 @@ The Counting Sensor System section shall be expected to detect and keep track of
 ### Counting Display Systems 
 
 The Counting Display Systems section shall implement a LCD Display that will display the amount of collected tennis balls.
-- The LCD display shall will be connected to the Raspberry Pi and use Serial Communication pins to display collected amounts.
-- LCD display shall be programmed to work in sync with the Counting sensors.
-- It shall display an accurate account of collected balls throughout the entire collection process.
+- The LCD display shall use Serial Communication to communicate with the Counting Sensor [7] and Raspberry Pi [1] components.
+- The subsystem shall display an accurate account of collected balls throughout the entire collection process.
+- The LCD display shall be connected to a circuit that supplies the required voltage of approximately 3.3V to the LCD display. 
    
 ### Vibration Systems 
 
@@ -340,7 +340,7 @@ gantt
 ``` 
 
 # References 
-[1] A. Industries, “Raspberry pi 4 model B - 2 GB RAM,” adafruit industries blog RSS, https://www.adafruit.com/product/4292#description (accessed Nov. 4, 2024). 
+[1] A. Industries, “Raspberry pi 4 model B - 2 GB RAM,” adafruit industries blog RSS, <https://www.adafruit.com/product/4292#description> (accessed Nov. 4, 2024). 
 
 [2] “CJMCU-1401 TSL 1401CL Linear CCD,” Amazon.in, <https://www.amazon.in/CJMCU-1401-TSL1401CL-Linear-Wide-Angle-Tracking/dp/B09D8NK773> (accessed Nov. 4, 2024).   
 
