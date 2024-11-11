@@ -236,14 +236,10 @@ The Counting Display Systems section shall implement a LCD Display that will dis
    
 ### Vibration Systems 
 
-The Vibration Motor Systems section shall intergrate the vibration motor in a way that dirupts cluttered tennis balls in the roller. 
-- The DC Vibration Motor [6] shall get it's power directly from the Lithium Polymer Battery.
+The DC Vibration Motor Systems section shall intergrate the vibration motor in a way that dirupts cluttered tennis balls in the roller. 
+- The Vibration Motor shall get it's power directly from the Lithium Polymer Battery.
 - The motor shall be expected to run and help with disrupting the collection of balls while the entire system runs.
-- The methods for measuring and calculating various losses (iron losses, copper losses, etc.) shall be standardized to maintain accuracy and repeatability.
 - Machines mounted according to specified configurations shall maintain compliance with vibration limits to ensure operational stability
-- Machines shall comply with noise limits specified in IEC 60034-9 to reduce environmental noise and meet workplace safety regulations
-- Noise levels shall be measured using standard methods, and machines shall not exceed the specified dB limits when operating under rated conditions
-- Machines shall meet the specified vibration limits to avoid damage or excessive wear. Measurements shall be taken at both no-load and rated load conditions to ensure compliance
 - Machines shall undergo vibration testing under standardized conditions to verify that they fall within permissible vibration levels for their class
 
 ### Power Supply Systems 
