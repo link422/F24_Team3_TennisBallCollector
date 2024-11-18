@@ -7,6 +7,16 @@ This document delineates the objectives of a comprehensive system design. Upon r
 - The rationale behind each crucial design decision
 - The procedure for constructing the solution
 
+Motors Systems
+The Motor Systems subsystem section shall increase the mobility of the Tennis Ball Collector by adding DC motors to the already established wheels.
+
+The DC motors [4] shall be connected to the power supply and Raspberry Pi.
+THe Dual Shaft Wheels [5] shall be connected by the Raspberry Pi.
+The rotation of the motors shall control the movement of the collector without any manual help.
+The DC motors shall recieve it's directions from the RC controller system.
+Shall continuely control the movement of the tennis ball collector.
+Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
+Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
 
 ## General Requirements for the Document
 
