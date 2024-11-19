@@ -1,5 +1,16 @@
 # Detailed Design
 
+
+The Motor Systems subsystem section shall increase the mobility of the Tennis Ball Collector by adding DC motors to the already established wheels.
+
+The DC motors [4] shall be connected to the power supply and Raspberry Pi.
+THe Dual Shaft Wheels [5] shall be connected by the Raspberry Pi.
+The rotation of the motors shall control the movement of the collector without any manual help.
+The DC motors shall recieve it's directions from the RC controller system.
+Shall continuely control the movement of the tennis ball collector.
+Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
+
+
 This document delineates the objectives of a comprehensive system design. Upon reviewing this design, the reader should have a clear understanding of:
 
 - How the specific subsystem integrates within the broader solution
