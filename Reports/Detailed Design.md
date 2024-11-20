@@ -1,44 +1,8 @@
 # Detailed Design
 
-This document delineates the objectives of a comprehensive system design. Upon reviewing this design, the reader should have a clear understanding of:
-
-- How the specific subsystem integrates within the broader solution
-- The constraints and specifications relevant to the subsystem
-- The rationale behind each crucial design decision
-- The procedure for constructing the solution
-
-Motors Systems
-The Motor Systems subsystem section shall increase the mobility of the Tennis Ball Collector by adding DC motors to the already established wheels.
-
-The DC motors [4] shall be connected to the power supply and Raspberry Pi.
-THe Dual Shaft Wheels [5] shall be connected by the Raspberry Pi.
-The rotation of the motors shall control the movement of the collector without any manual help.
-The DC motors shall recieve it's directions from the RC controller system.
-Shall continuely control the movement of the tennis ball collector.
-Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
-Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
-
-## General Requirements for the Document
-
-The document should include:
-
-- Explanation of the subsystem’s integration within the overall solution
-- Detailed specifications and constraints specific to the subsystem
-- Synopsis of the suggested solution
-- Interfaces among different subsystems
-- 3D models of customized mechanical elements*
-- A buildable diagram*
-- A Printed Circuit Board (PCB) design layout*
-- An operational flowchart*
-- A comprehensive Bill of Materials (BOM)
-- Analysis of crucial design decisions
-- Execution plan considering skill sets and time requirements
-*Note: These technical documentation elements are mandatory only when relevant to the particular subsystem.
-
-
 ## Function of the Subsystem
 
-This segment should elucidate the role of the subsystem within the entire system, detailing its intended function, aligned with the conceptual design.
+The objective of the Motor Subsystem is to help navigate the Tennis Ball Collector installed on the wheels using DC motors by increasing the mobility of already established wheels on the Tennis Ball Collector.  
 
 
 ## Specifications and Constraints
@@ -62,7 +26,7 @@ Provide detailed information about the inputs, outputs, and data transferred to 
 
 ## 3D Model of Custom Mechanical Components
 
-Should there be mechanical elements, display diverse views of the necessary 3D models within the document. Ensure the image's readability and appropriate scaling. Offer explanations as required.
+Should there be mechanical elements, di' splay diverse views of the necessary 3D models within the document. Ensure the image's readability and appropriate scaling. Offer explanations as required.
 
 
 ## Buildable Schematic 
