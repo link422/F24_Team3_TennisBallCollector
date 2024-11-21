@@ -1,7 +1,7 @@
 # Detailed Design
 ## Function of the Subsystem
 
-The RC subsystem's primary role within the overall system is to allow the user to control the DC motors wirelessly. Being able to wirelessly communicate with the Raspberry Pi [1] will give the subsystem the ability to wirlessly control the DC motors which will allow for varying speeds, turns, and an emergency stop feature. Being able to reliably control the system from a distance is important for the system as the motors could be unpredictable if there is not a strong signal controlling it. Having an emergency stop will also increase the safety of the device should anything happen. The controller will use a 2.4 GHz USB nano reciever [2] to ensure a strong connection as well as provide an intuitive controller that can have its buttons programmed to do the desired task.
+   The RC subsystem's primary role within the overall system is to allow the user to control the DC motors wirelessly. Being able to wirelessly communicate with the Raspberry Pi [1] will give the subsystem the ability to wirlessly control the DC motors which will allow for varying speeds, turns, and an emergency stop feature. Being able to reliably control the system from a distance is important for the system as the motors could be unpredictable if there is not a strong signal controlling it. Having an emergency stop will also increase the safety of the device should anything happen. The controller will use a 2.4 GHz USB nano reciever [2] to ensure a strong connection as well as provide an intuitive controller that can have its buttons programmed to do the desired task.
 
 
 ## Specifications and Constraints
@@ -23,19 +23,53 @@ The RC subsystem's primary role within the overall system is to allow the user t
      
 ## Overview of Proposed Solution
 
-The proposed solution for the RC subsystem is to provide wireless control of the Tennis Ball Collector using a controller with a 2.4GHz receiver connected to a Raspberry Pi. This will allow the customer to control the system easily. The subsystem will provide variable speed control, directional movement, and an emergency stop function. The subsystem will interact with the DC motors for moving as well as the power subsystem, vibration subsystem, counting subsystem, and display subsystem for the emergency stop function. The subsystem will follow IEEE 802.15.4 standards in using a 2.4 GHz reciver which will ensure reliable and mid ranged wireless communication protocols are used. The choice of controller and reciver were made such that the subsystem is reliable as well as cost effective to ensure that the overall cost of the system stays as low as possible for ease of access to consumers.
+   The proposed solution for the RC subsystem is to provide wireless control of the Tennis Ball Collector using a controller with a 2.4GHz receiver connected to a Raspberry Pi. This will allow the customer to control the system easily. The subsystem will provide variable speed control, directional movement, and an emergency stop function. The subsystem will interact with the DC motors for moving as well as the power subsystem, vibration subsystem, counting subsystem, and display subsystem for the emergency stop function. The subsystem will follow IEEE 802.15.4 standards in using a 2.4 GHz reciver which will ensure reliable and mid ranged wireless communication protocols are used. The choice of controller and reciver were made such that the subsystem is reliable as well as cost effective to ensure that the overall cost of the system stays as low as possible for ease of access to consumers.
 
 
 ## Interface with Other Subsystems
 
-Within and around the RC subsystem there are many inputs and outputs. The controller itself has many inputs with their names and types being: A - button, B - button, X - button, Y - button, back - button, start - button, mode - button, vibration - button, RB- bumper/button, LB - bumper/button, D-pad (has 4 buttons left, right, up, and down) - buttons, left and right joystick - analog sticks, left and right trigger - analog triggers. It outputs the signals from these inputs to the 2.4 GHz nano USB reciver which takes those outputs as inputs and sends them to the Raspberry Pi for processing. Once the Raspberry Pi has the inputs and the code processes the data that information is than output to the DC and vibration motors. The data being output to the motors will be simple signals with pulse width modulation to allow varying speeds in the motor. The Raspberry Pi's outputs will not directly connect to the motors but rather connect to transistor that will allow the DC motor to turn on when the output from the Raspberry Pi is high.
+   Within and around the RC subsystem there are many inputs and outputs. The controller itself has many inputs with their names and types being: A - button, B - button, X - button, Y - button, back - button, start - button, mode - button, vibration - button, RB- bumper/button, LB - bumper/button, D-pad (has 4 buttons left, right, up, and down) - buttons, left and right joystick - analog sticks, left and right trigger - analog triggers. It outputs the signals from these inputs to the 2.4 GHz nano USB reciver which takes those outputs as inputs and sends them to the Raspberry Pi for processing. Once the Raspberry Pi has the inputs and the code processes the data that information is than output to the DC and vibration motors. The data being output to the motors will be simple signals with pulse width modulation to allow varying speeds in the motor. The Raspberry Pi's outputs will not directly connect to the motors but rather connect to transistor that will allow the DC motor to turn on when the output from the Raspberry Pi is high.
 
 
 ## Operational Flowchart
 
-For sections including a software component, produce a chart that demonstrates the decision-making process of the microcontroller. It should provide an overview of the device's function without exhaustive detail.
+```mermaid 
+ 
+flowchart LR 
+ 
+A[Powered off] --> J(Devvice started up)
 
-TODO!!!
+    J --> B{Begin operation?}
+ 
+    B --> |Start Pressed| C{Begin vibration and look for inputs}
+ 
+    B --> |Start Not Pressed| B
+ 
+    C --> |Input Not Recived| C
+
+    C --> |Input Recived| D{Look at input recived}
+ 
+    D --> |Left| E(Turn left)
+ 
+    E --> C
+ 
+    D --> |Right| F(Turn right)
+ 
+    F --> C
+ 
+    D --> |Up| G(Move forward)
+
+    G --> C
+
+    D --> |Down| H(Move backword)
+
+    H --> C
+
+    D --> |Start| I(Shut everything down)
+
+    I --> A
+ 
+```
 
 
 ## BOM
@@ -48,9 +82,7 @@ TODO!!!
 
 ## Analysis
 
-Deliver a full and relevant analysis of the design demonstrating that it should meet the constraints and accomplish the intended function. This analysis should be comprehensive and well articulated for persuasiveness.
-
-The RC subsystem shall accomplish its intended function while also meeting the proposed constraints. The 2.4 GHz USB nano receiver ensures reliable and well ranged communication between the controller and the Raspberry Pi. The effective range of 30 feet allows for the user to be a safe distance from the collector while collecting the balls.The emergency stop button will immediately halt all motor operations in case of any unexpected behavior which enssures safe operation of the device. The cost of the subsystem has been kept very low as the controller and reciver are a single package and are very reasonably priced. This will make sure it is actually able to be implemented in a cost effective manner. Complying with IEEE 802.15.4 standard ensures that the wireless communication protocols used are reliable and widely accepted to make sure everything is compaitble. Overall the RC subsystem is able to perform its desired function effectivly and very cost efficiently. 
+   The RC subsystem shall accomplish its intended function while also meeting the proposed constraints. The 2.4 GHz USB nano receiver ensures reliable and well ranged communication between the controller and the Raspberry Pi. The effective range of 30 feet allows for the user to be a safe distance from the collector while collecting the balls.The emergency stop button will immediately halt all motor operations in case of any unexpected behavior which enssures safe operation of the device. The cost of the subsystem has been kept very low as the controller and reciver are a single package and are very reasonably priced. This will make sure it is actually able to be implemented in a cost effective manner. Complying with IEEE 802.15.4 standard ensures that the wireless communication protocols used are reliable and widely accepted to make sure everything is compaitble. Overall the RC subsystem is able to perform its desired function effectivly and very cost efficiently. 
 
 
 ## References
