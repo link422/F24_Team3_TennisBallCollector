@@ -1,31 +1,4 @@
 # Detailed Design
-
-This document delineates the objectives of a comprehensive system design. Upon reviewing this design, the reader should have a clear understanding of:
-
-- How the specific subsystem integrates within the broader solution
-- The constraints and specifications relevant to the subsystem
-- The rationale behind each crucial design decision
-- The procedure for constructing the solution
-
-
-## General Requirements for the Document
-
-The document should include:
-
-- Explanation of the subsystem’s integration within the overall solution
-- Detailed specifications and constraints specific to the subsystem
-- Synopsis of the suggested solution
-- Interfaces among different subsystems
-- 3D models of customized mechanical elements*
-- A buildable diagram*
-- A Printed Circuit Board (PCB) design layout*
-- An operational flowchart*
-- A comprehensive Bill of Materials (BOM)
-- Analysis of crucial design decisions
-- Execution plan considering skill sets and time requirements
-*Note: These technical documentation elements are mandatory only when relevant to the particular subsystem.
-
-
 ## Function of the Subsystem
 
 The RC subsystem's primary role within the overall system is to allow the user to control the DC motors wirelessly. Being able to wirelessly communicate with the Raspberry Pi CITE THIS will give the subsystem the ability to wirlessly control the DC motors which will allow for varying speeds, turns, and an emergency stop feature. Being able to reliably control the system from a distance is important for the system as the motors could be unpredictable if there is not a strong signal controlling it. Having an emergency stop will also increase the safety of the device should anything happen. The controller will use a 2.4 GHz USB nano reciever CITE THIS to ensure a strong connection as well as provide an intuitive controller that can have its buttons programmed to do the desired task.
@@ -55,9 +28,7 @@ The proposed solution for the RC subsystem is to provide wireless control of the
 
 ## Interface with Other Subsystems
 
-Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
-
-TODO!!!
+Within and around the RC subsystem there are many inputs and outputs. The controller itself has many inputs with their names and types being: A - button, B - button, X - button, Y - button, back - button, start - button, mode - button, vibration - button, RB- bumper/button, LB - bumper/button, D-pad (has 4 buttons left, right, up, and down) - buttons, left and right joystick - analog sticks, left and right trigger - analog triggers. It outputs the signals from these inputs to the 2.4 GHz nano USB reciver which takes those outputs as inputs and sends them to the raspberry Pi for processing. Once the raspberry Pi has the inputs and the code processes the data that information is than output to the DC and vibration motors. The data being output to the motors will be simple signals with pulse width modulation to allow varying speeds in the motor. The raspberry Pi's outputs will not directly connect to the motors but rather connect to transistor that will allow the DC motor to turn on when the output from the raspberry Pi is high.
 
 
 ## Operational Flowchart
