@@ -23,12 +23,12 @@
      
 ## Overview of Proposed Solution
 
-   The proposed solution for the RC subsystem is to provide wireless control of the Tennis Ball Collector using a controller with a 2.4GHz receiver connected to a Raspberry Pi. This will allow the customer to control the system easily. The subsystem will provide variable speed control, directional movement, and an emergency stop function. The subsystem will interact with the DC motors for moving as well as the power subsystem, vibration subsystem, counting subsystem, and display subsystem for the emergency stop function. The subsystem will follow IEEE 802.15.4 standards in using a 2.4 GHz reciver which will ensure reliable and mid ranged wireless communication protocols are used. The choice of controller and reciver were made such that the subsystem is reliable as well as cost effective to ensure that the overall cost of the system stays as low as possible for ease of access to consumers.
+   The proposed solution for the RC subsystem is to provide wireless control of the Tennis Ball Collector using a controller with a 2.4GHz receiver connected to a Raspberry Pi. This will allow the customer to control the system easily. The subsystem will provide variable speed control, directional movement, and an emergency stop function. The subsystem will interact with the DC motors for moving as well as the power subsystem, vibration subsystem, counting subsystem, and display subsystem for the emergency stop function. The subsystem also interacts with the power subsystem as the controller will be able to turn the system off. The subsystem also interacts with counting as the counting system will have to be stopped upon a emergency stop. Upon emergency stop the vibration motors need to be turned off as well. The subsystem will follow IEEE 802.15.4 standards in using a 2.4 GHz reciver which will ensure reliable and mid ranged wireless communication protocols are used. The choice of controller and reciver were made such that the subsystem is reliable as well as cost effective to ensure that the overall cost of the system stays as low as possible for ease of access to consumers.
 
 
 ## Interface with Other Subsystems
 
-   Within and around the RC subsystem there are many inputs and outputs. The controller itself has many inputs with their names and types being: A - button, B - button, X - button, Y - button, back - button, start - button, mode - button, vibration - button, RB- bumper/button, LB - bumper/button, D-pad (has 4 buttons left, right, up, and down) - buttons, left and right joystick - analog sticks, left and right trigger - analog triggers. It outputs the signals from these inputs to the 2.4 GHz nano USB reciver which takes those outputs as inputs and sends them to the Raspberry Pi for processing. Once the Raspberry Pi has the inputs and the code processes the data that information is than output to the DC and vibration motors. The data being output to the motors will be simple signals with pulse width modulation to allow varying speeds in the motor. The Raspberry Pi's outputs will not directly connect to the motors but rather connect to transistor that will allow the DC motor to turn on when the output from the Raspberry Pi is high.
+   Within and around the RC subsystem there are many inputs and outputs. The controller itself has many inputs with their names and types being: A - button, B - button, X - button, Y - button, back - button, start - button, mode - button, vibration - button, RB- bumper/button, LB - bumper/button, D-pad (has 4 buttons left, right, up, and down) - buttons, left and right joystick - analog sticks, left and right trigger - analog triggers. The start button will be the emergency start. It outputs the signals from these inputs to the 2.4 GHz nano USB reciver which takes those outputs as inputs and sends them to the Raspberry Pi for processing. Once the Raspberry Pi has the inputs and the code processes the data that information is than output to the DC and vibration motors. The data being output to the motors will be simple signals with pulse width modulation to allow varying speeds in the motor. The Raspberry Pi's outputs will not directly connect to the motors but rather connect to transistor that will allow the DC motor to turn on when the output from the Raspberry Pi is high.
 
 
 ## Operational Flowchart
@@ -65,7 +65,7 @@ A[Powered off] --> J(Devvice started up)
 
     H --> C
 
-    D --> |Start| I(Shut everything down)
+    D --> |Start (Emergency stop)| I(Shut everything down)
 
     I --> A
  
