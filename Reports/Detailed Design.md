@@ -69,4 +69,6 @@ Deliver a full and relevant analysis of the design demonstrating that it should 
 
 ## References
 
-All sources that have contributed to the detailed design and are not considered common knowledge should be duly cited, incorporating multiple references.
+[1] https://www.amazon.com/Benewake-TFmini-S-Single-Point-Raspberry-Interface/dp/B08D1XVRV5
+
+[2] https://www.adafruit.com/product/4292#description
