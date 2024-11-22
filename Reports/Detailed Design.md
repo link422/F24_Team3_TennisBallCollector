@@ -49,8 +49,8 @@ The schematic should be relevant to the design and provide ample details necessa
 ## Printed Circuit Board Layout
 
 Include a manufacturable printed circuit board layout.
-[![Raspberry Pi layout](![image](https://github.com/user-attachments/assets/2506c64b-ebda-4e59-8788-10a5ae453514)
-)
+[![Raspberry Pi layout](raspberry-pi-4b-board-layout-top-view.png)]
+[![Lidar](Lidar.jpg)]
 
 
 ## Operational Flowchart
