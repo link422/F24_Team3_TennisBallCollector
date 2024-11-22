@@ -34,9 +34,6 @@ The proposed solution for the Sensor subsystem is to use the Lidar Sensor, that 
 
 The sensor subsystem works with the power subsystem and the display subsystem. It doesn't, however, contain a direct physical connection to these subsystems but is instead connected using the Raspberry Pi as a medium. The sensor has 4 wires that need to be connected to the Pi. These are the GND, Voltage, RXD/SDA, and TXD/SCL. The GND will be connected to pin 6 of the Pi while the voltage will be connected to pin 2 to provide 5 V. The RXD and TXD will connect to pins 8 and 10 respectively. Once connected and powered, on operation the sensor will detect the ball passing and send a signal to the Pi. From here the Pi will recognize that a ball has passed and increase the ball count. While this is happening, the current count is displayed on the LCD and will update as a new signal is received. 
 
-## 3D Model of Custom Mechanical Components
-
-Should there be mechanical elements, di' splay diverse views of the necessary 3D models within the document. Ensure the image's readability and appropriate scaling. Offer explanations as required.
 
 
 ## Buildable Schematic 
@@ -48,9 +45,8 @@ The schematic should be relevant to the design and provide ample details necessa
 
 ## Printed Circuit Board Layout
 
-Include a manufacturable printed circuit board layout.
-[![Raspberry Pi layout](raspberry-pi-4b-board-layout-top-view.png)]
-[![Lidar](Lidar.jpg)]
+![Raspberry Pi layout](raspberry-pi-4b-board-layout-top-view.png)
+![Lidar](Lidar.jpg)
 
 
 ## Operational Flowchart
