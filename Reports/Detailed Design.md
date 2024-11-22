@@ -7,11 +7,13 @@ The objective of the Motor Subsystem is to help navigate the Tennis Ball Collect
 
 ## Specifications and Constraints
 
-This section should provide a list of constraints applicable to the subsystem, along with the rationale behind these limitations. For instance, constraints can stem from physics-based limitations or requirements, subsystem prerequisites, standards, ethical considerations, or socio-economic factors.
-
-The team should set specifications for each subsystem. These specifications may require modifications, which must be authorized by the team. It could be necessary to impose additional constraints as further information becomes available.
-
-Every subsystem must incorporate at least one constraint stemming from standards, ethics, or socio-economic factors.
+DC motors [4] shall be connected to the power supply and Raspberry Pi.
+THe Dual Shaft Wheels [5] shall be connected by the Raspberry Pi.
+The rotation of the motors shall control the movement of the collector without any manual help.
+The DC motors shall recieve it's directions from the RC controller system.
+Shall continuely control the movement of the tennis ball collector.
+Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
+Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
 
 
 ## Overview of Proposed Solution
