@@ -65,7 +65,7 @@ A[Powered off] --> J(Devvice started up)
 
     H --> C
 
-    D --> |Start (Emergency stop)| I(Shut everything down)
+    D --> |Start - Emergency stop| I(Shut everything down)
 
     I --> A
  
