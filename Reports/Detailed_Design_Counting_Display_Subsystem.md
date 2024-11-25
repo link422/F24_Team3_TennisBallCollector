@@ -40,14 +40,43 @@ Entire PCB.
 
 ## Operational Flowchart
 
-For sections including a software component, produce a chart that demonstrates the decision-making process of the microcontroller. It should provide an overview of the device's function without exhaustive detail.
+```mermaid
+
+flowchart LR
+
+A{Get Signal?} --> |Yes| B(Increment display count by one)
+    A --> |No| C(Keep Display Unchanged)
+    C --> A
+    B --> D(Display total ball count as a character array)
+    D --> E(Send character array to display)
+    E --> F{Character array within 4 digit boundary?}
+    F --> |Yes| G{Character array filled with numbers}
+    F --> |No| C
+    G --> |Yes| H(Display new count)
+    G --> |No| I(Fill rest of array with spaces)
+    I --> H
+    H --> A
+
+```
 
 
 ## BOM
+# Solution 1
+| Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link |
+|--------------|----------------|-------------|-------------------------|----------|-------|---------------|
+| Display Visions | EA DOGM162W-A | DigiKey | 1481-1078-ND | 1 | $13.53 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM162W-A/4896717?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsYA6gLQIgC6AvkA) |
 
-A complete list of all components needed for the design must be given with the cost of each component and the total cost of the subsystem. The BOM should be a markdown table. Make sure to to provide the manufacteror, part number, distributor, distributor part number, quantity, and price. Also provide a url where the product can be purchased from. If the componenet is refernced on your schematic make sure to include the component name.
+# Solution 2
+| Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link |
+|--------------|----------------|-------------|-------------------------|----------|-------|---------------|
+| Hitachi | HD44780U | Sparkfun | 255 | 1 | $18.50 | [link](https://www.sparkfun.com/products/255) |
+| ‎HiLetgo | 3-01-0080 | Amazon | B00VC2NEU8 | 2 | $7.49 | [link](https://www.amazon.com/HiLetgo-Interface-LCD1602-Address-Changeable/dp/B00VC2NEU8/ref=sr_1_1_sspa?crid=GSVG5X7RN5SX&dib=eyJ2IjoiMSJ9.KForF0owAe67XDG8YMDcsuzS7CDsUVcarAAwGx7y-8joyOKXOP82yKPC3BRftVG7Y56jeGSHTY2G2BdsG-MFFbj4-LbR_qLrCxvdBFXNIyV7bPMyKhoZJ_Wpfg-gvq4MWuIqCbPxy--wVuZF7YwpYzVMD9TGTUoGPfztdTx2K3ju6s-zMCp0ehPBoSC1OzrthkXCFS-8iwfQqZuxpc3NNozA3jtkURhnY_DkdMbeuyA.nNS47jSYa7aOu31ZXzhw7lTPkdU6fevkL9TMrl_h0hI&dib_tag=se&keywords=i2c+lcd+adapter&qid=1732507815&sprefix=i2c+lcd+adapter%2Caps%2C113&sr=8-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1) |
+| Adafruit | 757 | Adafruit | 757 | 1 | $3.95 | [link](https://www.adafruit.com/product/757) |
 
-Provide a comprehensive list of all necessary components along with their prices and the total cost of the subsystem. This information should be presented in a tabular format, complete with the manufacturer, part number, distributor, distributor part number, quantity, price, and purchasing website URL. If the component is included in your schematic diagram, ensure inclusion of the component name on the BOM (i.e R1, C45, U4).
+# Solution 3
+| Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link |
+|--------------|----------------|-------------|-------------------------|----------|-------|---------------|
+| Display Visions | EA DOGM132L-5 | DigiKey | 1481-1071-ND | 1 | $13.53 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM162W-A/4896717?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsYA6gLQIgC6AvkA) |
 
 ## Analysis
 
