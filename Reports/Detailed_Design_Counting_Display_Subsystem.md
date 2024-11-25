@@ -80,7 +80,8 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 
 ## Analysis
 
-Deliver a full and relevant analysis of the design demonstrating that it should meet the constraints and accomplish the intended function. This analysis should be comprehensive and well articulated for persuasiveness.
+According to the Bill of Materials, there were 3 possible solutions examined for this subsystem. The purpose of these solutions is to provide a guideline to construct the subsystem to work with the specifications and constraints given for the project and this subsystem. Solution number one is to alter the component being used from [1] to [3]. A example of the potential source code using this design is implemented in [5]. One reason not to use this solution is the difficulty of implementation. This solution involves writing the driver to interface from the raspberry pi 4 model B to the DOGM162W-A. The second solution has an easier integration but costs more. This involves soldering a I2C LCD adapter to [7], connecting the component to a I2C logic level converter, then connecting the I2C logic level converter to gpio pins of the subsystem.   
+
 
 ## References
 
