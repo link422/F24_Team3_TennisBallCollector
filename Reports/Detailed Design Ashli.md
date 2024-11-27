@@ -91,10 +91,17 @@ Operations will be carried out from inputs and safety precautions of the RC subs
 
 ## References
 [1] "BALL MOWER." PLAYMATE Tennis, 5 June 2023, www.playmatetennis.com/ball-mower/
+
 [2] "FIT0492-A." https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165, www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165
+
 [3] Ltd, Raspberry P. "Buy a Raspberry Pi 4 Model B – Raspberry Pi." Raspberry Pi, www.raspberrypi.com/products/raspberry-pi-4-model-b/.
+
 [4] "Sabertooth 2X12 R/C Regenerative Dual Motor Driver." Dimension Engineering - R/C, Power Electronics, Sensors, www.dimensionengineering.com/products/sabertooth2x12rc
+
 [5] "Bi-Directional Logic Level Converter Hookup Guide." Learn at SparkFun Electronics - SparkFun Learn, learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all
+
 [6] "Sabertooth 2X12 Regenerative Dual Motor Driver." Dimension Engineering - R/C, Power Electronics, Sensors, www.dimensionengineering.com/products/sabertooth2x12
+
 [7] "Playmate Ball Mower | Playmate Tennis Court Products | DH Distribution." DH Distribution, 9 Oct. 2024, dhtennis.net/product/the-playmate-ball-mower-2-0/
+
 [8] "775 Motor Casing." Cults 3D, 25 June 2021, cults3d.com/en/3d-model/tool/775-motor-casing
