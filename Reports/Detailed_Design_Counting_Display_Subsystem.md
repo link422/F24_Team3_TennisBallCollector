@@ -6,19 +6,21 @@ The Counting Display Systems section shall implement a LCD Display that will dis
 
 ## Specifications and Constraints
 
-The LCD display shall use Serial Communication to communicate with the Counting Sensor and Raspberry Pi components.
-The subsystem shall display an accurate account of collected balls throughout the entire collection process.
-The LCD display shall be connected to a circuit that supplies the required voltage of approximately 3.3V to the LCD display.
-
+- The LCD display shall use Serial Communication to communicate with the Counting Sensor and Raspberry Pi components.
+  - Rationale: There should be a common communication method between subsystems 
+- The subsystem shall display an accurate account of collected balls throughout the entire collection process.
+  - Rationale: The counting display subsystem will work in correlation with the Counting sensor subsystem in order for the project design to fulfill its goal of an accurate tennis ball collector.
+- The LCD display shall be connected to a circuit that supplies the required voltage of approximately 3.3V to the LCD display.
+  - Rationale: The raspberry pi model 4 B supplies 3.3V from its GPIO pins which will be used to interface with the solutions proposed by the counting display subsystem.
 
 ## Overview of Proposed Solution
 
-This subsystem shall display the amount of tennis balls collected as a numerical value. This subsystem also encompasses coding scripts that will interface with the LCD display. 
+This subsystem shall display the amount of tennis balls collected as a numerical value. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to [3] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B. Another solution involves using [7] with a soldered I2C LCD adapter connected to a I2C logic level convertor to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the LCD [1] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B to work with [1]
 
 
 ## Interface with Other Subsystems
 
-Provide detailed information about the inputs, outputs, and data transferred to other subsystems. Ensure specificity and thoroughness, clarifying the method of communication and the nature of the data transmitted.
+All three solutions involve using serial communication to interface with the raspberry pi model 4 B. Solution 1 has a serial mode that is able to be utilized in the design. Solution 2 converts serial data to characters that can be displayed on the LCD display. Solution 3 has a dedicated serial input and serial clock to integrate with raspberry pi model 4 B pins. 
 
 
 ## 3D Model of Custom Mechanical Components
@@ -34,8 +36,8 @@ The schematic should be relevant to the design and provide ample details necessa
 
 
 ## Printed Circuit Board Layout
+### Solution 1
 
-Entire PCB.
 
 
 ## Operational Flowchart
@@ -80,7 +82,7 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 
 ## Analysis
 
-According to the Bill of Materials, there were 3 possible solutions examined for this subsystem. The purpose of these solutions is to provide a guideline to construct the subsystem to work with the specifications and constraints given for the project and this subsystem. Solution number one is to alter the component being used from [1] to [3]. A example of the potential source code using this design is implemented in [5]. One reason not to use this solution is the difficulty of implementation. This solution involves writing the driver to interface from the raspberry pi 4 model B to the DOGM162W-A. The second solution has an easier integration but costs more. This involves soldering a I2C LCD adapter to [7], connecting the component to a I2C logic level converter, then connecting the I2C logic level converter to gpio pins of the subsystem.   
+According to the Bill of Materials, there were 3 possible solutions examined for this subsystem. The purpose of these solutions is to provide a guideline to construct the subsystem to work with the specifications and constraints given for the project and this subsystem. Solution number one is to alter the component being used from [1] to [3]. A example of the potential source code using this design is implemented in [5]. One reason not to use this solution is the difficulty of implementation. This solution involves writing the driver to interface from the raspberry pi 4 model B to the DOGM162W-A. The second solution has an easier integration but costs more. This involves soldering a I2C LCD adapter to [7], connecting the component to a I2C logic level converter, then connecting the I2C logic level converter to gpio pins of the subsystem. This solution involves simplier coding integration, see [6], with other subsystems including the Counting Sensor, and RC subsystems. The final solution is to keep the sensor unchanged from the conceptual design and rewriting the driver with more points for error in the design. The solutions were ordered based on a combination of cost and ease of integration with the project design and other subsystems.   
 
 
 ## References
