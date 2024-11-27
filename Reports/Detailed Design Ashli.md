@@ -11,32 +11,40 @@ The objective of the Motor subsystem is to help navigate the tennis ball collect
 ## Specifications and Constraints
 - The DC motors [2] shall be connected to the power supply and raspberry pi [3].
   - Rationale: The motors will need to be controlled by user interaction and power constraints for stability
-- The collector's [1] dual shaft wheels shall be connected by the raspberry pi [3]
+- The collector's [1] wheel's shall be connected by the raspberry pi [3]
   - Rationale: The wheels will need to be controlled by user interaction to be directed by instructions
 - The rotation of the motors [2] shall control the movement of the collector without any manual help.
    - Rationale : This will ensure that the movement maintains controllable while also ensuring the requirements to achieving a remote controlled tennis ball collector.   
 - The DC motors [2] shall recieve it's directions from the RC controller system.
   - Rationale : This will ensure motors operate via user input to limit unexpected behavior
 - Shall continuely control the movement of the tennis ball collector [1].
-  - Rationale : Control should be a constant factor within motor operation for reliable motions 
+  - Rationale : Control should be a constant factor within motor operation for reliable motions
+
+  
+Other motor subsystem specifications defined in the Conceptual Design were deemed irrational.
+- The Dual Shaft Wheels shall not be connected by the Raspberry Pi
+  - Rationale : Resulting effect would not outweigh the additional resources and calculations needed to ensure that it would not negatively impact the functionality of the collector.
+- Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
+  -Rationale: The reference of this standard no longer applies as there is no means of measuring "temperature limits"; mention of the standard wasn also removed in the Ethical, Professional, and Standards Considerations of the Conceptual Design.
+- Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
+  - This constraint on data rates does not apply to the motor subsystem.
+
 
 
 ## Overview of Proposed Solution
 
-The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. Operations will be carried out from inputs and safety precautions of the RC subsystem and Power-Supply subsystem established by the raspberry pi [3] and the Sabertooth dual 12A motor driver [4]. The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating an approximately 52 lb collector (inferred using the documented weight of a referenced website [5]). To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling; all other wheel connections will be stablized by a 3D printed altered design of a motor casing [7] tailored to the dimensions of the collector's caster brackets and motors. 
+The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. 3-4 motors, GEARMOTOR 50 RPM 12V METAL [2], will be controlled by 2 motor drivers, Sabertooth dual 12A motor driver (Sabertooth 2x12) [4] (one for the collector's [1] front small wheels, and the other for the back larger wheels). Connectivity outside the motor subsystem will be through the motor drivers [4] that will satisfy specifications including connecting DC motors [2] to power supply and raspberry pi [3], connecting tennis ball collector's wheels to the Raspberry Pi, controlling movement and rotation of the collector [1] without any manual help, and recieving inputs of direction from RC subsystem.
 
 
 ## Interface with Other Subsystems
 
 
-The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the RC subsystem's wireless communication with the Raspberry Pi microprocessor [3]
-Power System subsystem will supply an input of supply voltage using a compatible battery for the motor drivers [4] to activate and the RC controller subsystem will input user instructions wirelessly to the raspberry pi microprocessor [3] which will be transferred to the motor driver [4] reflecting as an output with the motors [2] activating. 
+The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the Power Supply System subsystem's supply voltage using a compatible battery and the RC subsystem's input user instructions recieved from the raspberry pi microprocessor [3]. All are inputs to the motor driver [4] which in turn, output's controll to the motors [2] for movement in the tennis ball collector [1]. 
 
 
 ## Buildable Schematic 
 
-
-The schematic should be relevant to the design and provide ample details necessary for constructing the model. It must be comprehensive so that someone, with no prior knowledge of the design, can easily understand it. Each related component's value and measurement should be clearly mentioned.
+RC Subsystem will recieve user input that will wirelessny connect to the raspberry pi microprocessor [3]. Through wiring, the motor driver will recieve input from the raspberry pi and using power from the power supply subsystem's battery the motor driver [4] will power on its corresponding motors, providing non-manual movement to the collector [1].
 
 ![motorsubsystem-schematic-36](https://github.com/user-attachments/assets/9750c082-0021-476d-ac5b-0e0db246b397)
 
@@ -46,12 +54,16 @@ A complete list of all components needed for the design must be given with the c
 
 Provide a comprehensive list of all necessary components along with their prices and the total cost of the subsystem. This information should be presented in a tabular format, complete with the manufacturer, part number, distributor, distributor part number, quantity, price, and purchasing website URL. If the component is included in your schematic diagram, ensure inclusion of the component name on the BOM (i.e R1, C45, U4).
 
-$15 for jumper wires
+$5.99 for jumper wires
 $1.78 
 
 ## Analysis
 
 Deliver a full and relevant analysis of the design demonstrating that it should meet the constraints and accomplish the intended function. This analysis should be comprehensive and well articulated for persuasiveness.
+
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power-Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [5]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [7] tailored to the dimensions of the collector's caster brackets and motors. 
+
+
 
 ## References
 
