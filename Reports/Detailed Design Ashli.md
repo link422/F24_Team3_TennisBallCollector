@@ -75,10 +75,12 @@ $5.99 for jumper wires
 
 | Manufacterer | Product Number | Distributor | Distributor Part Number | Quantity | Price | Schematic Label | Purchase Link |
 | ---------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | 
-| Dimension Engineering | SABERTOOTH 2X12 R/C | RobotShop |  RB-Dim-43 | 2 | 64.95 |  | [link](https://www.robotshop.com/products/sabertooth-dual-12a-regenerative-motor-driver) |
-| Dimension Engineering | SABERTOOTH 2X12 | DFRobot |  DRI0003 | 2 | 64.95 |  | [link](https://www.dfrobot.com/product-304.html) |
-| DFRobot | FIT0492-A | DigiKey |  FIT0492-A | 4 | 11.90 | | [link](https://www.dfrobot.com/product-304.html) |
-| Total Cost | N/A | N/A | N/A | N/A | 85 | N/A |
+| Dimension Engineering | SABERTOOTH 2X12 R/C | RobotShop |  RB-Dim-43 | 2 | 64.95 | MDA/MDB | [link](https://www.robotshop.com/products/sabertooth-dual-12a-regenerative-motor-driver) |
+| Dimension Engineering | SABERTOOTH 2X12 | DFRobot |  DRI0003 | 2 | 79.00 | D2x12 | [link](https://www.dfrobot.com/product-304.html) |
+| DFRobot | FIT0492-A | DigiKey |  1738-1268-ND | 4 | 11.90 | M50/S1A-B/S2A-B | [link](https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165) |
+| SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
+| Blair Store | -- | Amazon | B06XRV92ZB | 1 | 5.99 | -- | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
+| Total Cost | N/A | N/A | N/A | N/A | - | N/A |
 
 ## Analysis
 
