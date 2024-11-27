@@ -34,38 +34,55 @@ Other motor subsystem specifications defined in the Conceptual Design were deeme
 ## Overview of Proposed Solution
 
 The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. 3-4 motors, GEARMOTOR 50 RPM 12V METAL [2], will be controlled by 2 motor drivers, Sabertooth dual 12A motor driver (Sabertooth 2x12) [4] (one for the collector's [1] front small wheels, and the other for the back larger wheels). Connectivity outside the motor subsystem will be through the motor drivers [4] that will satisfy specifications including connecting DC motors [2] to power supply and raspberry pi [3], connecting tennis ball collector's wheels to the Raspberry Pi, controlling movement and rotation of the collector [1] without any manual help, and recieving inputs of direction from RC subsystem.
-
+There are two possible solution only differing by motor driver version. The first is a more desirable use of a simplistic R/C driver, Sabertooth dual 12A motor driver for R/C [4]. The other is a more generic version of the same motor driver type, the Sabertooth dual 12A motor driver [5]
 
 ## Interface with Other Subsystems
 
 
-The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the Power Supply System subsystem's supply voltage using a compatible battery and the RC subsystem's input user instructions recieved from the raspberry pi microprocessor [3]. All are inputs to the motor driver [4] which in turn, output's control to the motors [2] for movement in the tennis ball collector [1]. 
+The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the Power Supply System subsystem's supply voltage using a compatible battery and the RC subsystem's input user instructions recieved from the raspberry pi microprocessor [3]. All are inputs to the motor drivers which in turn, output's control to the motors [2] for movement in the tennis ball collector [1]. 
 
 
 ## Buildable Schematic 
 
-RC Subsystem will recieve user input that will wirelessny connect to the raspberry pi microprocessor [3]. Through wiring, the motor driver will recieve input from the raspberry pi and using power from the power supply subsystem's battery the motor driver [4] will power on its corresponding motors, providing non-manual movement to the collector [1].
+### Solution 1
+RC subsystem will recieve user input that will wirelessly connect to the raspberry pi microprocessor [3]. To ensure the signals are properly shifted to the required voltage levels, the level shifter [5] will be a median between the desired motor driver [4] and the raspberry pi. The motor driver will recieve input from the raspberry pi and using power from the power supply subsystem's battery the motor driver will power on its corresponding motors, providing non-manual movement to the collector [1]. For the Sabertooth Driver, S1 is the forwards/backwards channel of control and S2 is the left/right channel. The unnamed cord is the flip channel and it has optional usage that will depend on the coding of the raspberry pi.
 
-![motorsubsystem-schematic-36](https://github.com/user-attachments/assets/9750c082-0021-476d-ac5b-0e0db246b397)
+![motorsubsystem-schematic-36](https://github.com/user-attachments/assets/4be2daa4-ec76-4ef0-b437-3f1ab952ba29)
+
+### Solution 2 
+If I am unable to purchase the more cost efficient option of motor driver, I will use the more general Sabertooth 2x12 motor driver [6]. Though not mentioned on the schematic, this will also include the LS component shown in the first solution.
+![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/4e5bcad6-35ae-4cb9-a393-64119f4c6344)
+
+
+## Printed Circuit Board Layout
+
+### Level Shifter : SparkFun Logic Level Converter - Bi-Directional 
+![image](https://github.com/user-attachments/assets/40933d9c-2bdf-45d3-9f46-6e6a17af1974)
+
+### Motor Driver : Sabertooth dual 12A motor driver for R/C
+![Sabertooth-2X10-RC-diagram](https://github.com/user-attachments/assets/9cd1c8c9-8df3-47ef-ab18-a7affbf522ab)
+
+
+### Motor Driver : Sabertooth dual 12A motor driver
+![image](https://github.com/user-attachments/assets/5ac08e86-255c-49be-a490-a7906887921e)
+
+### Motor : GearMotor 50 RPM 12V METAL
+![image](https://github.com/user-attachments/assets/64201d8d-ab02-4b5a-8bfb-3c196a20a89c)
 
 ## BOM
 
-A complete list of all components needed for the design must be given with the cost of each component and the total cost of the subsystem. The BOM should be a markdown table. Make sure to to provide the manufacteror, part number, distributor, distributor part number, quantity, and price. Also provide a url where the product can be purchased from. If the componenet is refernced on your schematic make sure to include the component name.
-
-Provide a comprehensive list of all necessary components along with their prices and the total cost of the subsystem. This information should be presented in a tabular format, complete with the manufacturer, part number, distributor, distributor part number, quantity, price, and purchasing website URL. If the component is included in your schematic diagram, ensure inclusion of the component name on the BOM (i.e R1, C45, U4).
-
 $5.99 for jumper wires
-$1.78 
 
-| Manufacteror | Product Number | Distributor | Distributor Part Number | Quantity | Price | Purchase Link |
-| ---------- | --------- | --------- | --------- | --------- | --------- | --------- | 
-| Dimension Engineering | 940-000117 | Logitech G |  940-000117 | 2 | 40 | [link](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
-| Raspberry Pi Holdings Ltd | 4292 | Raspberry Pi | 4292 | 1 | 45 | [link](https://www.adafruit.com/product/4292?src=raspberrypi) |
+| Manufacterer | Product Number | Distributor | Distributor Part Number | Quantity | Price | Schematic Label | Purchase Link |
+| ---------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | 
+| Dimension Engineering | SABERTOOTH 2X12 R/C | RobotShop |  RB-Dim-43 | 2 | 64.95 |  | [link](https://www.robotshop.com/products/sabertooth-dual-12a-regenerative-motor-driver) |
+| Dimension Engineering | SABERTOOTH 2X12 | DFRobot |  DRI0003 | 2 | 64.95 |  | [link](https://www.dfrobot.com/product-304.html) |
+| DFRobot | FIT0492-A | DigiKey |  FIT0492-A | 4 | 11.90 | | [link](https://www.dfrobot.com/product-304.html) |
 | Total Cost | N/A | N/A | N/A | N/A | 85 | N/A |
 
 ## Analysis
 
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [5]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [6] tailored to the dimensions of the collector's caster brackets and motors. 
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [8] tailored to the dimensions of the collector's caster brackets and motors. 
 
 
 
