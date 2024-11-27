@@ -15,7 +15,7 @@ The Counting Display Systems section shall implement a LCD Display that will dis
 
 ## Overview of Proposed Solution
 
-This subsystem shall display the amount of tennis balls collected as a numerical value. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to [3] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B. Another solution involves using [7] with a soldered I2C LCD adapter connected to a I2C logic level convertor to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the LCD [1] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B to work with [1]
+This subsystem shall display the amount of tennis balls collected as a numerical value. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to [3] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B. Another solution involves using [7] with a soldered I2C LCD adapter connected to a I2C logic level convertor to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the LCD [1] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B to work with [1].
 
 
 ## Interface with Other Subsystems
@@ -30,11 +30,11 @@ There are no mechanical components in this subsystem.
 
 ## Buildable Schematic / Printed Circuit Board Layout
 ### Solution 1
-
+![Solution using DOGM162W-A](Images/Solution1.png)
 ### Solution 2
-
+![Solution using HD44780U](Images/Solution2.png)
 ### Solution 3
-
+![Solution using DOGM132L-5](Images/Solution3.png)
 ## Operational Flowchart
 
 ```mermaid
