@@ -39,7 +39,7 @@ The proposed solution for this Motor subsystem is to provide user controlled mot
 ## Interface with Other Subsystems
 
 
-The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the Power Supply System subsystem's supply voltage using a compatible battery and the RC subsystem's input user instructions recieved from the raspberry pi microprocessor [3]. All are inputs to the motor driver [4] which in turn, output's controll to the motors [2] for movement in the tennis ball collector [1]. 
+The Motor subsystem has few inputs and outputs as one of the technical applications of the design. Inputs include the Power Supply System subsystem's supply voltage using a compatible battery and the RC subsystem's input user instructions recieved from the raspberry pi microprocessor [3]. All are inputs to the motor driver [4] which in turn, output's control to the motors [2] for movement in the tennis ball collector [1]. 
 
 
 ## Buildable Schematic 
@@ -57,11 +57,15 @@ Provide a comprehensive list of all necessary components along with their prices
 $5.99 for jumper wires
 $1.78 
 
+| Manufacteror | Product Number | Distributor | Distributor Part Number | Quantity | Price | Purchase Link |
+| ---------- | --------- | --------- | --------- | --------- | --------- | --------- | 
+| Dimension Engineering | 940-000117 | Logitech G |  940-000117 | 2 | 40 | [link](https://www.logitechg.com/en-us/products/gamepads/f710-wireless-gamepad.940-000117.html) |
+| Raspberry Pi Holdings Ltd | 4292 | Raspberry Pi | 4292 | 1 | 45 | [link](https://www.adafruit.com/product/4292?src=raspberrypi) |
+| Total Cost | N/A | N/A | N/A | N/A | 85 | N/A |
+
 ## Analysis
 
-Deliver a full and relevant analysis of the design demonstrating that it should meet the constraints and accomplish the intended function. This analysis should be comprehensive and well articulated for persuasiveness.
-
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power-Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [5]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [7] tailored to the dimensions of the collector's caster brackets and motors. 
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [5]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [6] tailored to the dimensions of the collector's caster brackets and motors. 
 
 
 
