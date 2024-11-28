@@ -19,7 +19,8 @@ The objective of the Motor subsystem is to help navigate the tennis ball collect
   - Rationale : This will ensure motors operate via user input to limit unexpected behavior
 - Shall continuely control the movement of the tennis ball collector [1].
   - Rationale : Control should be a constant factor within motor operation for reliable motions
-
+- The DC motors shall be tested as applicable using procedures outline in IEEE Standard 112 [9]. 
+  - Rationale : This IEEE standard defines methods for testing and evaluating motor efficiency, torque, power, and speed under controlled conditions. This will be helpful in ensuring the solution for the subsystem is satisfactory in execution.
   
 Other motor subsystem specifications defined in the Conceptual Design were deemed irrational.
 - The Dual Shaft Wheels shall not be connected by the Raspberry Pi
@@ -35,7 +36,7 @@ Other motor subsystem specifications defined in the Conceptual Design were deeme
 
 The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. 3-4 motors, FIT0492-A: GEARMOTOR 50 RPM 12V METAL [2], will be controlled by 2 motor drivers, Sabertooth dual 12A motor driver (Sabertooth 2x12) [4] (one for the collector's [1] front small wheels, and the other for the back larger wheels). Connectivity outside the motor subsystem will be through the motor drivers [4] that will satisfy specifications including connecting DC motors [2] to power supply and raspberry pi [3], connecting tennis ball collector's wheels to the Raspberry Pi, controlling movement and rotation of the collector [1] without any manual help, and recieving inputs of direction from RC subsystem.
 
-There are two possible solution only differing by motor driver version. The first is a more desirable use of a simplistic R/C driver, Sabertooth dual 12A motor driver for R/C [4]. The other is a more generic version of the same motor driver type, the Sabertooth dual 12A motor driver [6].
+There are two possible solution only differing by motor driver version. The first is a more desirable use of a simplistic R/C driver, Sabertooth dual 12A motor driver for R/C [4]. The other is a more generic version of the same motor driver type, the Sabertooth dual 12A motor driver [6]. IEEE Standard 112 [9] testing will commence once all required motor components have been received and the necessary equipment has been prepared and verified for functionality.
 
 ## Interface with Other Subsystems
 
@@ -51,7 +52,7 @@ RC subsystem will recieve user input that will wirelessly connect to the raspber
 ![motorsubsystem-schematic-36](https://github.com/user-attachments/assets/4be2daa4-ec76-4ef0-b437-3f1ab952ba29)
 
 ### Solution 2 
-If I am unable to purchase the more cost efficient option of motor driver, I will use the more general Sabertooth 2x12 motor driver [6]. Though not mentioned on the schematic, this will also include the LS component shown in the first solution.
+If I am unable to purchase the more cost efficient option of motor driver due to an unapproved vendor, I will use the more general Sabertooth 2x12 motor driver [6]. Though not mentioned on the schematic, this will also include the LS component shown in the first solution.
 ![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/4e5bcad6-35ae-4cb9-a393-64119f4c6344)
 
 
@@ -105,3 +106,5 @@ Operations will be carried out from inputs and safety precautions of the RC subs
 [7] "Playmate Ball Mower | Playmate Tennis Court Products | DH Distribution." DH Distribution, 9 Oct. 2024, dhtennis.net/product/the-playmate-ball-mower-2-0/
 
 [8] "775 Motor Casing." Cults 3D, 25 June 2021, cults3d.com/en/3d-model/tool/775-motor-casing
+
+[9] Institute of Electrical and Electronics Engineers. IEEE Standard Test Procedure for Polyphase Induction Motors and Generators. Iowa State University, 1997.
