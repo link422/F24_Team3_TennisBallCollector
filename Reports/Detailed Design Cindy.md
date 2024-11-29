@@ -92,3 +92,4 @@ with operational stability requirements.
 [2] VZ4KC1B1051202 Vybronics Inc, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917   
 [3] Amazon.com: EEMB Lithium Polymer Battery Lipo: Health & Household, https://www.amazon.com/EEMB-2000mAh-Battery-Rechargeable-Connector/dp/B08214DJLJ    
 [4] Amazon Best Sellers: Best Pushbutton Switches, https://www.amazon.com/Best-Sellers-Pushbutton-Switches/zgbs/industrial/5739464011   
+
