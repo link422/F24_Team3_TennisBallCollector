@@ -35,7 +35,7 @@ Below is where the sensor will be located on the Playmate[3], connected via 3M a
 
 ## Interface with Other Subsystems
 
-The sensor subsystem works with the power subsystem and the display subsystem. It doesn't, however, contain a direct physical connection to these subsystems but is instead connected using the Raspberry Pi as a medium. The sensor has 4 wires that need to be connected to the Pi. These are the GND, Voltage, RXD/SDA, and TXD/SCL. The GND will be connected to pin 6 of the Pi while the voltage will be connected to pin 2 to provide 5 V. The RXD and TXD will connect to pins 8 and 10 respectively. Once connected and powered, on operation the sensor will detect motion (the ball) passing and send a signal to the Pi. From here the Pi will recognize that a ball has passed and increase the ball count. While this is happening, the current count is displayed on the LCD and will update as a new signal is received. 
+The sensor subsystem works with the power subsystem and the display subsystem. It doesn't, however, contain a direct physical connection to these subsystems but is instead connected using the Raspberry Pi as a medium. The sensor has 4 wires that need to be connected to the Pi. These are the GND, Voltage, RXD/SDA, and TXD/SCL. The specific wiring configuration of this can be seen below in the following section. Once connected and powered, on operation the sensor will detect motion (the ball) passing and send a signal to the Pi. From here the Pi will recognize that a ball has passed and increase the ball count. While this is happening, the current count is displayed on the LCD and will update as a new signal is received. 
 
 
 
