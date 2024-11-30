@@ -1,95 +1,66 @@
-#Detailed Design
+# Detailed Design
 
 ## Function of the Subsystem
 
-The Vibration System is designed to address tennis ball jamming within the roller mechanism of the Playmate Tennis Ball Mower 1.0 [1]. 
-By utilizing dual DC vibration motors, this subsystem provides a targeted solution that induces vibrations to dislodge jammed tennis balls, 
-ensuring uninterrupted collection and system efficiency. The motors are strategically positioned on either side of the collector and are 
-activated via button switches protected by membrane overlays to safeguard against environmental exposure.
+The function of the Vibration Subsystem is to prevent tennis ball jamming by utilizing dual DC vibration motors to induce targeted vibrations. These vibrations help dislodge jammed tennis balls from the collection system, ensuring uninterrupted operation of the Playmate Tennis Ball Collector [1]. This subsystem is powered by the shared Lithium Polymer Battery used in the Power Subsystem and integrates seamlessly with other components for efficient functionality. Proper integration of power and environmental protection ensures the longevity and reliability of the vibration subsystem.
 
 ## Specifications and Constraints
 
-The system shall use Vybronics DC Vibration Motors (VZ4KC1B1051202)[2].
-Rationale: This motor is compact, lightweight, and capable of producing sufficient vibration force (1.3 G) to dislodge jammed tennis balls, 
-aligning with the subsystem's requirements for performance and integration.
+The vibration subsystem shall use Vybronics DC Vibration Motors (VZ4KC1B1051202)[2].
+Rationale: Compact and lightweight with sufficient vibration force (1.3 G), aligning with system requirements.
 
 The vibration motors shall operate at 3.0 V DC with a current draw of approximately 60 mA per motor.
 Rationale: Operating at the motor’s rated specifications ensures reliable performance and prevents premature wear or failure due to overvoltage 
 or excessive current.
 
-The subsystem shall be powered directly by the Lithium Polymer Battery [3] integrated into the power supply system.
-Rationale: Using the shared power source simplifies system design, reduces the need for additional power components, and minimizes weight and 
-space requirements.
+The vibration motors shall be powered by the shared 3.7 V Lithium Polymer Battery from the Power Subsystem.
+Rationale: Using the shared power source simplifies design by reducing the need for additional batteries, minimizes weight, and ensures consistent power delivery across all subsystems for seamless integration.
 
-The vibration motors shall be activated by button switches [4] mounted within the collector, covered with membrane overlays.
-Rationale: The button switches ensure that the vibration motors are only activated when needed, while the membrane overlays provide 
-environmental protection from dust, debris, and moisture.
+The motors shall be activated using lever-actuated switches (JANDECCN V-153-1C25) [3].
+Rationale:  Lever-actuated switches offer mechanical durability, reliable activation, and easy integration with the collector system. Their long lever arms are suitable for engaging the motors during mechanical operation without requiring additional protection overlays.
 
-The system shall comply with relevant safety standards to protect users and maintain operational safety.
-Rationale: Adhering to safety standards minimizes the risk of injury or malfunction, ensuring the system can be safely operated and maintained.
+The subsystem shall comply with relevant safety standards, such as 49 CFR 173.185, to ensure safe handling and operation of lithium batteries.
+Rationale: Minimizes risks to users and the system during operation.
 
-The subsystem shall be protected from environmental factors, including dust and moisture, to ensure long-term durability and functionality.
-Rationale: Environmental protection safeguards critical components, reducing maintenance requirements and extending the system's operational lifespan.
+The vibration subsystem shall undergo vibration tests alongside the power subsystem to ensure compatibility and stability.
+Rationale: Verifies subsystem integration and prevents issues related to simultaneous operation.
 
 
 ## Overview of Proposed Solution
 
-The proposed solution for the vibration system utilizes two compact Vybronics DC vibration motors (VZ4KC1B1051202) mounted on opposite sides of 
-the tennis ball collector to effectively dislodge jammed balls. Powered by the system's 3.7 V Lithium Polymer Battery, the motors operate at 3.0 V DC 
-with a current draw of 60 mA, regulated by a voltage step-down mechanism to ensure optimal performance and longevity. Activation is controlled by 
-strategically placed button switches, shielded by durable membrane overlays to protect against dust and moisture. The system is designed to comply with 
-safety standards, maintaining effective vibration levels without compromising stability or user safety, while a sealed housing safeguards components 
-from environmental factors. This energy-efficient, cost-effective solution integrates seamlessly with the power supply and other subsystems, providing a 
-reliable mechanism to enhance the functionality and efficiency of the Playmate Tennis Ball Mower.
+The proposed Vibration Subsystem consists of two Vybronics DC Vibration Motors mounted on opposite sides of the tennis ball collector to address jamming. Power is supplied through the shared Lithium Polymer Battery from the Power Subsystem. The motors are activated via lever-actuated switches (JANDECCN V-153-1C25), which offer enhanced durability and ease of operation within the collector’s mechanical structure. The long lever arms of the switches eliminate the need for additional overlays, simplifying design and reducing maintenance requirements.
 
+This solution is efficient, cost-effective, and integrates seamlessly with other subsystems. It adheres to safety standards and ensures consistent performance without interfering with other operations, such as ball scanning or RC motor functions.
 
 ## Interface with Other Subsystems
 
-The vibration system interfaces with other subsystems, particularly the power supply and sensor subsystems, ensuring compatibility and non-disruptive 
-operation. The system is powered by its dedicated Lithium Polymer Battery, which provides the required 3.0 V DC for the vibration motors via a voltage 
-regulator, ensuring reliable performance while maintaining operational independence from other subsystems. It also integrates with the sensor subsystem, 
-with careful calibration of the vibration motors to avoid interference with ball counting or detection processes, preserving sensor accuracy. The button 
-switches used to activate the motors are designed for seamless integration, ensuring reliable functionality without affecting other subsystems such as the 
-RC controller or motor systems. This dedicated and non-intrusive design ensures efficient operation while maintaining subsystem compatibility and overall 
-system stability.
+The Vibration Subsystem interfaces closely with the Power Subsystem by utilizing the shared 3.7V Lithium Polymer Battery as its primary power source. This connection ensures compatibility and minimizes the need for additional power components. The subsystem is carefully calibrated to avoid interference with the Sensor Subsystem, ensuring that vibrations do not disrupt the accuracy of ball scanning or detection. Additionally, the manual activation of the vibration motors via lever-actuated switches is designed to operate independently from the RC and Control Subsystems, ensuring non-disruptive functionality. This seamless integration with other subsystems allows the Vibration Subsystem to perform its function effectively while maintaining overall system stability and efficiency.
 
 
 ## Printed Circuit Board Layout
+![PCB Mount](https://github.com/user-attachments/assets/dbda3a5c-661a-4333-b582-1860a208ab72)
 
-![PCB Mount](https://github.com/user-attachments/assets/2c65ed5c-3fc6-499d-927a-89acf329abdc) 
+![product specification](https://github.com/user-attachments/assets/2631ed9b-7ddf-4376-9867-24294a29ae83)
 
-
-![product specification](https://github.com/user-attachments/assets/de589ac6-7480-4caa-950a-c0d42556f45f)
 
 
 ## Operational Flowchart
 
-![output (2)](https://github.com/user-attachments/assets/577513c5-dcf0-4099-8117-ba8c07fa0284)
+![Professional_Vibration_Subsystem_Flowchart](https://github.com/user-attachments/assets/262fefb3-5d19-4b54-9843-88b6941b6d99)
 
 
 ## BOM
 
-![Screenshot 2024-11-28 110007](https://github.com/user-attachments/assets/7373a726-7b40-43fb-a9cc-4551b5084bfb)
+![Screenshot 2024-11-30 091017](https://github.com/user-attachments/assets/a5299c18-9f1b-4f16-b977-1058372fee9b)
 
 
 ## Analysis
 
-The proposed design for the vibration system is robust, cost-effective, and meets all specified constraints. The use of two independent 
-vibration motors (Vybronics VZ4KC1B1051202) ensures that jamming can be addressed on either side of the collector. The motors' low current draw of 
-60 mA and vibration force of 1.3 G are optimal for dislodging jammed tennis balls without causing structural damage.
-The dual Lithium Polymer Batteries (EEMB 2000mAh) provide ample power for continuous operation while maintaining lightweight portability. 
-The addition of voltage regulators (LM317) ensures the motors receive a consistent 3.0 V output, preventing overvoltage damage. The momentary pushbutton 
-switches allow manual activation, simplifying the design and removing the need for additional sensors. The protective membrane overlays enhance durability 
-by safeguarding buttons from dust and moisture.
-This system aligns with safety standards, is straightforward to assemble, and minimizes power consumption. Testing and calibration will ensure compliance 
-with operational stability requirements.
-
-
+The Vibration Subsystem design provides an efficient and reliable solution for preventing tennis ball jams in the Playmate Tennis Ball Collector by utilizing dual Vybronics DC Vibration Motors, delivering sufficient vibration force without causing structural damage. Powered by the shared Lithium Polymer Battery from the Power Subsystem, the design simplifies integration, minimizes cost and weight, and replaces press-button switches with durable lever-actuated switches for increased reliability and mechanical compatibility. These switches eliminate the need for additional overlays and provide straightforward activation through mechanical engagement. Careful testing and calibration will verify the subsystem’s effectiveness, ensuring compatibility with the Sensor and RC Subsystems and preventing interference with ball detection processes. This well-balanced design achieves seamless integration, cost-efficiency, and robust performance, contributing to the overall functionality and stability of the machine.
 
 ## References
 
 [1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/  
-[2] VZ4KC1B1051202 Vybronics Inc, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917   
-[3] Amazon.com: EEMB Lithium Polymer Battery Lipo: Health & Household, https://www.amazon.com/EEMB-2000mAh-Battery-Rechargeable-Connector/dp/B08214DJLJ    
-[4] Amazon Best Sellers: Best Pushbutton Switches, https://www.amazon.com/Best-Sellers-Pushbutton-Switches/zgbs/industrial/5739464011   
+[2] VZ4KC1B1051202 Vybronics Inc, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917    
+[3] JANDECCN V-153-1C25, Amazon, https://www.amazon.com/JANDECCN-Switch-Straight-Action-V-153-1C25/dp/B09SWCJ8FF 
 
