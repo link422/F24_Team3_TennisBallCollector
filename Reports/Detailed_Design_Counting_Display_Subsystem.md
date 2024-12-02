@@ -2,7 +2,7 @@
 
 ## Function of the Counting Display Subsystem
 
-The Counting Display Systems section shall implement a LCD Display that will display the amount of collected tennis balls.
+The Counting Display subsystem shall implement a LCD Display that will display the amount of collected tennis balls. This subsystem will interpret every new reading from the Counting Sensor subsystem as a new tennis ball. For every new tennis ball detected by the sensor, the counting display subsystem will increment the number displayed on the LCD display. The LCD display shall output the information to the user in a comprehensive way such as "The number of Tennis Balls collected is #", where # is the number of tennis balls collected. 
 
 ## Specifications and Constraints
 
@@ -12,6 +12,8 @@ The Counting Display Systems section shall implement a LCD Display that will dis
   - Rationale: The counting display subsystem will work in correlation with the Counting sensor subsystem in order for the project design to fulfill its goal of an accurate tennis ball collector.
 - The LCD display shall be connected to a circuit that supplies the required voltage of approximately 3.3V to the LCD display.
   - Rationale: The raspberry pi model 4 B supplies 3.3V from its GPIO pins which will be used to interface with the solutions proposed by the counting display subsystem.
+- The counting display shall use materials and components that comply with Restriction of Hazardous Substances (RoHS) standards.
+  - Rationale: Compliance with RoHS standards minimizes the use of hazardous materials in electronic components, promoting environmental safety and ethical responsibility in the product's lifecycle. This aligns with the U.S Hazardous Materials Regulations ethical constraint as specified in the conceptual design.
 
 ## Overview of Proposed Solution
 
@@ -20,7 +22,7 @@ This subsystem shall display the amount of tennis balls collected as a numerical
 
 ## Interface with Other Subsystems
 
-All three solutions involve using serial communication to interface with the raspberry pi model 4 B. Solution 1 has a serial mode that is able to be utilized in the design. Solution 2 converts serial data to characters that can be displayed on the LCD display. Solution 3 has a dedicated serial input and serial clock to integrate with raspberry pi model 4 B pins. 
+All three solutions involve using serial communication to interface with the raspberry pi model 4 B. Solution 1 has a serial mode that is able to be utilized in the design. Solution 2 converts serial data to characters that can be displayed on the LCD display. Solution 3 has a dedicated serial input and serial clock to integrate with raspberry pi model 4 B pins. The Counting Sensor subsystem also uses serial communication providing a communication method between the two subsystems. The communication between the sensor and display subsystems works as follows: when the sensor detects a new tennis ball, the display is incremented by one. The power subsystem was designed so that the required current is supplied for solutions 1 and 3 and the required voltage is supplied to the raspberry pi model 4 B. Solution 2 accounts for power with the I2C logic level converter.
 
 
 ## 3D Model of Custom Mechanical Components
