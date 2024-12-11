@@ -83,7 +83,9 @@ I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the G
 
 ## Analysis
 
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [8] tailored to the dimensions of the collector's caster brackets and motors. 
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque output, weight distribution, and credibility. The GearMotor 50 RPM 12V METAL is designed for high-torque applications due to its low RPM. The use of 4 motors had the potential to evenly handle the load of 52 lb: Rated Torque = 9 kg,,, 52 lbs/4(motors) = 13 lb per motor [5.9 kg per motor]  1 small wheels Torque = 5.9 kg * $$$$$$$$$$$$$$$$finish here
+
+To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [8] tailored to the dimensions of the collector's caster brackets and motors. 
 
 The motors [2] will be connected through attaching a designed model similar to the 775 Motor Casing [8] to the Mower Caster Bracket [6] for the front wheels and the inside of connector drum of the tennis collector drum for the back wheels.
 
@@ -111,3 +113,8 @@ The motors [2] will be connected through attaching a designed model similar to t
 [8] "775 Motor Casing." Cults 3D, 25 June 2021, https://cults3d.com/en/3d-model/tool/775-motor-casing
 
 [9] Institute of Electrical and Electronics Engineers. IEEE Standard Test Procedure for Polyphase Induction Motors and Generators. Iowa State University, 1997.
+
+[10] "Ball Mower Replacemetn Casters | Playmate Tennis Court Parts & Accessories | DH Distribution." DH Distribution, 
+https://dhtennis.net/product/replacement-caster-for-ball-mower/
+
+[11] 
