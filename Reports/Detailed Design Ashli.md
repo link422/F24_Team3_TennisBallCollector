@@ -36,7 +36,7 @@ Other motor subsystem specifications defined in the Conceptual Design were deeme
 
 The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. 3-4 motors, FIT0492-A: GEARMOTOR 50 RPM 12V METAL [2], will be controlled by 2 motor drivers, Sabertooth dual 12A motor driver (Sabertooth 2x12) [4] (one for the collector's [1] front small wheels, and the other for the back larger wheels). Connectivity outside the motor subsystem will be through the motor drivers [4] that will satisfy specifications including connecting DC motors [2] to power supply and raspberry pi [3], connecting tennis ball collector's wheels to the Raspberry Pi, controlling movement and rotation of the collector [1] without any manual help, and recieving inputs of direction from RC subsystem.
 
-There are two possible solution only differing by motor driver version. The first is a more desirable use of a simplistic R/C driver, Sabertooth dual 12A motor driver for R/C [4]. The other is a more generic version of the same motor driver type, the Sabertooth dual 12A motor driver [6]. IEEE Standard 112 [9] testing will commence once all required motor components have been received and the necessary equipment has been prepared and verified for functionality.
+Through the use of a more generic version of the same motor driver type, the Sabertooth dual 12A motor driver [4] will be configured to operate using the schematic featured in the Buildable Schematic section and connection of motors using a casing model similar to the 775 Motor Casing [8]. These will be attached to the Mower Caster Bracket [6] for the front wheels and inside of connector drum for the back wheel motors. IEEE Standard 112 [9] testing will commence once all required motor components have been received and the necessary equipment has been prepared and verified for functionality.
 
 ## Interface with Other Subsystems
 
@@ -46,14 +46,11 @@ The Motor subsystem has few inputs and outputs as one of the technical applicati
 
 ## Buildable Schematic 
 
-### Solution 1
-RC subsystem will recieve user input that will wirelessly connect to the raspberry pi microprocessor [3]. To ensure the signals are properly shifted to the required voltage levels, the level shifter [5] will be a median between the desired motor driver [4] and the raspberry pi. The motor driver will recieve input from the raspberry pi and using power from the power supply subsystem's battery the motor driver will power on its corresponding motors, providing non-manual movement to the collector [1]. For the Sabertooth Driver, S1 is the forwards/backwards channel of control and S2 is the left/right channel. The unnamed cord is the flip channel and it has optional usage that will depend on the coding of the raspberry pi.
-
-![motorsubsystem-schematic-36](https://github.com/user-attachments/assets/4be2daa4-ec76-4ef0-b437-3f1ab952ba29)
-
-### Solution 2 
-If I am unable to purchase the more cost efficient option of motor driver due to an unapproved vendor, I will use the more general Sabertooth 2x12 motor driver [6]. Though not mentioned on the schematic, this will also include the LS component shown in the first solution.
+### Solution
+I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the GearMotors supplying movement to the existing collector wheels. The schematic is shown below. 
 ![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/4e5bcad6-35ae-4cb9-a393-64119f4c6344)
+
+
 
 
 ## Printed Circuit Board Layout
@@ -71,13 +68,13 @@ If I am unable to purchase the more cost efficient option of motor driver due to
 ### Motor : GearMotor 50 RPM 12V METAL
 ![image](https://github.com/user-attachments/assets/64201d8d-ab02-4b5a-8bfb-3c196a20a89c)
 
+
 ## BOM
 
 
 
 | Component | Manufacterer | Product Number | Distributor | Distributor Part Number | Quantity | Price | Schematic Label | Purchase Link |
 | ---------- | ---------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | 
-| Sabertooth dual 12A motor driver for R/C | Dimension Engineering | SABERTOOTH 2X12 R/C | RobotShop |  RB-Dim-43 | 2 | 64.95 | MDA/MDB | [link](https://www.robotshop.com/products/sabertooth-dual-12a-regenerative-motor-driver) |
 | Sabertooth dual 12A motor driver | Dimension Engineering | SABERTOOTH 2X12 | DFRobot |  DRI0003 | 2 | 79.00 | D2x12 | [link](https://www.dfrobot.com/product-304.html) |
 | FIT0492-A : GearMotor 50 RPM 12V METAL | DFRobot | FIT0492-A | DigiKey |  1738-1268-ND | 4 | 11.90 | M50/S1A-B/S2A-B | [link]([https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165](https://www.dfrobot.com/product-1471.html)) |
 | SparkFun Logic Level Converter - Bi-Directional | SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
@@ -88,23 +85,29 @@ If I am unable to purchase the more cost efficient option of motor driver due to
 
 Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 3-4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [8] tailored to the dimensions of the collector's caster brackets and motors. 
 
+The motors [2] will be connected through attaching a designed model similar to the 775 Motor Casing [8] to the Mower Caster Bracket [6] for the front wheels and the inside of connector drum of the tennis collector drum for the back wheels.
+
+![Screenshot 2024-12-10 222114](https://github.com/user-attachments/assets/1528f36e-cd4a-49b6-ab87-81b47a65e6bc). 
+
+![Screenshot 2024-12-10 224651](https://github.com/user-attachments/assets/26a69cd9-eb0b-473e-849b-aca4ff44eb49)
+
 
 
 ## References
 [1] "BALL MOWER." PLAYMATE Tennis, 5 June 2023, www.playmatetennis.com/ball-mower/
 
-[2] "FIT0492-A." https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165, www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165
+[2] "FIT0492-A." https://www.digikey.com/en/products/detail/dfrobot/FIT0492-A/7087165
 
-[3] Ltd, Raspberry P. "Buy a Raspberry Pi 4 Model B – Raspberry Pi." Raspberry Pi, www.raspberrypi.com/products/raspberry-pi-4-model-b/.
+[3] Ltd, Raspberry P. "Buy a Raspberry Pi 4 Model B – Raspberry Pi." Raspberry Pi, https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
 
-[4] "Sabertooth 2X12 R/C Regenerative Dual Motor Driver." Dimension Engineering - R/C, Power Electronics, Sensors, www.dimensionengineering.com/products/sabertooth2x12rc
+[4] "Sabertooth 2X12 R/C Regenerative Dual Motor Driver." Dimension Engineering - R/C, Power Electronics, Sensors, www.dimensionengineering.com/products/sabertooth2x12rc/
 
-[5] "Bi-Directional Logic Level Converter Hookup Guide." Learn at SparkFun Electronics - SparkFun Learn, learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all
+[5] "Bi-Directional Logic Level Converter Hookup Guide." Learn at SparkFun Electronics - SparkFun Learn, https://learn.sparkfun.com/tutorials/bi-directional-logic-level-converter-hookup-guide/all/
 
-[6] "Sabertooth 2X12 Regenerative Dual Motor Driver." Dimension Engineering - R/C, Power Electronics, Sensors, www.dimensionengineering.com/products/sabertooth2x12
+[6] "Ball Mower Caster Bracket Kit | Playmate Tennis Court Parts & Accessories | DH Distribution." DH Distribution, https://dhtennis.net/product/mower-caster-bracket-kit/
 
-[7] "Playmate Ball Mower | Playmate Tennis Court Products | DH Distribution." DH Distribution, 9 Oct. 2024, dhtennis.net/product/the-playmate-ball-mower-2-0/
+[7] "Playmate Ball Mower | Playmate Tennis Court Products | DH Distribution." DH Distribution, 9 Oct. 2024, https://dhtennis.net/product/the-playmate-ball-mower-2-0/
 
-[8] "775 Motor Casing." Cults 3D, 25 June 2021, cults3d.com/en/3d-model/tool/775-motor-casing
+[8] "775 Motor Casing." Cults 3D, 25 June 2021, https://cults3d.com/en/3d-model/tool/775-motor-casing
 
 [9] Institute of Electrical and Electronics Engineers. IEEE Standard Test Procedure for Polyphase Induction Motors and Generators. Iowa State University, 1997.
