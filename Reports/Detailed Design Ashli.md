@@ -84,18 +84,33 @@ Installation show in Analysis section
 
 ## Analysis
 
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 4 DC motor, GEARMOTOR 50 RPM 12V METAL [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque output, weight distribution, and credibility. The GearMotor 50 RPM 12V METAL is designed for high-torque applications due to its low RPM. The use of 4 motors will handle the load of 52 lb by attaching to it's 14'' drive wheels (2) in the back, and 3'' castor wheels in the front (4).
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 4 DC motor, 83 RPM Metal DC motor (GB37Y3530-12V-83R) [2], capable of operating a weight load similar to the 52 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque, weight distribution, and speed. The use of 4 motors will handle the load of 52 lb by attaching to it's drive wheels (2) in the back, and castor wheels in the front (4). One of our competitors, Tennibot travels at 1.4 mph; preferably we would like to get close to that speed.
 
+Motor Specs:
 Rated voltage = 12V
-Gear reduction ratio = 131:1
+  Rationale : Within limitations of 11.1 V Lipo Battery supplied via Power Supply subsystem; though slightly reducing rated speed and torque.
 Rated speed = 83 RPM
+(Diameter * RPM)/ 60
+  V(rear) = (1.12 m * 83 RPM)/ 60 = 1.55 m/s
+  V(front) = (0.238 m * 83 RPM)/ 60 = 0.33 m/s
+  Rationale : Speed will be dominated by the rear ($\approx$ 3.46 (1.55 * 2.237) can be infered to result in a speed greater or equal to 1.4 mph.
 Rated torque = 45 kg.cm
 
-52 lbs/4 = 13 lb per motor
-Small Wheel Analysis: 
+52lb, 23.6 kg Load Distribution: $\approx$ 75% on rear wheels, $\approx$ 25% on front casters
 
+Rear Wheels (14'' diameter, 1.12 m) Analysis:
+Total Load: Weight = 23.6 kg * 0.75 = 17.7 kg 
+    => Load per motor : 17.7/2 = 8.85 kg
+Rear Torque: Radius = 0.178 m ; Torque = Weight per motor * radius
+    => 8.85 kg * 0.178 m = 1.577 Nm; 16.1 kg.cm
 
-Torque(per motor) =  [5.9 kg per motor]  1 small wheels Torque = 5.9 kg *
+Front Castor Wheels (3'' diameter, 0.238 m) Analysis: 
+Total Load : 23.6 kg * 0.25 = 5.9kg 
+    => Load per motor : 5.9/2 = 2.95 kg
+Front Torque: Radius = 0.038 m ; Torque = (Weight per motor * radius)/ # of wheels 
+    => (2.95 kg * 0.038 m) / 2 = 0.056 Nm; 0.57 kg.cm
+
+Torque Rationale : Desired Rear (16.1 kg.cm) and Front (0.57 kg.cm) Motor Torque is in reasonable range of the rated torque of 45 kg.cm
 
 To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by direct coupling. All other wheel connections, if needed, will be stablized by a 3D printed altered design of a motor casing [8] tailored to the dimensions of the collector's caster brackets and motors. 
 
