@@ -47,7 +47,8 @@ The Motor subsystem has few inputs and outputs as one of the technical applicati
 ## Buildable Schematic 
 
 ### Solution
-I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the DC motor supplying movement to the existing collector wheels. The schematic is shown below. 
+
+RC subsystem will recieve user input that will wirelessly connect to the raspberry pi microprocessor [3]. To ensure the signals are properly shifted to the required voltage levels, the level shifter [5] will be a median between the desired motor driver [4] and the raspberry pi. The motor driver will recieve input from the raspberry pi and using power from the power supply subsystem's battery the motor driver will power on its corresponding motors, providing non-manual movement to the collector [1]. 
 
 ![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/ba2a870e-6abd-4201-904d-1968bab00d49)
 
