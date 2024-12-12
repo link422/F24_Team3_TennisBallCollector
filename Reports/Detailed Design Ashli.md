@@ -26,7 +26,7 @@ Other motor subsystem specifications defined in the Conceptual Design were deeme
 - The Dual Shaft Wheels shall not be connected by the Raspberry Pi
   - Rationale : Resulting effect would not outweigh the additional resources and calculations needed to ensure that it would not negatively impact the functionality of the collector.
 - Shall operate continuously at rated power and rated voltage without exceeding temperature limits, as specified by IEC 60034-1
-  -Rationale: The reference of this standard no longer applies as there is no means of measuring "temperature limits"; mention of the standard wasn also removed in the Ethical, Professional, and Standards Considerations of the Conceptual Design.
+  - Rationale: The reference of this standard no longer applies as there is no means of measuring "temperature limits"; mention of the standard wasn also removed in the Ethical, Professional, and Standards Considerations of the Conceptual Design.
 - Shall have a data rates based on the frequency: 2.4 GHz up to 250 kbps and 915 MHz, 40 kbps
   - This constraint on data rates does not apply to the motor subsystem.
 
@@ -59,10 +59,6 @@ I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the D
 
 ### Level Shifter : SparkFun Logic Level Converter - Bi-Directional 
 ![image](https://github.com/user-attachments/assets/40933d9c-2bdf-45d3-9f46-6e6a17af1974)
-
-### Motor Driver : Sabertooth dual 12A motor driver for R/C
-![Sabertooth-2X10-RC-diagram](https://github.com/user-attachments/assets/9cd1c8c9-8df3-47ef-ab18-a7affbf522ab)
-
 
 ### Motor Driver : Sabertooth dual 12A motor driver
 ![image](https://github.com/user-attachments/assets/5ac08e86-255c-49be-a490-a7906887921e)
