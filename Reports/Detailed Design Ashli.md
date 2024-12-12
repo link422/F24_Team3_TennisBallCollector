@@ -47,8 +47,10 @@ The Motor subsystem has few inputs and outputs as one of the technical applicati
 ## Buildable Schematic 
 
 ### Solution
-I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the GearMotors supplying movement to the existing collector wheels. The schematic is shown below. 
-![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/4e5bcad6-35ae-4cb9-a393-64119f4c6344)
+I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the DC motor supplying movement to the existing collector wheels. The schematic is shown below. 
+
+![S2motorsubsystem-schematic-](https://github.com/user-attachments/assets/ba2a870e-6abd-4201-904d-1968bab00d49)
+
 
 
 
@@ -68,7 +70,7 @@ I will use the Sabertooth 2x12 motor driver [4] as the motor controller of the G
 ### Motor :  83 RPM, 12V Metal DC motor Geared Motor 
 ![FIT0185_Dimension](https://github.com/user-attachments/assets/4f710ae7-9948-41e2-99e4-d2a06a53a3c0)
 
-Installation show in Analysis section
+Installation shown in Analysis section
 
 ## BOM
 
@@ -77,10 +79,10 @@ Installation show in Analysis section
 | Component | Manufacterer | Product Number | Distributor | Distributor Part Number | Quantity | Price | Schematic Label | Purchase Link |
 | ---------- | ---------- | --------- | --------- | --------- | --------- | --------- | --------- | --------- | 
 | Sabertooth dual 12A motor driver | Dimension Engineering | SABERTOOTH 2X12 | DFRobot |  DRI0003 | 2 | 79.00 | D2x12 | [link](https://www.dfrobot.com/product-304.html) |
-| 83 RPM Metal DC motor | DFRobot | FIT0492- | DFRobot |  FIT0185 | 4 | 16.50 | M50/S1A-B/S2A-B | [link](https://www.dfrobot.com/product-633.html) |
+| 83 RPM Metal DC motor | DFRobot | FIT0185 | DFRobot | FIT0185 | 4 | 16.50 | M50/S1A-B/S2A-B | [link](https://www.dfrobot.com/product-633.html) |
 | SparkFun Logic Level Converter - Bi-Directional | SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
 | 120pcs 20 cm Breadboard Jumper Wires Dupont Cable Assorted Kit| EDGELEC | ED-DP_L20_Mix_120pcs | Amazon | B07GD2BWPY | 1 | 6.98 | N/A | [link](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY?crid=3DGC320SX81Z2&dib=eyJ2IjoiMSJ9.APYjLeLR3cSKMa-3o77o4cYI1olfvBTpJBIBWrLqSaoqeqjKWlnOg1F7dI1ZHbmBbHXPnl9A-zfQjw7P80ggVPZr7fM9E61QH7DOhZ_nWHnJ6KQoWLD4hxEjd2VbMnSznD3cFZ049cNPHb-py6kYwTtqcH3GbSuH7vg1aoHE7ebusdWXj1c0YVqajUVuVcP0oktnHN8Mv2MMez3cyrXOVYzVh3j4K00H6j53cig7Ex4.4b2v71rjNo84MGdm-KeQ8BLrgu2huoe5dUA729xcNXA&dib_tag=se&keywords=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale&qid=1732744550&sprefix=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale%2Caps%2C147&sr=8-1&th=1) |
-| Total Cost | N/A | N/A | N/A | N/A | N/A | 187.98 or 216.08 | N/A |
+| Total Cost | N/A | N/A | N/A | N/A | N/A | $234.48 | N/A |
 
 ## Analysis
 
@@ -144,4 +146,4 @@ The motors [2] will be connected through attaching a designed model similar to t
 [10] "Ball Mower Replacement Casters | Playmate Tennis Court Parts & Accessories | DH Distribution." DH Distribution, 
 https://dhtennis.net/product/replacement-caster-for-ball-mower/
 
-[11] 
+
