@@ -36,7 +36,7 @@ Other motor subsystem specifications defined in the Conceptual Design were deeme
 
 The proposed solution for this Motor subsystem is to provide user controlled motors on the pre-existing wheels of the tennis ball collector. 4 motors, 83 RPM Metal DC motor (GB37Y3530-12V-83R) [2], will be controlled by 2 motor drivers, Sabertooth dual 12A motor driver (Sabertooth 2x12) [4] (one for the collector's [1] front small wheels, and the other for the back larger wheels); for simplicity we are going to focus on control of the back wheels as they drive most of the movement. Connectivity outside the motor subsystem will be through the motor drivers [4] that will satisfy specifications including connecting DC motors [2] to power supply and raspberry pi [3], connecting tennis ball collector's wheels to the Raspberry Pi, controlling movement and rotation of the collector [1] without any manual help, and recieving inputs of direction from RC subsystem.
 
-The Sabertooth dual 12A motor driver [4] will be configured to operate using the schematic featured in the Buildable Schematic section and connection of motors using driver coupling. IEEE Standard 112 [8] testing will commence once all required motor components have been received and the necessary equipment has been prepared and verified for functionality.
+The Sabertooth dual 12A motor driver [4] will be configured to operate using the schematic featured in the Buildable Schematic section and connection of motors using pulley and belt system. IEEE Standard 112 [8] testing will commence once all required motor components have been received and the necessary equipment has been prepared and verified for functionality.
 
 ## Interface with Other Subsystems
 
@@ -79,8 +79,10 @@ Installation shown in Analysis section
 | 83 RPM Metal DC motor | DFRobot | FIT0185 | DFRobot | FIT0185 | 4 | 16.50 | M50/S1A-B/S2A-B | [link](https://www.dfrobot.com/product-633.html) |
 | SparkFun Logic Level Converter - Bi-Directional | SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
 | 120pcs 20 cm Breadboard Jumper Wires Dupont Cable Assorted Kit| EDGELEC | ED-DP_L20_Mix_120pcs | Amazon | B07GD2BWPY | 1 | 6.98 | N/A | [link](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY?crid=3DGC320SX81Z2&dib=eyJ2IjoiMSJ9.APYjLeLR3cSKMa-3o77o4cYI1olfvBTpJBIBWrLqSaoqeqjKWlnOg1F7dI1ZHbmBbHXPnl9A-zfQjw7P80ggVPZr7fM9E61QH7DOhZ_nWHnJ6KQoWLD4hxEjd2VbMnSznD3cFZ049cNPHb-py6kYwTtqcH3GbSuH7vg1aoHE7ebusdWXj1c0YVqajUVuVcP0oktnHN8Mv2MMez3cyrXOVYzVh3j4K00H6j53cig7Ex4.4b2v71rjNo84MGdm-KeQ8BLrgu2huoe5dUA729xcNXA&dib_tag=se&keywords=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale&qid=1732744550&sprefix=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale%2Caps%2C147&sr=8-1&th=1) |
-| Driver Coupling | SJC | --- | AutomationDirect | --- | 2 | 10.50 - 71 | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/drive_couplings/double_loop_couplings#Brand_Name_ms=%22Sung-Il%20Machinery%22&start=0) |
-| Total Cost | N/A | N/A | N/A | N/A | N/A | $244.98 - $305.48 | N/A |
+| Motor Pulley | --- | --- | Automation Direct | 4 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
+| Wheel Pulley | --- | --- | Automation Direct | 2 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
+| Pulley Belt | --- | --- | Automation Direct | 1 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
+| Total Cost | N/A | N/A | N/A | N/A | N/A | $234.48 | N/A |
 
 ## Analysis
 
@@ -105,8 +107,9 @@ Rear Torque: Radius = 0.1778 m ; Torque = Weight per motor * radius
 
 Torque Rationale : Desired Rear (9.1 Nm) Motor Torque is in reasonable range of the rated torque of 45 kg.cm (17.652 Nm)
 
-To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor shaft can be directly connected to it by drive coupling. Drive coupling will be used to connect motor to wheel, specifically a Jaw/Spider or Clamp-Style SIM products from AutomationDirect [10] (they all have fairly quick shipping).This is to be confirmed after more measurments are taken from the tennis ball collector.
+To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor-wheel connection will be using a pulley and belt system that consist of 2 motor pulleys (6mm bore size) and 1 wheel pulley (unknown bore size) on each 14 inch drive wheel. The materials to use for this system will be selected from AutomationDirect [10] (they all have fairly quick shipping). This is to be confirmed after more measurments are taken from the tennis ball collector. In the diagram below, I show how the framing inside the drum (khaki circle) will be, with the pulley and belt system highlighted in white and mechanical connections noted in purple. 
 
+![image](https://github.com/user-attachments/assets/68751df5-57d4-4f51-a496-3a17783d0959)
 
 
 
@@ -131,5 +134,5 @@ To ensure control of the collector without manual help we must consider how to e
 [9] "Ball Mower Replacement Casters | Playmate Tennis Court Parts & Accessories | DH Distribution." DH Distribution, 
 https://dhtennis.net/product/replacement-caster-for-ball-mower/
 
-[10] Drive Couplings | Power Transmission (Mechanical) | Products | AutomationDirect, https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/drive_couplings#Brand_Name_ms=%22Sung-Il%20Machinery%22&start=0
+[10] Timing Belts, Timing Pulleys and Tapered Bushings | Power Transmission (Mechanical) | Products | AutomationDirect, https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings
 
