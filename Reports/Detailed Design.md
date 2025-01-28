@@ -34,8 +34,10 @@ The function of the Power Supply Subsystem is to detail the ways each component 
   
 ## Overview of Proposed Solution
 
-The proposed solution of the Power Subsystem is focusing on powering the Raspberry Pi, RC wheels, Display systems, sensors, and vibration motors that are all connected to the Tennis ball Collector. The Raspberry Pi must be placed on the main body of the collector on a stable surface, so the vibrations do not mess with the connections coming from the Pi. The wired connections for the Pi will be sorted in a way that makes issues easy to detect. The battery connected into the Pi will have a secure casing as well to not allow loose wires to affect the machines desired output. The second 11.1V Lipo Battery will have testers set in place such as a battery tester [4]to ensure there is no overflow of power going into the motors. All testing will be done before it is installed onto the machine for ease of testing, after connections are made correctly it will then be installed on the machine with the same connections as before.
-
+The proposed solution of the Power Subsystem is focusing on powering the Raspberry Pi, RC wheels, Display systems, sensors, and vibration motors that are all connected to the Tennis ball Collector. The Raspberry Pi must be placed on the main body of the collector on a stable surface, so the vibrations do not mess with the connections coming from the Pi. The power supply for the Raspberry Pi will come from a 12 Volt battery that will be connected through a step down convertor to allow the neccessary 5 volts. The 12 volt battery will also send 12 volts to the motor drivers controlling the wheels of the design.
+The LCD will allow
+The Vibration motors
+The Sensors 
 
 ## Interface with Other Subsystems
 
@@ -60,9 +62,11 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 | Emate | BO7L6BNTDV| Amazon | 0-50C-1400-3S1P-XT60+TRX | 1 | 13.60 | [link](https://www.amazon.com/Connector-Airplane-Helicopter-Quadcopter-Multi-Motor/dp/B07L6BNTDV) |
 | Yueton | 5060768824800 | Amazon | HOME0098 | 1 | 5.50 | [link](https://www.amazon.com/Battery-Monitor-Voltage-Checker-Indicator/dp/B013U1CP08/ref=asc_df_B013U1CP08?mcid=057b15c4cb2232cf886245a8cf1b0621&tag=hyprod-20&linkCode=df0&hvadid=693308318554&hvpos=&hvnetw=g&hvrand=14971361529341986625&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1025954&hvtargid=pla-304998738630&psc=1) |
 | Total Cost | N/A | N/A | N/A | N/A | 21.10 | N/A |
-
+[link](https://www.amazon.com/Battery-Monitor-Voltage-Checker-Indicator/dp/B013U1CP08/ref=asc_df_B013U1CP08?mcid=057b15c4cb2232cf886245a8cf1b0621&tag=hyprod-20&linkCode=df0&hvadid=693308318554&hvpos=&hvnetw=g&hvrand=14971361529341986625&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1025954&hvtargid=pla-304998738630&psc=1)
 ## Analysis
-The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The subsystem will have two main points of power for the tennis ball collector system. The first being a 11.1V Lipo Battery for powering the RC motors and the second being a 5V rechargeable lithium battery to be used for the sensor, vibration motor, raspberry pi, and LCD display. The Lidar sensor as well as the LCD used will receive all necessary power from the Raspberry Pi. The vibration motor however will require a continuous 3A to operate. The amount of time every part is expected to be powered for around 10-15 minutes, and with the used batteries this will be sustainable. The amount of power going into each subsystem shall follow along given constraints as to ensure safety will operating the machine. When correctly connected all components will operate at efficient levels to provide clear and effective results.
+The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The subsystem will have two main points of needing power for the tennis ball collector system. 
+The first being powering the RC motors and the second being powering the sensor, vibration motor, raspberry pi, and LCD display. 
+The Lidar sensor as well as the LCD used will receive all necessary power from the Raspberry Pi. The vibration motor however will require a continuous 3A to operate. The amount of time every part is expected to be powered for around 10-15 minutes, and with a recharable 12 volt battery with a on and off switch this will work. The amount of power going into each subsystem shall follow along given constraints as to ensure safety will operating the machine. When correctly connected all components will operate at efficient levels to provide clear and effective results.
 
 
 ## References
