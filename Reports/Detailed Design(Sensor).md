@@ -31,6 +31,8 @@ The proposed solution for the Sensor subsystem is to use the Lidar Sensor, that 
 
 Below is where the sensor will be located on the Playmate[3], connected via ST2.9 screws. With it being located here, it shouldn't have the risk of being triggered by any other objects, as the only objects in passing will be tennis balls.
 ![playmate](playmate.png)
+![playmateaerial](playmateaerial.jpeg)
+![playmatefront](playmatefront.jpeg)
 
 
 ## Interface with Other Subsystems
