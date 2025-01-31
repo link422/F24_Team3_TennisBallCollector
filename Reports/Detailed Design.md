@@ -52,20 +52,21 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 - Black lines represent grounding
 - The green lines represent general connection of RC Motors 
 
+![image](https://github.com/user-attachments/assets/5b29bce1-e164-4226-a0f1-ffb8810ef9e1)
 
 ## BOM
 
 
 | Manufacturer | Product Number | Distributor | Distributor Part Number | Quantity | Price | Purchase Link |
 | ---------- | --------- | --------- | --------- | --------- | --------- | --------- | 
-| KBT KEEP BETTER TECH | B0C243MXMQ  | Amazon |  B0C243MXMQ | 1 | 16.99 | [link](https://www.amazon.com/KBT-1200mAh-rechargeable-Replacement-Compatible/dp/B0C243MXMQ/ref=asc_df_B0C243MXMQ?mcid=dea48368babc3c8f81704b14a90b61e6&hvocijid=18117759364931301635-B0C243MXMQ-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=18117759364931301635&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9013670&hvtargid=pla-2281435179258&th=1) |
-| JZK | B071ZRXKJY| Amazon | B071ZRXKJY | 1 | 6.38 | [link](https://www.amazon.com/Connector-Airplane-Helicopter-Quadcopter-Multi-Motor/dp/B07L6BNTDV) |
-| Total Cost | N/A | N/A | N/A | N/A | 23.37 | N/A |
+| KBT KEEP BETTER TECH | 	B0CX531LMP  | Amazon |  	B0CX531LMP | 1 | 23.99 | [link](https://www.amazon.com/KBT-1200mAh-rechargeable-Replacement-Compatible/dp/B0CX531LMP/ref=asc_df_B0C243MXMQ?mcid=dea48368babc3c8f81704b14a90b61e6&hvocijid=18117759364931301635-B0C243MXMQ-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=18117759364931301635&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9013670&hvtargid=pla-2281435179258&th=1) |
+| JZK | B071ZRXKJY| Amazon | B071ZRXKJY | 1 | 6.38 | [link](https://www.amazon.com/JZK-Power-Module-Supply-Converter/dp/B071ZRXKJY/ref=asc_df_B071ZRXKJY?mcid=481143c64f193ab3a24fa0bd17d058b4&hvocijid=4507323184159719967-B071ZRXKJY-&hvexpln=73&tag=hyprod-20&linkCode=df0&hvadid=721245378154&hvpos=&hvnetw=g&hvrand=4507323184159719967&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9013670&hvtargid=pla-2281435177858&psc=1) |
+| Total Cost | N/A | N/A | N/A | N/A | 30.37 | N/A |
 
 ## Analysis
-The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The subsystem will have two different-voltages, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The second direction of the 12-volts will go through a step-down convertor to output 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi. The rechargeable battery outputs 1200mAh so it expected to power the system for up to 1.2 hours when fully charged. The amount of power going into each subsystem shall follow along given constraints as to ensure safety will operating the machine. 
+The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The subsystem will have two different-voltages, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The second direction of the 12-volts will go through a step-down convertor to output 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi. The rechargeable battery outputs 2600mAh, meaing it can output 2.6 Ampheres an hour when fully charged. After flowing through a buck-converter with the minimum efficiency of 80%, the current will raise from 2600 mAh to 5000 mAh, due to the nature of the converter raising current. With this raise in current both the Raspberry Pi and the vibration motors will be supplied with their needed minimum required current, 3A and 450mA respectfully. The amount of power going into each subsystem shall follow along their given constraints as to ensure safety will operating the machine. 
 
 
 ## References
-(1) "KBT 12V 1200mah rechargeable Li-Ion Battery, Bare Leads Wire Replacement Battery Pack with 12V Charger Compatible for 12V Devices RC Car, Boat, Robot, DIY, LED Light Kit : Health & Household." Amazon, www.amazon.com/KBT-1200mAh-rechargeable-Replacement-Compatible/dp/B0C243MXMQ. (Accessed 30 Jan. 2025.) 
+(1) "KBT 12V 2600mAh Rechargeable Li-ion Battery, DC5521 Male Connector, Replacement Battery Pack with 12V Charger Compatible with 12V Device RC Car, Boat, Robot, DIY, LED Light Strip, CCTV Camera" Amazon, www.amazon.com/KBT-1200mAh-rechargeable-Replacement-Compatible/dp/B0C243MXMQ. (Accessed 30 Jan. 2025.) 
 (2) "JZK 24V / 12V to 5V 5A Power Buck Module DC-DC step-down Power Supply Converter with LED." Amazon, www.amazon.com/gp/product/B0B1DLJ7ZP/. (Accessed 30 Jan. 2025.)
