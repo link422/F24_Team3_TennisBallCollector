@@ -2,7 +2,7 @@
 
 ## Function of the Counting Display Subsystem
 
-The Counting Display subsystem shall implement a LCD Display that will display the amount of collected tennis balls. This subsystem will interpret every new reading from the Counting Sensor subsystem as a new tennis ball. For every new tennis ball detected by the sensor, the counting display subsystem will increment the number displayed on the LCD display. The LCD display shall output the information to the user in a comprehensive way such as "The number of Tennis Balls collected is #", where # is the number of tennis balls collected. 
+The Counting Display subsystem shall implement a LCD Display that will display the amount of collected tennis balls to the operator. This subsystem will interpret every new reading from the Counting Sensor subsystem as a new tennis ball. For every new tennis ball detected by the sensor, the counting display subsystem will increment the number displayed on the LCD display. This subsystem shall display the current amount of tennis balls using the display in a comprehensive sentence ending with the total number collected as a numerical value.  
 
 ## Specifications and Constraints
 
@@ -14,10 +14,12 @@ The Counting Display subsystem shall implement a LCD Display that will display t
   - Rationale: The raspberry pi model 4 B [1] supplies 3.3V from its GPIO pins which will be used to interface with the solutions proposed by the counting display subsystem.
 - The counting display shall use materials and components that comply with Restriction of Hazardous Substances (RoHS) standards.
   - Rationale: Compliance with RoHS standards minimizes the use of hazardous materials in electronic components, promoting environmental safety and ethical responsibility in the product's lifecycle. This aligns with the U.S Hazardous Materials Regulations ethical constraint as specified in the conceptual design.
+- The counting display shall not be used to display error messages from other subsystems.
+  - Rationale: The primary purpose of this subsystem is to display the number of tennis balls collected. Having the display also display error messages goes against the specification of displaying an accurate account of collected tennis balls.
 
 ## Overview of Proposed Solution
 
-This subsystem shall display the amount of tennis balls collected as a numerical value. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to the EA DOGM162W-A [1] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B [1]. Another solution involves using a HD44780U [3] with a soldered I2C LCD adapter [4] connected to a I2C logic level converter [5] to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the EA DOGM132L-5 [6] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B [1] to work with the DOGM132L-5 [6].
+The LCD display will display the information to the user as, "The number of Tennis Balls collected is #", where # is the number of tennis balls collected. The maximum count for the # is set at 100 since the specfication for the maximum amount of tennis balls sensed by the Counting Sensor as given in the conceptual design is 100. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to the EA DOGM162W-A [1] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B [1]. Another solution involves using a HD44780U [3] with a soldered I2C LCD adapter [4] connected to a I2C logic level converter [5] to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the EA DOGM132L-5 [6] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B [1] to work with the DOGM132L-5 [6].
 
 
 ## Interface with Other Subsystems
