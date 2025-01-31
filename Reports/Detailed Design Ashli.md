@@ -83,45 +83,45 @@ Installation shown in Analysis section
 | SparkFun Logic Level Converter - Bi-Directional | SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
 | 120pcs 20 cm Breadboard Jumper Wires Dupont Cable Assorted Kit| EDGELEC | ED-DP_L20_Mix_120pcs | Amazon | B07GD2BWPY | 1 | 6.98 | N/A | [link](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY?crid=3DGC320SX81Z2&dib=eyJ2IjoiMSJ9.APYjLeLR3cSKMa-3o77o4cYI1olfvBTpJBIBWrLqSaoqeqjKWlnOg1F7dI1ZHbmBbHXPnl9A-zfQjw7P80ggVPZr7fM9E61QH7DOhZ_nWHnJ6KQoWLD4hxEjd2VbMnSznD3cFZ049cNPHb-py6kYwTtqcH3GbSuH7vg1aoHE7ebusdWXj1c0YVqajUVuVcP0oktnHN8Mv2MMez3cyrXOVYzVh3j4K00H6j53cig7Ex4.4b2v71rjNo84MGdm-KeQ8BLrgu2huoe5dUA729xcNXA&dib_tag=se&keywords=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale&qid=1732744550&sprefix=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale%2Caps%2C147&sr=8-1&th=1) |
 | Motor Pulley | --- | --- | Automation Direct | 2 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
-| Gearbox | --- | --- | Automation Direct | 2 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
+
 | Pulley Belt | --- | --- | Automation Direct | 1 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
 | Total Cost | N/A | N/A | N/A | N/A | N/A | $234.48 | N/A |
 
 ## Analysis
 ------------figure out what spur to use and continue proofreading
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 2 DC gearmotors, BRINGSMART 12V 12rpm DC Worm Gear Motor [2], capable of operating a weight load similar to the 44 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque, weight distribution, and speed. The use of 4 motors will handle the load of 44 lb by attaching to it's drive wheels (2) in the back. One of our competitors, Tennibot travels at 1.4 mph (0.626 m/s); preferably we would like to get close to that speed.
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 2 DC gearmotors, BRINGSMART 12V 12rpm DC Worm Gear Motor [2], capable of operating a weight load similar to the 44 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque, weight distribution, and speed. The use of 4 motors will handle the load of 44 lb by attaching to it's drive wheels (2) in the back. One of our competitors, Tennibot travels at 1.4 mph (0.6258 m/s); preferably we would like to get close to that speed.
 
-Motor Specs:
-Rated Torque = 70 kg.cm = 6.97 Nm
-Rated voltage = 12V
-  Rationale : Within limitations of 12V Battery supplied via Power Supply subsystem; high torque to ensure it can handle load without stalling
-Rated speed = 9 RPM
-No Load Current = 350mA
-Rated Current = 1.6 A
-Reducer ratio = 1:670
+Desired Horsepower for tennis collector (RPM * Torque / 5252)
+Rear Wheel Diameter, D = 14in ,, 0.3556 m) 
+    s = speed (m), C = circumference, W = load per wheel (2), r = wheel radius (m) = D/2
+   RPM = 60 * s / C = 0.6258 * 60 / ( $\pi * 0.3556) = 33.61 RPM
+   Torque = W * r = ((44 * 4.448) / 2) * 0.1778 $\approx$ 17.4 N
+   Power needed = (33.61 * 17.4)/ 5252 = 0.11135 $\approx$ 0.0114 Hp $\approx$ 8.5 W
+Therefore, Motor Specification Limits: 12A Current (for Motor Controller [2]), Output RPM $\approx$ 33-35 RPM, 12V Power Supply--we have some wiggle room with the potential to connect gears to balance speed and torque.
 
-Analysis: 
+### Torque Rationale: 
+Rated torque = 70 kg.cm, 6.86 Nm 
+
+Analysis:
+Total Required Load : lb to newton conversion of tennis ball collector --44 lb = 195.72 N / 2 (wheels) = 97.86 N
+Rear Torque: Radius = 0.1778 m ; Torque = Weight per motor * radius
+    =>  97.86 N * 0.1778 m = 19.39 Nm;
+
+Torque Rationale : Desired Rear (19.39 Nm) Motor Torque is in reasonable range of the rated torque of 2 motors of 70 kg.cm (17.652 Nm)
 (Diameter * RPM)/ 60
   Motor RPM = 9 RPM/670 = 0.01343 RPM
-  V(rear) = (1.12 m * 0.01343 RPM)/ 60 = 0.000251 m/s
+  V(rear) = (1.12 m)/ 60 = 0.000251 m/s
   We will need another stage of gear to increase it--we can also use this as a means to connection motors to the wheels.
   Rationale : Speed will be dominated by the rear ($\approx$ 0.501 (0.224 m/s * 2.237)), but it still does not meet the desired speed. 
-
+Horsepower = ()
 Considering a spur gear.
   Rationale:
     - increases speed by having the wheel gear smaller than the motor gear
     - cost-effective, simple, and efficient for direct power transmission
 
-Rated torque = 70 kg.cm =  N * 4 motors = 17.652 Nm 
+Specifications for Gear Alignment
 
 
-Rear Wheels (14'' diameter, 1.12 m) Analysis:
-Tennis Ball collector weight: 44lb, 20.87 kg 
-Total Load per motor: 20.87 * 9.81/4 = 51.2 N
-Rear Torque: Radius = 0.1778 m ; Torque = Weight per motor * radius
-    =>  51.2 N * 0.1778 m = 9.1 Nm;
-
-Torque Rationale : Desired Rear (9.1 Nm) Motor Torque is in reasonable range of the rated torque of 45 kg.cm (17.652 Nm)
 
 To ensure control of the collector without manual help we must consider how to effectively add the motors. There is large set of wheels in the back, potentially within the metal barrel that feeds the tennis balls into the collection basket. If the wheels are connected by an axel the motor-wheel connection
 
