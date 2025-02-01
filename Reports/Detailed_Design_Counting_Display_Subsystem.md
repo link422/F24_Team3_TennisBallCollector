@@ -2,7 +2,7 @@
 
 ## Function of the Counting Display Subsystem
 
-The Counting Display subsystem shall implement a LCD Display that will display the amount of collected tennis balls to the operator. This subsystem will interpret every new reading from the Counting Sensor subsystem as a new tennis ball. For every new tennis ball detected by the sensor, the counting display subsystem will increment the number displayed on the LCD display. This subsystem shall display the current amount of tennis balls using the display in a comprehensive sentence ending with the total number collected as a numerical value.  
+The Counting Display subsystem shall implement a LCD Display that will display the amount of collected tennis balls to the operator. This subsystem will interpret every new reading from the Counting Sensor subsystem as a new tennis ball. For every new tennis ball detected by the sensor, the counting display subsystem will increment the number displayed on the LCD display. This subsystem shall display the current amount of tennis balls using the display in a comprehensive sentence which will include the total number collected as a numerical value.  
 
 ## Specifications and Constraints
 
@@ -19,12 +19,16 @@ The Counting Display subsystem shall implement a LCD Display that will display t
 
 ## Overview of Proposed Solution
 
-The LCD display will display the information to the user as, "The number of Tennis Balls collected is #", where # is the number of tennis balls collected. The maximum count for the # is set at 100 since the specfication for the maximum amount of tennis balls sensed by the Counting Sensor as given in the conceptual design is 100. This subsystem also encompasses coding scripts that will interface with the LCD display. There are multiple solutions examined in this detailed design. One involves altering the LCD display to the EA DOGM162W-A [1] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B [1]. Another solution involves using a HD44780U [3] with a soldered I2C LCD adapter [4] connected to a I2C logic level converter [5] to adequatly supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the EA DOGM132L-5 [6] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B [1] to work with the DOGM132L-5 [6].
+The LCD display will display the information to the user as, "The number of Tennis Balls collected is #", where # is the number of tennis balls collected. The maximum count for the # is set at 100 since the specfication for the maximum amount of tennis balls sensed by the Counting Sensor as given in the conceptual design is 100. Reseting the counter is handled by pressing a button on the remote controller which will rewrite the display with the tennis ball counter at 0. Coding scripts will be used to increment the ball counter that will be written to the LCD display.
+
+Multiple solutions were examined in this detailed design depending on the particular LCD display used. One involves altering the LCD display from the conceptual design to the EA DOGM163W-A [2] used for convience with existing data online about interfacing the LCD display with the raspberry pi model 4 B [1]. Another solution involves using a HD44780U [3] with a soldered I2C LCD adapter [4] connected to a I2C logic level converter [5] to adequately supply the different LCD display from the proposed conceptual design LCD. The final solution is integrating the EA DOGM132L-5 [6] from the conceptual design similar to solution 1 but with little to no knowledge on encoding the raspberry pi model 4 B [1] to work with the DOGM132L-5 [6].
 
 
 ## Interface with Other Subsystems
 
-All three solutions involve using serial communication to interface with the raspberry pi model 4 B [1]. Solution 1 has a serial mode that is able to be utilized in the design. Solution 2 converts serial data to characters that can be displayed on the LCD display. Solution 3 has a dedicated serial input and serial clock to integrate with raspberry pi model 4 B pins. The Counting Sensor subsystem also uses serial communication providing a communication method between the two subsystems. The communication between the sensor and display subsystems works as follows: when the sensor [7] detects a new tennis ball, the display is incremented by one. The power subsystem was designed so that the required current is supplied for solutions 1 and 3 and the required voltage is supplied to the raspberry pi model 4 B [1]. Solution 2 accounts for power with the I2C logic level converter [5].
+The remote control subsystem communicates to the counting display subsystem by sending a signal to reset the ball counter on the display whenever the button designated as the reset button is pressed. Serial communication is the method that the counting display subsystem uses to communicate with all other subsystems.  The Counting Sensor subsystem communicates to the Counting Display subsystem via serial communication as follows: when the sensor [7] detects a new tennis ball, the display is incremented by one. The power subsystem considers the 3.3V voltage needs of this subsystem as required by the subsystem specification requirements for voltage supplied.
+
+In terms of solution integration, all three solutions involve using serial communication to interface with the raspberry pi model 4 B [1]. Solution 1 has a serial mode that is able to be utilized in the design. Solution 2 converts serial data to characters that can be displayed on the LCD display. Solution 3 has a dedicated serial input and serial clock to integrate with raspberry pi model 4 B pins. The power subsystem was designed so that the required current is supplied for solutions 1 and 3 and the required voltage is supplied to the raspberry pi model 4 B [1]. Solution 2 accounts for power with the I2C logic level converter [5].
 
 
 ## 3D Model of Custom Mechanical Components
@@ -34,7 +38,7 @@ There are no mechanical components in this subsystem.
 
 ## Buildable Schematic / Printed Circuit Board Layout
 ### Solution 1
-![Solution using DOGM162W-A](Images/Solution1.png)
+![Solution using DOGM163W-A](Images/Solution1.png)
 ### Solution 2
 ![Solution using HD44780U](Images/Solution2.png)
 ### Solution 3
@@ -65,7 +69,7 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 # Solution 1
 | Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link | Datasheet |
 |--------------|----------------|-------------|-------------------------|----------|-------|---------------|-----------|
-| Display Visions | EA DOGM162W-A | DigiKey | 1481-1078-ND | 1 | $13.53 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM162W-A/4896717?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsYA6gLQIgC6AvkA) | [8](https://www.lcd-module.de/eng/pdf/doma/dog-me.pdf) |
+| Display Visions | EA DOGM163W-A | DigiKey | 1481-1078-ND | 1 | $13.57 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM163W-A/4896722?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsAzAOoC0CIAugL5A) | [8](https://www.lcd-module.de/eng/pdf/doma/dog-me.pdf) |
 
 # Solution 2
 | Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link | Datasheet |
@@ -81,14 +85,14 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 
 ## Analysis
 
-According to the Bill of Materials, there were 3 possible solutions examined for this subsystem. The purpose of these solutions is to provide a guideline to construct the subsystem to work with the specifications and constraints given for the project and this subsystem. Only one solution will be implemented in the final design which will be solution 3.  Solution three does not change the component being used which is the EA DOGM132L-5 [6] from the conceptual design. This component requires 3.3 V according to the datasheet [10]. The functional voltage for the LCD display [6] is addressed through the 3.3 V supplied by circuit constraint. Existing source code [11] implementing the EA DOGM162W-A [2] can be used as guidance for constructing the driver to interface with the EA DOGM132L-5 [6] using the raspberry pi model 4 B [1]. The DOGM132L-5 [6] has a serial data in pin and a serial clock pin that is used for serial communication which complies with the Serial Communication constraint. The communication between the Counting Sensor subsystem and the Counting Display Subsystem will work as follows to address the accurate tennis ball collector constraint. When the sensor [7] detects a new tennis ball, the implemented code will increment the number of tennis balls by one and write the new number to the LCD display [6]. The only component in the counting display subsystem to worry about Restriction of Hazardous Substances (RoHS) compliance, which is a constraint for this subsystem, is the DOGM132L-5 [6]. The component is compliant with RoHS3 as given in the Environmental and Exports Section on the Digikey order website for the DOGM132L-5 [6].  
+According to the Bill of Materials, there were 3 possible solutions examined for this subsystem. The purpose of these solutions is to provide a guideline to construct the subsystem to work with the specifications and constraints given for the project and this subsystem. Only one solution will be implemented in the final design which will be solution 3.  Solution three does not change the component being used which is the EA DOGM132L-5 [6] from the conceptual design. This component requires 3.3 V according to the datasheet [10]. The functional voltage for the LCD display [6] is addressed through the 3.3 V supplied by circuit constraint. Existing source code [11] implementing the EA DOGM163W-A [2] can be used as guidance for constructing the driver to interface with the EA DOGM132L-5 [6] using the raspberry pi model 4 B [1]. The DOGM132L-5 [6] has a serial data in pin and a serial clock pin that is used for serial communication which complies with the Serial Communication constraint. The communication between the Counting Sensor subsystem and the Counting Display Subsystem will work as follows to address the accurate tennis ball collector constraint. When the sensor [7] detects a new tennis ball, the implemented code will increment the number of tennis balls by one and write the new number to the LCD display [6] in joint with the display message. All components in the counting display subsystem are compliant with the Restriction of Hazardous Substances (RoHS) compliance, which is a constraint for this subsystem. The DOGM132L-5 [6] in particular is compliant with RoHS3 as given in the Environmental and Exports Section on the Digikey order website for the DOGM132L-5 [6].  
 
 
 ## References
 
 [1] A. Industries, “Raspberry pi 4 model B - 2 GB RAM,” adafruit industries blog RSS, <https://www.adafruit.com/product/4292#description> (accessed Nov. 4, 2024).
 
-[2] "EA DOGM162W-A," DigiKey Electronics, <https://www.digikey.com/en/products/detail/display-visions/EA-DOGM162W-A/4896717?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsYA6gLQIgC6AvkA> (accessed Nov. 24, 2024).
+[2] "EA DOGM162W-A," DigiKey Electronics, <https://www.digikey.com/en/products/detail/display-visions/EA-DOGM163W-A/4896722?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsAzAOoC0CIAugL5A> (accessed Feb. 1, 2024).
 
 [3] "Basic 16x2 Character LCD - Black on Green," Sparkfun, <https://www.sparkfun.com/products/255> (accessed Nov. 24, 2024).
 
