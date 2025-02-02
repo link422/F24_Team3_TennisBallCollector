@@ -86,7 +86,7 @@ Installation shown in Analysis section
 | uxcell 2pcs ANSI #40 / DIN(ISO)08A Roller Chain Idler Sprocket 15mm Bore, 1/2" Pitch, Hardened 15 Tooth Tensioner Sprocket, Insert Single Bearing (B Type) | uxcell | N/A | Amazon | B0CNSGX2RB | 1 | 27.09 | "Motors" (Motor-Sprocket Connection) | [link](https://www.amazon.com/uxcell-Sprocket-Hardened-Tensioner-Bearing/dp/B0CNSGX2RB?crid=26EP8PRTDG0FX&dib=eyJ2IjoiMSJ9.4c9I2pQ9tfO2Lx866RMSfdz5z2mSuC-57w3ttb1NQJc_gftIVww5ei_NFen8GUNK7IqGBktRlzv4RAQLhgpwD_BhKTr02bwZ0vOss12z6SLSxssfILlClr_NYwUASfboJJQQ9A9UjV76xlnAF7g3k40hlkzEQfnAe8nydV9bZRYab-jfyQrRuPwBtNHv9zu8uCVn_FaRFPyeDlW_NEflkOrLwo9B7QlaGGVAwGFtH30.zf7oUCfGfPOOeMfC5WzioXQ-isqOu5F2YZeZO3axWGo&dib_tag=se&keywords=%2340+roller+chain+sprocket+15mm+bore&qid=1738465023&sprefix=15mm+%2340+sp%2Caps%2C113&sr=8-3) |
 | Jeremywell #40 Roller Chain Sprocket B Type 1" Bore Hardened 12 Tooth | Jeremywell | 40BS12H | Amazon | B08DDKLYMF | 2 | 18.45 | Bevel/Sprocket Hub | [link](https://www.amazon.com/Jeremywell-40BS12H-1-Tooth-Sprocket-Roller/dp/B08DDKLYMF?crid=3QXM1Q3Q259YY&dib=eyJ2IjoiMSJ9.eHq2qMWk_gU-Q967Zd8a4dwBOf81104aE_hJYjO19nVlbWbAyKQ2JhRfD4On6Q5A53D2RPeeQzwq6WTjKMb6ZyjPVFBzLiDF30BvHpBhNnQmUPTnslf6PutXO-K8toVb1maPpv7eSILN6kGG5RtihufMgbNn8ATkbKZI8vFtcjl3ldNYhrf72c4vu-rBffsur6KYLXLVoNCod7btfuJu4kYWYeAigeYV7_B_1Z66Vz9IBavoXvFOnCQ0CQxnlsdzJSz-Vo_Du1M4r9-nHMQcGfuq4umWL_19mGEwZHwdKHtxT1iqG1V9XwrUy_1ocLaYCtvtO6MRYZMRHrPex6O7ihuTTX1EydUTgT2vpaAFi-Y.KAHWSK25yG6iv_iKQTwQQRrhKl4P0uctOMVWdxHDrAg&dib_tag=se&keywords=%2340%2BRoller%2BChain%2BSprocket%2BB%2BType%2B1%27%27%2B12%2Btooth&qid=1738461979&s=industrial&sprefix=%2B40%2Broller%2Bchain%2Bsprocket%2Bb%2Btype%2B1%27%27%2B12%2Btooth%2Cindustrial%2C175&sr=1-4&th=1) |
 | 2 Pcs 1.5M 20 Teeth 8/10/12/14/15/16mm Shaft Hole Tapered Bevel Gear 1: 1# 45 Steel 1.5 Module 90 Degree Steering Gear with M5 Fixing Hole (12mm) | PGFUN | TYXC-0011_1.5_20_12 | Amazon | B09VGPWQSQ | 1 | 13.99 | Bevel | [link](https://www.amazon.com/PGFUN-Teeth-Shaft-Tapered-Bevel/dp/B09VGPWQSQ?crid=1UCJMBJGVPPM3&dib=eyJ2IjoiMSJ9.dFIRvfj8nzZrceaqvGTgcawWpd03jtaeqbcw-NzG3sPJZQALyZWqZOPUCKwM5CDXO0w2N64mMGc8zDS9qjmYr1vuGtMJaUgS4IP3cLRsX9f4NbuncOyO6rNCmOLH7e_tRBAw5vnX74ObLVL7hMpwEw27bxMgPw5cmCtRgiaGPk4dhz2ZRp3r6cGEYWKpbxh3BMam1Itd4OB6a7mL0H7cLQIc7_nJXoEomoLizPzRGT4.jJQF5s_2g1LHmYxEmKVJp-g1MJkYeL58PHAKA8u0swU&dib_tag=se&keywords=bevel%2Bgear%2B1%2Bin&qid=1738468301&sprefix=bevel%2Bgear%2B1%2Bin%2Caps%2C126&sr=8-1&th=1) |
-| Total Cost | N/A | N/A | N/A | N/A | N/A | $450.26 | N/A |
+| Total Cost | N/A | N/A | N/A | N/A | N/A | $449.94 | N/A |
 
 ## Analysis
 
@@ -98,24 +98,43 @@ Operations will be carried out from inputs and safety precautions of the RC subs
 Assumptions of environment: Starts with no added weight (0 collected tennis balls) on smooth, acrylic/clay court -> $\mu$ $\approx$ 0.01
 
 #### Initial (static torque) 
-Desired Horsepower/Watts for tennis collector (RPM * Torque / 5252)
-Rear Wheel Diameter, D = 14in ,, 0.3556 m) 
-    s = speed (m), C = circumference, W = load per wheel (2), r = wheel radius (m) = D/2
-   RPM = 60 * s / C = 0.6258 * 60 / ( $\pi * 0.3556) = 33.61 RPM
-   Torque = W * r = ((44 * 4.448) / 2) * 0.1778 $\approx$ 17.4 Nm = 12.83 lb-ft
-   Power = (33.61 * 12.83)/ 5252 $\approx$ 0.082 Hp $\approx$ 61.2 W
 
-   current = P/V = 61.2/12 = 5.1 A (peak current)
+Desired Horsepower/Watts for tennis collector (RPM * Torque / 5252)
+
+Rear Wheel Diameter, D = 14in ,, 0.3556 m) 
+
+s = speed (m), C = circumference, W = load per wheel (2), r = wheel radius (m) = D/2
+
+RPM = 60 * s / C = 0.6258 * 60 / ( $\pi * 0.3556) = 33.61 RPM
+
+Torque = W * r = ((44 * 4.448) / 2) * 0.1778 $\approx$ 17.4 Nm = 12.83 lb-ft
+
+Power = (33.61 * 12.83)/ 5252 $\approx$ 0.082 Hp $\approx$ 61.2 W
+
+current = P/V = 61.2/12 = 5.1 A (peak current)
    
 #### Continuous (dynamic torque)
 Rear Wheel Diameter d = 14in ,, 0.3556 m -> radius r = 0.1778 m 
-    s = desired speed (m) = 0.6258 m/s, C = circumference = ($\pi * 0.3556), acceleration a = 0.2 m/$s^2$, moderate acceleration for slow-moving device, m = load per wheel = 44/2 lb = 22 lb $\approx$ 10 kg
-   RPM = 60 * s / C = 33.61 RPM
-   Frictional Force = $\mu$ * m * g = 0.981 N
-   Acceleration Force = m * a = 2 N
-   Total Force per Wheel = 2.981
-   Torque per Wheel $\tau$ = Total Force * r $\approx$ 0.53 N, for safety margin total T * 1.5 = 1.59 N
-   Power($\tau$ * $\omega$) P = (1.59 * 33.61)/9.549 $\approx$ 5.6 W 
+
+s = desired speed (m) = 0.6258 m/s
+
+C = circumference = ($\pi * 0.3556)
+
+Acceleration a = 0.2 m/$s^2$
+
+Moderate acceleration for slow-moving device, m = load per wheel = 44/2 lb = 22 lb $\approx$ 10 kg
+
+RPM = 60 * s / C = 33.61 RPM
+
+Frictional Force = $\mu$ * m * g = 0.981 N
+
+Acceleration Force = m * a = 2 N
+
+Total Force per Wheel = 2.981
+
+Torque per Wheel $\tau$ = Total Force * r $\approx$ 0.53 N, for safety margin total T * 1.5 = 1.59 N
+
+Power($\tau$ * $\omega$) P = (1.59 * 33.61)/9.549 $\approx$ 5.6 W 
 
 Considering an added weight of tennis balls (100): 
 same procedure leads us to => 2.07 Nm total torque required (1.04 Nm on each motor); desired current to be P/V = 7.15/12 $\approx$ 0.6 A
