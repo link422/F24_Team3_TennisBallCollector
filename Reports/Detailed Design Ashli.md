@@ -57,8 +57,6 @@ RC subsystem will recieve user input that will wirelessly connect to the raspber
 
 
 
-
-
 ## Printed Circuit Board Layout
 
 ### Level Shifter : SparkFun Logic Level Converter - Bi-Directional 
@@ -84,14 +82,15 @@ Installation shown in Analysis section
 | Makermotor High Torque Gearmotor 12V DC 6RPM Conveyor Gear Motor | Makermotor | PN00113-6 | Amazon | B01890J6UW | 2 | 115.00 + 24.50 (shipping) | M50 | [link](https://www.amazon.com/Makermotor-Torque-Gearmotor-Conveyor-Motor/dp/B01890J6UW?crid=FFFK3US0UTMP&dib=eyJ2IjoiMSJ9.Q9X_ekkq4Pnt-SCPsIByem9zFOtMHohVW9LYIAgq-i--aWRN1jk_abIqb4Z0boq-nsNk3rNYsqXsZ792wH6AWAaMB-wz0JlVvvuGxxpSega7GZVmJlvDplqDbd_xiO9Haa72QBXavtKZFi6OQfm95XJukHDaE2QREk5YxPkBCorwcusgbGS3y_7N7CFwzWn9BWLCFPsJrYp4-m3ApSK1TGJ9mvAobNW6pg26LOrmoXwe5dF_0LPlqXPcucPXX_uP_MqWffSH2xzQyxKJX1OILaxcRZbS0fx2mP1-uHanVobTh0CN2j6CCxy_owqOyziOq-Bbe3JkK2LrDxublglC4G4YZ4sCTTuZ8UxnP4o821LyqpK8j12JeWNsaLsOdLG4pXftp4oZauKAFSYyxpCR3tolMPhqgJDlbDvFH2FQ56MGBeusukfEsUyivF91fJOi.iwtwsuRRASnjylxk02lBdjk_u4gzNsFKogCkM_3qwa0&dib_tag=se&keywords=maker%5Cmotor&qid=1738426589&sprefix=makermotor%2Caps%2C216&sr=8-23) |
 | SparkFun Logic Level Converter - Bi-Directional | SparkFun Electronics | BOB-12009 | DigiKey |  1568-1209-ND | 1 | 3.50 | LS | [link](https://www.digikey.com/en/products/detail/sparkfun-electronics/BOB-12009/5673795?s=N4IgTCBcDaIIwFYBsAOAtHMAGAnGgcgCKDQBCALoC%2BQA) |
 | 120pcs 20 cm Breadboard Jumper Wires Dupont Cable Assorted Kit| EDGELEC | ED-DP_L20_Mix_120pcs | Amazon | B07GD2BWPY | 1 | 6.98 | N/A | [link](https://www.amazon.com/EDGELEC-Breadboard-Optional-Assorted-Multicolored/dp/B07GD2BWPY?crid=3DGC320SX81Z2&dib=eyJ2IjoiMSJ9.APYjLeLR3cSKMa-3o77o4cYI1olfvBTpJBIBWrLqSaoqeqjKWlnOg1F7dI1ZHbmBbHXPnl9A-zfQjw7P80ggVPZr7fM9E61QH7DOhZ_nWHnJ6KQoWLD4hxEjd2VbMnSznD3cFZ049cNPHb-py6kYwTtqcH3GbSuH7vg1aoHE7ebusdWXj1c0YVqajUVuVcP0oktnHN8Mv2MMez3cyrXOVYzVh3j4K00H6j53cig7Ex4.4b2v71rjNo84MGdm-KeQ8BLrgu2huoe5dUA729xcNXA&dib_tag=se&keywords=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale&qid=1732744550&sprefix=jump%2Bwires%2Bmale%2Bto%2Bmale%2C%2Bmale%2Bto%2Bfemale%2C%2Bfemale%2Bto%2Bfemale%2Caps%2C147&sr=8-1&th=1) |
-| Motor Pulley | --- | --- | Automation Direct | 2 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
-
-| Pulley Belt | --- | --- | Automation Direct | 1 |  | | N/A | [link](https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings) |
-| Total Cost | N/A | N/A | N/A | N/A | N/A | $234.48 | N/A |
+| AZSSMUK 08A 40# Roller Chain - 5 Feet 40Mn Carbon Steel Material with 1 Connecting Link for Go Kart, Mini Bike Chain Replacement | AZSSMUK | MAXLER | Amazon | B079L72M2V | 2 | 13.99 | N/A | [link](https://www.amazon.com/Aobbmok-Roller-Chain-Connecting-Replacements/dp/B079L72M2V?crid=PIUBEA96E714&dib=eyJ2IjoiMSJ9.cctI3hRBcZxu_ycCiZFonsfAW1wb-uNxiFLm6bleJgVY8nD3DBPD7WY16KsbHtYB4wNSXRSan6MjmNUI1cq_rz7XP0Cg2W5OIGsOPTVbgzKxisG0CfpnPhej4uQxF7FWp85FWs0lb_PsCZtFJqUnxsm5OOpT4ZMK0hwLgLtA-xXoM5-xeTwWVNcoNa-EE58yGgHurztlMKHzqd1CKNTDWTo5oypTSR_DXagpK0MowaY.4MD-SatGKf8DkQihdCIhgjb0sip0wH5ZKGYJwF4mm28&dib_tag=se&keywords=roller%2Bchain%2B40&qid=1738461187&sprefix=roller%2Bchain%2B40%2Caps%2C180&sr=8-6&th=1) |
+| #40 Roller Chain Sprocket B Type 1" Bore Rust Prevention Hardened 15 Tooth | RHKING | RHKING | Amazon |  B0BV189LWT | 2 | 21.30 | N/A | [link](https://www.amazon.com/RHKING-Roller-Sprocket-Prevention-Hardened/dp/B0BV189LWT?crid=3UVH1MYF9U3RJ&dib=eyJ2IjoiMSJ9.HuL0jqVx8E-gvniKoHTsZxcpzStz6fiPku9DIpTByM0RUhGIkeXC0BCtlftWXsXQf8zhtERNCWxdHT65zSB9G2KuovmMndgzXb5l9DDF0XDLsdPE2N2sKOSdHqaJsbpA3Paad7l48PYVCxeSVJ1WcJSEKdgkOfrkgvzpLD54WvDgws8AnR62Eu7KMDzf67bNnvIzarqXYXQiZcdWuOl-yJEWbQbrGxafZTONUGwndtdMSubIlCLmQPVFnAb5TET81MGNhrXMGFq5MIp1_gmqyPFrTSyMtiNplraXfNLbDJl2H0QV5aznl6VjDyOG34ddEsnfWUdf-ulYkuI6RHyyco6nRI8AmyVprmEJ1Xwo-Wo.NeMWaDkirXRgXQwnJitO1YYHa_eekDoJQ_o5zwJzfLk&dib_tag=se&keywords=%2340%2BRoller%2BChain%2BSprocket%2BB%2BType%2B1%22%2BBore%2BHardened%2B15%2BTooth&qid=1738461588&refinements=p_72%3A1248921011&rnid=1248919011&s=industrial&sprefix=%2B40%2Broller%2Bchain%2Bsprocket%2Bb%2Btype%2B1%2Bbore%2Bhardened%2B15%2Btooth%2Cindustrial%2C142&sr=1-3&th=1) |
+| Jeremywell #40 Roller Chain Sprocket B Type 1" Bore Hardened 12 Tooth | Jeremywell | 40BS12H | Amazon | B08DDKLYMF | 2 | 18.45 | N/A | [link](https://www.amazon.com/Jeremywell-40BS12H-1-Tooth-Sprocket-Roller/dp/B08DDKLYMF?crid=3QXM1Q3Q259YY&dib=eyJ2IjoiMSJ9.eHq2qMWk_gU-Q967Zd8a4dwBOf81104aE_hJYjO19nVlbWbAyKQ2JhRfD4On6Q5A53D2RPeeQzwq6WTjKMb6ZyjPVFBzLiDF30BvHpBhNnQmUPTnslf6PutXO-K8toVb1maPpv7eSILN6kGG5RtihufMgbNn8ATkbKZI8vFtcjl3ldNYhrf72c4vu-rBffsur6KYLXLVoNCod7btfuJu4kYWYeAigeYV7_B_1Z66Vz9IBavoXvFOnCQ0CQxnlsdzJSz-Vo_Du1M4r9-nHMQcGfuq4umWL_19mGEwZHwdKHtxT1iqG1V9XwrUy_1ocLaYCtvtO6MRYZMRHrPex6O7ihuTTX1EydUTgT2vpaAFi-Y.KAHWSK25yG6iv_iKQTwQQRrhKl4P0uctOMVWdxHDrAg&dib_tag=se&keywords=%2340%2BRoller%2BChain%2BSprocket%2BB%2BType%2B1%27%27%2B12%2Btooth&qid=1738461979&s=industrial&sprefix=%2B40%2Broller%2Bchain%2Bsprocket%2Bb%2Btype%2B1%27%27%2B12%2Btooth%2Cindustrial%2C175&sr=1-4&th=1) |
+| uxcell 25 Tooth Roller Sprocket B Type, #25 Chain, Single Strand 1/4" Pitch, 15mm Bore Black Oxide C45 Carbon Steel with Set Screws for ISO 04C | Jeremywell | 40BS12H | Amazon | B08DDKLYMF | 2 | 18.45 | N/A | [link]() |
+| Total Cost | N/A | N/A | N/A | N/A | N/A | $450.26 | N/A |
 
 ## Analysis
 
-Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 2 DC gearmotors,  Makermotor High Torque Gearmotor 12V DC 6RPM Conveyor Gear Motor [2], capable of operating a weight load similar to the 44 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque, weight distribution, and speed. The use of 4 motors will handle the load of 44 lb by attaching to it's drive wheels (2) in the back. One of our competitors, Tennibot travels at 1.4 mph (0.6258 m/s); preferably we would like to get close to that speed, this will be done with a speed increasing !!!!!! system.
+Operations will be carried out from inputs and safety precautions of the RC subsystem and Power Supply subsystem  the raspberry pi [3] and 2 Sabertooth dual 12A motor driver[4] (each handling up to 2 DC motors[2]). The soluion will consist of 2 DC gearmotors,  Makermotor High Torque Gearmotor 12V DC 6RPM Conveyor Gear Motor [2], capable of operating a weight load similar to the 44 lb Playmate Ball Mower 2.0 [7]. This design choice was established considering torque, weight distribution, and speed. The use of 4 motors will handle the load of 44 lb by attaching to it's drive wheels (2) in the back. One of our competitors, Tennibot travels at 1.4 mph (0.6258 m/s); preferably we would like to get close to that speed, this will be done with a speed increasing sprocket and chain system.
 
 
 ### Desired Motor Specifications: 
@@ -126,22 +125,21 @@ same procedure leads us to => 2.07 Nm total torque required (1.04 Nm on each mot
 
 ### Specifications for Alignment 
 
-At start up, we will need all the torque given by the motor, but as we continue it would be favorable if speed increases. To ensure this and keep the design as simple as possible, we will use a sprocket and chain drive. Location of this focus, depends on the metal barrel that feeds tennis balls into the collection basket; if it has enough space to easily confide within it without disturbing the function of other subsystems and ball collecting. If at any point it is inferred that that is impossible, we make the motor subsystem external; this will only add scrap metal or 3d printed barring as needed to hold the components. Refer to this time to show the internal application for alignment--
-
+At start up, we will need all the torque given by the motor, but as we continue it would be favorable if speed increases. To ensure this and keep the design as simple as possible, we will use a sprocket and chain drive. Location of this focus, depends on the metal barrel that feeds tennis balls into the collection basket; if it has enough space to easily confide within it without disturbing the function of other subsystems and ball collecting. If at any point it is inferred that that is impossible, we make the motor subsystem external; this will only add scrap metal or 3d printed barring as needed to hold the components. 
 
 #### Sprocket and Chain Drive
 
+Due to the limited space in the direction adjacent to the wheel, we need to have a bevel gear set [10] to shift the output by 90 degrees, allowing for hidden  sprocket and chain drive connecing to the motor. 
 
+For the SC drive, the turned wheel output will be linked to a sprocket, which by chain will connect to the motor. For execution, we will need a larger driven sprocket on the wheel [11] and a smaller motor sprocket [12]. For simplisicity, we will make the motor sprocket 12 teeth, and the wheel socket 15 teeth with a #25 roller chain [13] with a chain tensioner [14].
 
-
-
-
+![design](https://github.com/user-attachments/assets/255b2d81-3017-44d0-bff8-5ad7d472c6ab)
 
 
 ## References
 [1] "BALL MOWER." PLAYMATE Tennis, 5 June 2023, www.playmatetennis.com/ball-mower/
 
-[2] “BRINGSMART 12V 12rpm DC Worm Gear Motor 70kg.cm High Torque Self-Locking Reversed Mini Turbine Geared Motor for DIY Robot Rotating Table Door Lock Curtain Machine (12V 12rpm)” amazon.com, https://www.amazon.com/BRINGSMART-70kg-cm-Self-locking-Reversed-Rotating/dp/B07F8Y36PD?dib=eyJ2IjoiMSJ9.lRc1JXl09pYwCJYedlOy6vOR1eXRAe_QP4rlXNh62gKUX5VoMbQpF0jbiUQE5naXb0iEwiCXEegvldtuZ5cWV0Olz9cXPuhkjCPJlxFVhfpuzsZD2fePkaBsWzDykprzVzV2GKjkRYgc5K2yF3SsqRBp86F8KqkkyxoB1PdLqHYY-C4tH7DQy08ylL-GlJkLKc91FgDQpZjrcADe0Ez2ax7uYcwEhz7nubUgzjc-isrJYjnwCCpeLVoPmjF5ucqvi0RINV35Sp99jmJGaUDvSMOpV0pJpedBnO0lv3-55V8JxE7Pmc8IRq1fWWbmFHPIIN9mlE10XA8eqtrDaYS-F_qXoQ1KyMU2Y5kHgCzhdRhjmiOj3DGrcKXks6xk2iXGmGqwgbUZmYBEvUBra3_EpfQC2XeXJiRz3tVcJV5g0imSdGvIC7LIAEM5dnO6jTIq.HsAywLdAWmite_N27a7INBedNzcalUtHO4v64B7J7i4&dib_tag=se&keywords=12v%2Bdc%2Bmotor%2Bhigh%2Btorque&qid=1738259387&sr=8-5&utm_source=chatgpt.com&th=1
+[2] “Makermotor High Torque Gearmotor 12V DC 6RPM Conveyor Gear Motor.” amazon.com, 8 September 2011, [https://www.amazon.com/Makermotor-Torque-Gearmotor-Conveyor-Motor/](https://www.amazon.com/Makermotor-Torque-Gearmotor-Conveyor-Motor/dp/B01890J6UW?crid=2UYAOB5PJGPJC&dib=eyJ2IjoiMSJ9.QyJ7dWqdbUJFV4Z3vxTzYv5q6VTMUr1toHcuorTLZkSz6JPO9eRZbK2_9vNilJTBjt7pQBmsIrahrwTTa5m0Wtu5NAPRFtodIjqK8NQAuAjcR7p7cgQWpwaIv7e8MBsJooJWIP-H9AiRClwPD_s17C1pwnnYdkKIqkn-_Eq9gVUsBHNzDOz6LHY82lrc38RKnzWV15vCOqKh-KryHls_GdKr9flt6JddVYAHpYlNlkh9BRHedd-CXgjuW2-H_CT6TLZpJ2ATEC0Pf91IjbfHP-AbZ65niq1bFqFLZxbFHp_Zhbw8FwAuzK_Yb0-PAVkhEpwRsYgEJCe3HPdzXOmkzRLkzaEfVA_dA6bbf02Lg2z0ZSumK7V0gPKW6gtqDV8edKZxp5SG34x3dS-09Dqj3CZU2aX1IBgBp0gEfiNqq4LuCFjoVVNu6IeNcdsIDPXF.eykrnPWY5i8EMRbGOvpRQrPUOaJ2t1Sd8IfFHJ5cFSM&dib_tag=se&keywords=12v+high+torque+dc+motor+low+speed&qid=1738352199&refinements=p_36%3A9400-&rnid=1243644011&sprefix=12v+high+torque+dc+motor+low+speed%2Caps%2C177&sr=8-2)
 
 [3] Ltd, Raspberry P. "Buy a Raspberry Pi 4 Model B – Raspberry Pi." Raspberry Pi, https://www.raspberrypi.com/products/raspberry-pi-4-model-b/
 
@@ -158,5 +156,12 @@ At start up, we will need all the torque given by the motor, but as we continue 
 [9] "Ball Mower Replacement Casters | Playmate Tennis Court Parts & Accessories | DH Distribution." DH Distribution, 
 https://dhtennis.net/product/replacement-caster-for-ball-mower/
 
-[10] Timing Belts, Timing Pulleys and Tapered Bushings | Power Transmission (Mechanical) | Products | AutomationDirect, https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings
+[10] *** bevel gear set Timing Belts, Timing Pulleys and Tapered Bushings | Power Transmission (Mechanical) | Products | AutomationDirect, https://www.automationdirect.com/adc/shopping/catalog/power_transmission_(mechanical)/timing_belts,_timing_pulleys_-a-_tapered_bushings
 
+[11] ***wheel sporcket 
+
+[12] smaller motor sprocket
+
+[13] larger wheel sprocket
+
+[14] chain tensioner
