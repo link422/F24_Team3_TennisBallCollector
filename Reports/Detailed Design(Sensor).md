@@ -41,7 +41,7 @@ Here is a view of the device from a top view. With this view, the sensors locati
 
 
 ![playmatefront](playmatefront.jpeg)
-This is a front view of the device where the two sensors are seen mounted to the sides of the device. They are mounted with ST2.9 screws that are drilled into the device itself.
+This is a front view of the device where the two sensors are seen mounted to the sides of the device. They are mounted with ST2.9 screws that are drilled into the device itself. For safety concerns these screws will be sanded down at the ends to prevent any hazards, but due to the location of the screws relative to the wheels and handles the ends will not protrude far enough to pose harm.
 
 
 ## Interface with Other Subsystems
