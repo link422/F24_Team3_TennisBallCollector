@@ -30,9 +30,18 @@ The Counting Sensor System section shall be expected to detect and keep track of
 The proposed solution for the Sensor subsystem is to use the Lidar Sensor, that is Raspberry Pi compatible, to track incoming balls into the collection basket. The Lidar sensor has frame frequency of 100 Hz and an ambient light immunity of 70 Klux, making it an accurate addition that will be able to operate in different lighting environments. The sensor has a blind zone within the first 10 cm that will be avoided by using an additional sensor on the opposite side with a slight offset from the other to capture objects in each of their dead zones. This subsystem will work in tandem with the Display subsystem to show the user how many balls have been collected. It will be connected to the Raspberry Pi via GPIO pins to allow accurate, seamless, and remote communication. The Pi itself will host the programming software for the sensor that will configure the pins and increment a value as motion is detected on the sensor. 
 
 Below is where the sensor will be located on the Playmate[3], connected via ST2.9 screws. With it being located here, it shouldn't have the risk of being triggered by any other objects, as the only objects in passing will be tennis balls.
+
+
 ![playmate](playmate.png)
+Pictured is the PlayMate[3] itself, with the location of the sensor indicated.
+
+
 ![playmateaerial](playmateaerial.jpeg)
+Here is a view of the device from a top view. With this view, the sensors location and size are shown in relation to the size of the device.
+
+
 ![playmatefront](playmatefront.jpeg)
+This is a front view of the device where the two sensors are seen mounted to the sides of the device. They are mounted with ST2.9 screws that are drilled into the device itself.
 
 
 ## Interface with Other Subsystems
