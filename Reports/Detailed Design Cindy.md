@@ -2,7 +2,7 @@
 
 ## Function of the Subsystem
 
-The Vibration Subsystem prevents tennis ball jams by utilizing dual DC vibration motors that generate targeted oscillations to dislodge stuck tennis balls, ensuring uninterrupted operation of the Playmate Tennis Ball Collector [1]. It interfaces with the RC Control System, enabling remote activation and deactivation for enhanced adaptability and user convenience. Powered by a shared rechargeable Lithium Battery, the subsystem integrates seamlessly with other components, maintaining efficient power distribution and operational harmony. Its design incorporates robust power integration, remote control capabilities, and environmental safeguards, ensuring longevity, reliability, and enhanced overall functionality of the collector.
+The Vibration Subsystem prevents tennis ball jams by utilizing dual DC vibration motors that generate targeted oscillations to dislodge stuck tennis balls, ensuring uninterrupted operation of the Playmate Tennis Ball Collector [1]. It interfaces with the RC Control System, enabling remote activation and deactivation for enhanced adaptability and user convenience. Powered by a shared rechargeable Lithium Battery, the subsystem integrates seamlessly with other components, maintaining efficient power distribution and operational harmony. The design incorporates robust power integration, remote control capabilities, and environmental safeguards, ensuring longevity, reliability, and enhanced overall functionality of the collector.
 
 ## Specifications and Constraints
 
@@ -16,8 +16,8 @@ or excessive current.
 - The vibration motors shall be powered by the shared Lithium Battery from the Power Subsystem.
   - Rationale: Using the shared power source simplifies design by reducing the need for additional batteries, minimizing weight, and ensuring consistent power delivery across all subsystems for seamless integration.
 
-- The motors shall be activated using lever-actuated switches and can be controlled remotely.
-  - Rationale:  Lever-actuated switches offer mechanical durability, reliable activation, and easy integration with the collector system. Remote control functionality adds user convenience and operational flexibility, allowing the motors to start and stop without manual intervention.
+- The motors shall be activated using a SunFounder 2-Channel 5V Relay Module, controlled remotely by the RC Subsystem.
+  - Rationale:  The relay module enables reliable and efficient switching of the vibration motors when commanded by the controller, providing remote activation and deactivation.
 
 - The subsystem shall comply with relevant safety standards, such as 49 CFR 173.185, to ensure safe handling and operation of lithium batteries.
   - Rationale: Minimizes risks to users and the system during operation.
@@ -28,16 +28,20 @@ or excessive current.
 
 ## Overview of Proposed Solution
 
-The proposed Vibration Subsystem comprises two Vybronics DC Vibration Motors (VZ4KC1B1051202) [2] strategically mounted on opposite sides of the tennis ball collector to mitigate jamming effectively. Power is supplied by the shared Lithium Polymer Battery from the Power Subsystem, ensuring streamlined integration and consistent energy delivery. The motors are engaged via durable lever-actuated switches (JANDECCN V-153-1C25) [3], which offer robust performance and intuitive operation within the collector’s mechanical framework. Additionally, the motors can be remotely controlled to start and stop, enhancing user convenience and operational flexibility. The long lever arms of the switches eliminate the need for additional protective overlays, simplifying the design while minimizing maintenance requirements.
+The proposed Vibration Subsystem comprises two Vybronics DC Vibration Motors (VZ4KC1B1051202) [2] strategically mounted on opposite sides of the tennis ball collector to mitigate jamming effectively. Power is supplied by the shared Lithium Polymer Battery from the Power Subsystem, ensuring streamlined integration and consistent energy delivery.
+
+The motors are activated through a SunFounder 2-Channel 5V Relay Module [3], which the RC Subsystem controls. This relay module allows the vibration motors to be switched on or off remotely based on user commands from the controller. The relay ensures that the motors only activate when necessary, reducing power consumption and wear on the components.
 
 This subsystem is designed to be efficient, cost-effective, and seamlessly compatible with other components. It complies with safety standards and delivers reliable performance without disrupting other functions, such as ball scanning or the operation of RC motors.
 
+
 ## Interface with Other Subsystems
 
-The Vibration Subsystem interfaces closely with the Power Subsystem by utilizing the shared Lithium Battery as its primary power source. This connection ensures compatibility and minimizes the need for additional power components. The subsystem is carefully calibrated to avoid interference with the Sensor Subsystem, ensuring that vibrations do not disrupt the accuracy of ball scanning or detection. Additionally, the vibration motors can be manually activated via lever-actuated switches or remotely controlled through the RC and Control Subsystems, allowing precise operation and quick responses to jamming scenarios. This dual activation mechanism enhances user flexibility and ensures seamless coordination with the RC Subsystem's broader control functionalities.
+The Vibration Subsystem interfaces closely with the Power Subsystem by utilizing the shared Lithium Battery as its primary power source. This connection ensures compatibility and minimizes the need for additional power components. The subsystem is carefully calibrated to avoid interference with the Sensor Subsystem, ensuring that vibrations do not disrupt the accuracy of ball scanning or detection.
 
-The integration of the RC Subsystem enables centralized control of the vibration motors, simplifying the operational workflow while maintaining non-disruptive functionality. This cohesive design allows the Vibration Subsystem to perform its function effectively, addressing jamming issues, while maintaining overall system stability, efficiency, and compatibility with other subsystems.
+The vibration motors are activated through the SunFounder Relay Module, which controls the RC Subsystem and the Raspberry Pi. When the controller sends a command, the relay switches on, allowing power to flow to the motors. This setup provides precise operation and quick responses to jamming scenarios while eliminating mechanical wear issues associated with lever-actuated switches.
 
+The integration of the RC Subsystem enables centralized control of the vibration motors, simplifying the operational workflow while maintaining non-disruptive functionality. This cohesive design allows the Vibration Subsystem to perform its function effectively, addressing jamming issues while maintaining overall system stability, efficiency, and compatibility with other subsystems.
 
 ## Printed Circuit Board Layout
 ![PCB Mount](https://github.com/user-attachments/assets/dbda3a5c-661a-4333-b582-1860a208ab72)
@@ -48,22 +52,24 @@ The integration of the RC Subsystem enables centralized control of the vibration
 
 ## Operational Flowchart
 
-![Screenshot 2024-12-11 034838](https://github.com/user-attachments/assets/3f87c6a7-b8f5-459e-955b-95057b11cb5e)
+![image](https://github.com/user-attachments/assets/a773d65e-81e3-4c40-ac82-f4bbc640da97)
+
+
 
 ## BOM
 
-![Screenshot 2024-11-30 091017](https://github.com/user-attachments/assets/a5299c18-9f1b-4f16-b977-1058372fee9b)
+![image](https://github.com/user-attachments/assets/0bf4446b-4700-42db-9c30-ab274c3db986)
 
 
 ## Analysis
 
-The Vibration Subsystem design presents a plausible and testable solution to mitigate tennis ball jams in the Playmate Tennis Ball Collector by employing dual Vybronics DC Vibration Motors. These motors generate sufficient vibration force to dislodge jammed balls without risking structural damage. While the effectiveness of vibration in resolving jamming is not guaranteed for all scenarios, it is a well-considered approach grounded in the understanding that oscillatory motion can disrupt static friction and free-wedged objects. The design incorporates flexible activation mechanisms—manual lever-actuated switches and RC control—to allow for precise, on-demand usage and adaptability in varying operational conditions.
+The Vibration Subsystem design offers a potential solution to reduce tennis ball jams in the Playmate Tennis Ball Collector by utilizing dual Vybronics DC Vibration Motors. These motors are chosen based on their ability to generate sufficient vibration forces that could dislodge jammed balls without risking damage to the structure. While the system's theoretical basis—using vibration to disrupt static friction and release wedged objects—appears promising, further testing is necessary to determine its effectiveness under real-world conditions. The system is designed with flexibility in mind, featuring a remote-controlled activation mechanism that eliminates concerns over mechanical wear and ensures seamless integration with the RC and Raspberry Pi subsystems. The shared Lithium Battery contributes to overall system efficiency, reducing weight and maintaining cost-effectiveness, while the relay ensures motor activation occurs only when necessary.
 
-The subsystem’s integration with the shared Lithium Battery from the Power Subsystem ensures simplicity, cost-efficiency, and reduced weight while maintaining reliable power delivery. The durable lever-actuated switches enhance mechanical compatibility and eliminate the need for overlays, streamlining the design. Extensive testing and calibration will be conducted to validate the vibration’s effectiveness in addressing jamming while ensuring seamless compatibility with the Sensor and RC Subsystems. This iterative process allows for refinement, ensuring the subsystem contributes to the machine's overall functionality, stability, and efficiency.
+Although initial calculations and system design suggest that the vibration motors should be appropriately sized for the tennis collector, confirmation of their adequacy in practice will be determined through future testing. Additionally, the design takes into account the conditions under which tennis balls typically become jammed—when multiple balls try to exit simultaneously or due to the speed of the tennis collector mechanism. Extensive testing and calibration will be conducted to assess the system’s performance, with adjustments made as needed to optimize the vibration's effect on ball jams and ensure compatibility with other subsystems. This iterative testing process will refine the subsystem, contributing to the overall functionality, stability, and efficiency of the Playmate Tennis Ball Collector.
 
 ## References
 
 [1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/  
 [2] VZ4KC1B1051202 Vybronics Inc, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917    
-[3] JANDECCN V-153-1C25, Amazon, https://www.amazon.com/JANDECCN-Switch-Straight-Action-V-153-1C25/dp/B09SWCJ8FF 
+[3] SunFounder 2-Channel 5V Relay Module, https://www.amazon.com/SunFounder-Channel-Optocoupler-Expansion-Raspberry/dp/B00E0NTPP4
 
