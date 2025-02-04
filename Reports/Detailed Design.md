@@ -52,8 +52,6 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 - Black lines represent grounding
 - The green lines represent general connection of RC Motors 
 
-![image](https://github.com/user-attachments/assets/5b29bce1-e164-4226-a0f1-ffb8810ef9e1)
-
 ## BOM
 
 
@@ -64,9 +62,14 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 | Total Cost | N/A | N/A | N/A | N/A | 30.37 | N/A |
 
 ## Analysis
-The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The subsystem will have two different-voltages, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The second direction of the 12-volts will go through a step-down convertor to output 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi. The rechargeable battery outputs 2600mAh, meaing it can output 2.6 Ampheres an hour when fully charged. After flowing through a buck-converter with the minimum efficiency of 80%, the current will raise from 2600 mAh to 5000 mAh, due to the nature of the converter raising current. With this raise in current both the Raspberry Pi and the vibration motors will be supplied with their needed minimum required current, 3A and 450mA respectfully. The amount of power going into each subsystem shall follow along their given constraints as to ensure safety will operating the machine. 
+The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The battery used in the subsystem will have two different-voltages, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The first direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The two motor drivers used will be put in parallell to supply both with needed input voltage of 12-volts. The second direction of the 12-volts will go through a step-down convertor to lower the voltage to 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi that are sitting in parallel as well. The raspberry Pi is rated to need an input voltage of 5-volts as well as needing a minimum of 3-amps, the DC motor only needs 3-volts and 450-milliamps. The battery has a continous discharge current of 2.6-amps before going through the converter. Assuming the converter to operate on a duty of 40-45%, and a efficiency of a minimum of 80% efficiency will allow the current to increase from 2.6-amps to 5-amps. DC Motor will have a 11 ohm resistor connected into it to not overcharge the motor.
+
+The total current flowing in the circuit neccessary to run is 1.352-amps, this current takes in the consideration on both the 12-volt connections as well as the 5-volt connections. The rechargeable battery used is expected to output 2.6-amphours when fully charged. With these calculations the battery can be expected to run for around 3.5 hours. To ensure proper connections and current flow the devices will be tested before and after installment. The amount of power going into each subsystem shall follow along their given constraints as to ensure safety will operating the machine. 
 
 
 ## References
 (1) "KBT 12V 2600mAh Rechargeable Li-ion Battery, DC5521 Male Connector, Replacement Battery Pack with 12V Charger Compatible with 12V Device RC Car, Boat, Robot, DIY, LED Light Strip, CCTV Camera" Amazon, www.amazon.com/KBT-1200mAh-rechargeable-Replacement-Compatible/dp/B0C243MXMQ. (Accessed 30 Jan. 2025.) 
+
 (2) "JZK 24V / 12V to 5V 5A Power Buck Module DC-DC step-down Power Supply Converter with LED." Amazon, www.amazon.com/gp/product/B0B1DLJ7ZP/. (Accessed 30 Jan. 2025.)
+
+(3) Sabertooth 2X10 User’s Guide - Dimension Engineering, www.dimensionengineering.com/datasheets/Sabertooth2x10.pdf. (Accessed 4 Feb. 2025.) 
