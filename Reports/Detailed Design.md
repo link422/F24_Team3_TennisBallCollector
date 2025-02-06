@@ -42,11 +42,10 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 
 
 
-
 ## Circuit Design
 
+![image](https://github.com/user-attachments/assets/b8934c62-8be4-4531-bf1c-ab79e153cd14)
 
-![image](https://github.com/user-attachments/assets/5fa23260-60b9-4396-bf57-2e666d11d092)
 
 - Red lines represents power
 - Black lines represent grounding
@@ -62,9 +61,9 @@ The Power Subsystem connects into all subsystems attached to tennis ball collect
 | Total Cost | N/A | N/A | N/A | N/A | 30.37 | N/A |
 
 ## Analysis
-The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The battery used in the subsystem will have two different-voltages, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The first direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The two motor drivers used will be put in parallell to supply both with needed input voltage of 12-volts. The second direction of the 12-volts will go through a step-down convertor to lower the voltage to 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi that are sitting in parallel as well. The raspberry Pi is rated to need an input voltage of 5-volts as well as needing a minimum of 3-amps, the DC motor only needs 3-volts and 450-milliamps. The battery has a continous discharge current of 2.6-amps before going through the converter. Assuming the converter to operate on a duty of 40-45%, and a efficiency of a minimum of 80% efficiency will allow the current to increase from 2.6-amps to 5-amps. DC Motor will have a 11 ohm resistor connected into it to not overcharge the motor.
+The Power subsystem shall power all its specified components within the necessary constraints and have clear wiring. The battery used in the subsystem is a KBT 12V 2600mAh Rechargeable Li-ion Battery [1]. The battery's power will be split between two different directions of voltage, 12-volts and 5-volts, which will be used to operate the tennis ball collector system. The first direction of the 12-volts coming directly from the battery will go to the motor drivers of the RC subsystem supplying them with effective power. The two motor drivers used will be put in parallell to supply both with needed input voltage of 12-volts. The second direction of the 12-volts will go through a step-down convertor to lower the voltage to 5-volts. The 5-volts will then branch to both the DC vibration motors and the Raspberry Pi that are sitting in parallel as well. The raspberry Pi is rated to need an input voltage of 5-volts as well as needing a minimum of 3-amps, the DC motor only needs 3-volts and 450-milliamps. The battery has a continous discharge current of 2.6-amps before going through the converter. Assuming the converter to operate on a duty of 40-45%, and a efficiency of a minimum of 80% efficiency will allow the current to increase from 2.6-amps to 5-amps. Due to the current neccessary for the DC Motor being low, it will be placed in series with an 11-ohms resistor connected into it to not overcharge the motor. This will lower the incoming current from 2-amps to about 460 mA, making it suitable for the DC Motor. 
 
-The total current flowing in the circuit neccessary to run is 1.352-amps, this current takes in the consideration on both the 12-volt connections as well as the 5-volt connections. The rechargeable battery used is expected to output 2.6-amphours when fully charged. With these calculations the battery can be expected to run for around 3.5 hours. To ensure proper connections and current flow the devices will be tested before and after installment. The amount of power going into each subsystem shall follow along their given constraints as to ensure safety will operating the machine. 
+The total current flowing in the circuit neccessary to run is 1.352-amps, this current takes in the consideration on both the 12-volt connections as well as the 5-volt connections. The rechargeable battery used is expected to output 2.6-amphours [1] when fully charged. By multiplying the circuit's current of 1.35A with the battery's given output of 2.6Ah, the the battery can be calculated to run for around 3.5 hours. To ensure proper connections and current flow the devices will be tested before and after installment. The amount of power going into each subsystem shall follow along their given constraints as to ensure safety will operating the machine. 
 
 
 ## References
