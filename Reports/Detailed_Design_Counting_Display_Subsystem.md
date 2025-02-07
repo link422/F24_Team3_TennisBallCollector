@@ -81,7 +81,7 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 # Solution 3
 | Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link | Datasheet |
 |--------------|----------------|-------------|-------------------------|----------|-------|---------------|-----------|
-| Display Visions | EA DOGM132L-5 | DigiKey | 1481-1071-ND | 1 | $13.53 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM162W-A/4896717?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsYA6gLQIgC6AvkA) | [10](https://www.lcd-module.de/eng/pdf/grafik/dogm132-5e.pdf) |
+| Display Visions | EA DOGM132L-5 | DigiKey | 1481-1071-ND | 1 | $13.53 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM132L-5/4896710) | [10](https://www.lcd-module.de/eng/pdf/grafik/dogm132-5e.pdf) |
 
 ## Analysis
 
