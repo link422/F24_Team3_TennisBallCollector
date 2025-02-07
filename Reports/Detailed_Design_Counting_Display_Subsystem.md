@@ -69,7 +69,7 @@ A{Get Signal?} --> |Yes| B(Increment display count by one)
 # Solution 1
 | Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link | Datasheet |
 |--------------|----------------|-------------|-------------------------|----------|-------|---------------|-----------|
-| Display Visions | EA DOGM163W-A | DigiKey | 1481-1078-ND | 1 | $13.57 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM163W-A/4896722?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsAzAOoC0CIAugL5A) | [8](https://www.lcd-module.de/eng/pdf/doma/dog-me.pdf) |
+| Display Visions | EA DOGM163W-A | DigiKey | 1481-1083-ND | 1 | $13.57 | [link](https://www.digikey.com/en/products/detail/display-visions/EA-DOGM163W-A/4896722?s=N4IgTCBcDaIKIEEAEARA8gcQLIEYBsAzAOoC0CIAugL5A) | [8](https://www.lcd-module.de/eng/pdf/doma/dog-me.pdf) |
 
 # Solution 2
 | Manufacturer | Product Number | Distributor | Distributor Part number | Quantity | Price | Purchase Link | Datasheet |
