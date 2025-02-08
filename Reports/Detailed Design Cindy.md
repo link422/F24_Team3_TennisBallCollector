@@ -9,9 +9,8 @@ The Vibration Subsystem prevents tennis ball jams by utilizing dual DC vibration
 - The vibration subsystem shall use Vybronics DC Vibration Motors.
   - Rationale: Compact and lightweight with sufficient vibration force (1.3 G), aligning with system requirements.
 
-- The vibration motors shall operate at 3.0 V DC with a current draw of approximately 60 mA per motor.
-  - Rationale: Operating at the motor’s rated specifications ensures reliable performance and prevents premature wear or failure due to overvoltage 
-or excessive current.
+- The vibration motors shall operate at 5.0 V DC with a current draw of approximately 100 mA per motor.
+  - Rationale: Operating at the motor’s rated specifications ensures reliable performance and prevents premature wear or failure due to overvoltage or excessive current.
 
 - The vibration motors shall be powered by the shared Lithium Battery from the Power Subsystem.
   - Rationale: Using the shared power source simplifies design by reducing the need for additional batteries, minimizing weight, and ensuring consistent power delivery across all subsystems for seamless integration.
@@ -28,7 +27,7 @@ or excessive current.
 
 ## Overview of Proposed Solution
 
-The proposed Vibration Subsystem comprises two Vybronics DC Vibration Motors (VZ4KC1B1051202) [2] strategically mounted on opposite sides of the tennis ball collector to mitigate jamming effectively. Power is supplied by the shared Lithium Polymer Battery from the Power Subsystem, ensuring streamlined integration and consistent energy delivery.
+The proposed Vibration Subsystem comprises two Vybronics DC Vibration Motors (VJP16-70E310) [2] strategically mounted on opposite sides of the tennis ball collector to mitigate jamming effectively. Power is supplied by the shared Lithium Polymer Battery from the Power Subsystem, ensuring streamlined integration and consistent energy delivery.
 
 The motors are activated through a SunFounder 2-Channel 5V Relay Module [3], which the RC Subsystem controls. This relay module allows the vibration motors to be switched on or off remotely based on user commands from the controller. The relay ensures that the motors only activate when necessary, reducing power consumption and wear on the components.
 
@@ -44,9 +43,10 @@ The vibration motors are activated through the SunFounder Relay Module, which co
 The integration of the RC Subsystem enables centralized control of the vibration motors, simplifying the operational workflow while maintaining non-disruptive functionality. This cohesive design allows the Vibration Subsystem to perform its function effectively, addressing jamming issues while maintaining overall system stability, efficiency, and compatibility with other subsystems.
 
 ## Printed Circuit Board Layout
-![PCB Mount](https://github.com/user-attachments/assets/dbda3a5c-661a-4333-b582-1860a208ab72)
+![Vibration motor](https://github.com/user-attachments/assets/f6db1516-39ce-4b7d-acae-01f2b0e0417c)
 
-![product specification](https://github.com/user-attachments/assets/2631ed9b-7ddf-4376-9867-24294a29ae83)
+
+![datasheet](https://github.com/user-attachments/assets/5f9bf6eb-c43f-4f05-aac0-c41b01b59e80)
 
 
 
@@ -58,7 +58,8 @@ The integration of the RC Subsystem enables centralized control of the vibration
 
 ## BOM
 
-![image](https://github.com/user-attachments/assets/0bf4446b-4700-42db-9c30-ab274c3db986)
+![Screenshot (376)](https://github.com/user-attachments/assets/3de2bc64-a8ff-4bde-8e1d-b8b522bd57eb)
+
 
 
 ## Analysis
@@ -70,6 +71,6 @@ Although initial calculations and system design suggest that the vibration motor
 ## References
 
 [1] “Ball Mower 2.0,” PLAYMATE Tennis, https://www.playmatetennis.com/ball-mower-2/  
-[2] VZ4KC1B1051202 Vybronics Inc, https://www.digikey.com/en/products/detail/vybronics-inc/VZ4KC1B1051202/6009917    
+[2] VJP16-70E310 Vybronics Inc,https://www.digikey.com/en/products/detail/vybronics-inc/VJP16-70E310/6009932      
 [3] SunFounder 2-Channel 5V Relay Module, https://www.amazon.com/SunFounder-Channel-Optocoupler-Expansion-Raspberry/dp/B00E0NTPP4
 
