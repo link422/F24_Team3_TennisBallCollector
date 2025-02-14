@@ -1,15 +1,13 @@
-# {Tennis Ball Collector} - Your project should have a catchy and functional name
-
-The descriptions and information in all readme files in the starter repo (including this one) must be edited. All section descriptions must be deleted. Any failure to remove the description information (like the statement that you are currently reading) will be heavily penalized!
+# Automated Tennis Ball Mower
 
 ## Executive Summary
 
-Give the elevator pitch and abstract for the project. It should allow interested visitors to broadly understand the motivation for the project and what the project has accomplished.
+When consulting a tennis coach at Tennessee Tech, they explained that their current tennis ball collecting method was outdated and broken. The current model is operated by manually pushing the machine, this sometimes causes balls to jam inside the machine from not pushing hard enough. This automated tennis ball mower will fix the need for dejamming, manual pushing, and manual counting of the balls.
 
 
 ## Capabilities
 
-Here explain in more detail (though not as much as will be given in the datasheet) what the version of this project in this repo is capable of doing.
+This device is capable of being controlled remotely with a logitech controller. It is also capable of counting the amount of balls coming into the machine and prevents jamming.
 
 
 ## Salient Outcomes
@@ -28,15 +26,25 @@ Below the video link show some well-taken, appropriately sized images of the pro
 
 ### Team
 
-Give a brief bio for each team member and their broad contribution to the project (no need to be terribly specifc).
+Ashli: Experienced with Microcomputing (Assembly programming), wiring, database management, and Quartus Prime. Working on Motor Subsystem
+
+Carter: Experience with RC cars, DC motors, vibration motors, programing, microcomputers, FPGAs. Working on RC Subsystem
+
+Cindy: Experienced with object-oriented programming, a little RANCS autonomous vehicle programming, microcomputing, and digital systems. Working on the Vibration Subsystem
+
+Gabriel: Worked with Arduino coding, Soldering, Microcontrollers, PLCs and generally coding languages. Working on Power Subsystem.
+
+Maxwell: Experience with programming (C, C++, assembly, python), microcomputers, and digital system design. Working on Counting Sensor Subsystem
+
+Tate: Experienced with Data Structures in C and C++, Matlab Scripting, and general coding of microcontrollers that use Arm, ArmV8, and VHDL to interface. Working on Counting Display Subsystem
 
 ### Faculty Supervisor
 
-Tell who the faculty supervisor was for the project
+The faculty supervisor for the project was Dr. Stephan Canfield.
 
 ### Stakeholders
 
-Tell a bit about the customer for the project. Also discuss any other groups (specific or general) that are expected to be impacted by the project.
+The customer of our project is the tennis team of Tennessee Tech. While this project is designed for them if make commersially viable it could help other tennis teams and instructors as it is a cheaper method than current competitors.
 
 ### Recognitions
 
