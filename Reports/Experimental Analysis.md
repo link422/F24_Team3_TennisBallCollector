@@ -24,16 +24,6 @@ system can be controlled correctly every time.
 
 ## Detailed Procedure 
 
-#### LCD AND LIDAR SENSOR  EXPERIMENT 
-
-- *First, the lidar sensors (2) are connected to the Raspberry Pi along with the LCD.* 
-
-- *The code for sensing and counting the tennis balls as well as displaying the count on the LCD shall be loaded onto the Raspberry Pi, and both operate on the boot up of the Pi.*
-
-- *Then, perform a series of trials on the sensor and display. There are 5 trials consisting of 10 attempts each, where a ball passes by both sensors and the accuracy of the sensors is tested.* 
-
-- *Once past the sensor, the code loaded onto the Raspberry Pi shall increment the ball count to be viewed on the LCD.*
-
 #### BATTERY EXPERIMENT 
 - *Connect the first 12-Volt into the motor driver subsystem.*
 
@@ -52,6 +42,17 @@ system can be controlled correctly every time.
 - *Start a timer again to calculate the length of time it stays on.*
 
 - *Wait until the Raspberry Pi has powered off or until the vibration motors no longer turn on.*
+
+
+#### LCD AND LIDAR SENSOR  EXPERIMENT 
+
+- *First, the lidar sensors (2) are connected to the Raspberry Pi along with the LCD.* 
+
+- *The code for sensing and counting the tennis balls as well as displaying the count on the LCD shall be loaded onto the Raspberry Pi, and both operate on the boot up of the Pi.*
+
+- *Then, perform a series of trials on the sensor and display. There are 5 trials consisting of 10 attempts each, where a ball passes by both sensors and the accuracy of the sensors is tested.* 
+
+- *Once past the sensor, the code loaded onto the Raspberry Pi shall increment the ball count to be viewed on the LCD.*
 
 
 #### CONTROLLER EXPERIMENT 
