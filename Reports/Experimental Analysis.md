@@ -17,7 +17,7 @@ the detailed procedure section.
 #### CONTROLLER EXPERIMENT 
 To test the functionality of the controller, a simple python script was used from 
 https://github.com/FRC4564/Xbox. This allowed for each button to be tested individually and ensured that 
-it would be useable with other Python files. Using the code made to work with the ROS2 package, the arrays of 
+it would be usable with other Python files. Using the code made to work with the ROS2 package, the arrays of 
 integers produced are recorded. These recordings were taken for 5 button presses of each button used in the 
 ROS2 package. This will ensure that each button pressed is accounted for correctly to ensure that the 
 system can be controlled correctly every time. 
@@ -62,7 +62,7 @@ system can be controlled correctly every time.
 
 - *Test different buttons on the controller and observe them on the terminal.*
 
-- *Once this test is complete as long build the ros2 package using the command colcon build.* 
+- *Once this test is complete build the ros2 package using the command colcon build.* 
 
 - *After the package is built, launch the package using the command ros2 launch tennisbot tennisbot.launch.py.*
 
@@ -96,10 +96,10 @@ The experiment is expected to have 100% accuracy in detecting controller inputs 
 ## Interpretation and Conclusions
 
 #### BATTERY EXPERIMENT 
-The 12 Volt battery connected to the driver motor was overly discharged to test its capabilities and the safety of the battery. The battery ran for over an hour, and around an hour and 20 minutes in, the motor started rotating at a slower rate. After two hours of running the battery loses its ability to recharge due to a short circuit. These results show the importance of battery usage and maintain charge for the RC Tennis Ball Collector. 
+The 12 Volt battery connected to the driver motor was overly discharged to test its capabilities and the safety of the battery. The battery ran for over an hour, and around an hour and 20 minutes in, the motor started rotating at a slower rate. After two hours of running the battery lost its ability to recharge due to a short circuit. These results show the importance of battery usage and maintain charge for the RC Tennis Ball Collector. 
 
 #### LCD AND LIDAR SENSOR EXPERIMENT
-The results of the 5 trials had 100% accuracy. This lets us know the sensors operate for their intended purpose with no error. Not only was the detection of the sensors correct, but the results were also displayed correctly on the LCD. The only errors we noticed was a ghost count during the boot up of the Pi, which we ruled to possible movements on our part while this was going on. Aside from that, when the count was reset and the attempts took place, we were given accurate results. 
+The results of the 5 trials had 100% accuracy. This lets us know the sensors operate for their intended purpose with no error. Not only was the detection of the sensors correct, but the results were also displayed correctly on the LCD. The only error observed was a ghost count during the boot up of the Pi, which we ruled to possible movements on our part while this was going on. Aside from that, when the count was reset and the attempts took place, we were given accurate results. 
 
 #### CONTROLLER EXPERIMENT 
 Based on the results of this experiment, it can be concluded that the controller is accurately being represented by the ROS2 topic. Every button press tested for each trial was displayed correctly from the ROS2 topic, which means that the system is getting the input every time, ensuring that no errors can occur that would prevent the emergency stopping of the system. These results perfectly matched what was expected as there was 100% accuracy throughout the trials.
