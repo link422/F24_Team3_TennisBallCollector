@@ -90,6 +90,11 @@ The experiment is expected to have 100% accuracy in detecting controller inputs 
 #### LCD AND LIDAR SENSOR EXPERIMENT 
 ![Screenshot (412)](https://github.com/user-attachments/assets/403f0627-8332-40b8-a6a5-af0f3b84ad3f)
 
+![lidarExperiment1](https://github.com/user-attachments/assets/1f672a5c-a7f7-46df-8d48-11de3f4e6a9e)
+
+![lidarExperiment2](https://github.com/user-attachments/assets/9c2052c0-053e-4902-9e10-8d5f6edafd12)
+
+
 #### CONTROLLER EXPERIMENT 
 ![Screenshot (413)](https://github.com/user-attachments/assets/5b6a0667-5aaf-4fa2-a1cb-44ed17a86053)
 
