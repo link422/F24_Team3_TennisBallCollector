@@ -4,11 +4,11 @@
 
 #### BATTERY EXPERIMENT
 Testing the battery’s life expectancy and safety is integral to making the Tennis Ball Collector 
-remote-controlled. The batteries used are expected to run for the entire process of ball collection; 
-If they fail, it can cause damage not only to the other components but also danger to the user themself. 
+remote-controlled. The batteries used are expected to run for the entire process of ball collection. 
+If they fail, it can harm not only the other components but also the user. 
 
 #### LCD AND LIDAR SENSOR EXPERIMENT 
-The goal of this experiment is to test the accuracy of the sensors to detect a tennis ball and increment 
+The goal of this experiment is to test the accuracy of the sensors' ability to detect a tennis ball and increment 
 the counter on the LCD. The proper operation of these devices is crucial for the intended purpose 
 of our device. Our device is expected to update the user with an accurate ball count so they know how many 
 balls have been collected already. The extent of the data collected through the experiment is outlined in 
@@ -19,7 +19,7 @@ To test the functionality of the controller, a simple python script was used fro
 https://github.com/FRC4564/Xbox. This allowed for each button to be tested individually and ensured that 
 it would be useable with other Python files. Using the code made to work with the ROS2 package, the arrays of 
 integers produced are recorded. These recordings were taken for 5 button presses of each button used in the 
-ROS2 package. This will ensure that each button pressed is accounted for correctly by ROS to ensure that the 
+ROS2 package. This will ensure that each button pressed is accounted for correctly to ensure that the 
 system can be controlled correctly every time. 
 
 ## Detailed Procedure 
@@ -35,48 +35,46 @@ system can be controlled correctly every time.
 
 - *This test allows us to see any issues that arise in long-term constant connection.* 
 
-- *Connect the second 12-Volt battery into the 5-Volt stepdown input*
+- *Connect the second 12-Volt battery into the 5-Volt stepdown input.*
 
-- *Connect the Raspberry Pi and vibration subsystem to 5-Volt stepdown output*
+- *Connect the Raspberry Pi and vibration subsystem to 5-Volt stepdown output.*
 
 - *Start a timer again to calculate the length of time it stays on.*
 
-- *Wait until the Raspberry Pi has powered off or until the vibration motors no longer turn on.*
+- *Wait until the Raspberry Pi has powered off or until the vibration motors no longer vibrate.*
 
 
 #### LCD AND LIDAR SENSOR  EXPERIMENT 
 
 - *First, the lidar sensors (2) are connected to the Raspberry Pi along with the LCD.* 
 
-- *The code for sensing and counting the tennis balls as well as displaying the count on the LCD shall be loaded onto the Raspberry Pi, and both operate on the boot up of the Pi.*
+- *The code for sensing and counting the tennis balls will be deployed and will display the count on the LCD.*
 
-- *Then, perform a series of trials on the sensor and display. There are 5 trials consisting of 10 attempts each, where a ball passes by both sensors and the accuracy of the sensors is tested.* 
-
-- *Once past the sensor, the code loaded onto the Raspberry Pi shall increment the ball count to be viewed on the LCD.*
+- *Then 5 trials consisting of 10 attempts each will be done. Balls will be passed by both sensors at varying speeds and angles and the accuracy of the sensors is recorded.* 
 
 
 #### CONTROLLER EXPERIMENT 
-- *Plug the controller into the Raspberry Pi*
+- *Plug the controller into the Raspberry Pi.*
 
-- *Download the xbox.py and sample.py files from https://github.com/FRC4564/Xbox*
+- *Download the xbox.py and sample.py files from https://github.com/FRC4564/Xbox .*
 
-- *Run the command sudo python3 sample.py* 
+- *Run the command sudo python3 sample.py.* 
 
-- *Test different buttons on the controller and observe them on the terminal*
+- *Test different buttons on the controller and observe them on the terminal.*
 
-- *Once this test is complete as long build the ros2 package using the command colcon build* 
+- *Once this test is complete as long build the ros2 package using the command colcon build.* 
 
-- *After the package is built, launch the package using the command ros2 launch tennisbot tennisbot.launch.py*
+- *After the package is built, launch the package using the command ros2 launch tennisbot tennisbot.launch.py.*
 
-- *In a new terminal, type in the command ros2 topic echo/controls*
+- *In a new terminal, type in the command ros2 topic echo/controls.*
 
-- *In the terminal, an array of integers can be seen and change from 0 to 1 when a button is pressed then back to 0 when let go*
+- *In the terminal, an array of integers can be seen and change from 0 to 1 when a button is pressed then back to 0 when let go.*
 
-- *Record the array for each button press 5 times* 
+- *Record the array for each button press 5 times.* 
 
 ## Expected Results
 #### BATTERY EXPERIMENT 
-The expected result for the Motor battery is around 52 minutes due to the battery’s output and the consumption of the driver. The Raspberry Pi and DC motors are expected to run for at least an hour on their battery. This will stay on with no overheating or crashing of data, this can be assumed because of the rated 2.6 Ah of both batteries used. 
+The expected result for the motors' battery is around 52 minutes due to the battery’s output and the consumption of the motor driver. The Raspberry Pi and DC motors are expected to run for at least an hour on their battery. This will stay on with no overheating or crashing of data, this can be assumed because of the rated 2.6 Ah of both batteries used. 
 
 #### LCD AND LIDAR SENSOR EXPERIMENT 
 The expected result of this experiment is an accurate count of tennis balls collected, as interpreted by the Lidar sensors, shown on the LCD. When each ball passes by the sensor, the count on the display will be incremented to the correct amount. 
@@ -98,10 +96,10 @@ The experiment is expected to have 100% accuracy in detecting controller inputs 
 ## Interpretation and Conclusions
 
 #### BATTERY EXPERIMENT 
-The 12 Volt battery connected to the driver motor was overly discharged to test its capabilities and the safety of the battery. The battery ran for over an hour, and around an hour and 20 minutes in, the motor started rotating at a slower rate. After 2 hours of running the battery loses its ability to recharge due to a short circuit. These results show the importance of battery usage and maintain charge for the RC Tennis Ball Collector. 
+The 12 Volt battery connected to the driver motor was overly discharged to test its capabilities and the safety of the battery. The battery ran for over an hour, and around an hour and 20 minutes in, the motor started rotating at a slower rate. After two hours of running the battery loses its ability to recharge due to a short circuit. These results show the importance of battery usage and maintain charge for the RC Tennis Ball Collector. 
 
 #### LCD AND LIDAR SENSOR EXPERIMENT
-After running through the five trials on the sensor, we were able to come out with 100% accuracy. This lets us know the sensors operate for their intended purpose successfully with no error. Not only was the detection of the sensors correct, but the results were also displayed correctly on the LCD. The only errors we noticed was a ghost count during the boot up of the Pi, which we ruled to possible movements on our part while this was going on. Aside from that, when the count was reset and the attempts took place, we were given accurate results. 
+The results of the 5 trials had 100% accuracy. This lets us know the sensors operate for their intended purpose with no error. Not only was the detection of the sensors correct, but the results were also displayed correctly on the LCD. The only errors we noticed was a ghost count during the boot up of the Pi, which we ruled to possible movements on our part while this was going on. Aside from that, when the count was reset and the attempts took place, we were given accurate results. 
 
 #### CONTROLLER EXPERIMENT 
 Based on the results of this experiment, it can be concluded that the controller is accurately being represented by the ROS2 topic. Every button press tested for each trial was displayed correctly from the ROS2 topic, which means that the system is getting the input every time, ensuring that no errors can occur that would prevent the emergency stopping of the system. These results perfectly matched what was expected as there was 100% accuracy throughout the trials.
