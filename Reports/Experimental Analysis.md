@@ -82,7 +82,7 @@ The experiment is expected to have 100% accuracy in detecting controller inputs 
 ## Actual Results
 
 #### BATTERY EXPERIMENT 
-![Screenshot (411)](https://github.com/user-attachments/assets/13956ba8-6a0c-4bfe-8f99-9f64f7b68b56)
+![image](https://github.com/user-attachments/assets/01ce082d-d075-40ea-8766-d7fdc344ab75)
 
 #### LCD AND LIDAR SENSOR EXPERIMENT 
 ![Screenshot (412)](https://github.com/user-attachments/assets/403f0627-8332-40b8-a6a5-af0f3b84ad3f)
