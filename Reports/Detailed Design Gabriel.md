@@ -3,7 +3,7 @@
 
 ## Function of the Subsystem
 
-The function of the Power Supply Subsystem is to detail the ways each component will be powered, and the steps needed to recreate the power system. Powering the system properly is important in running the entire project together, by ensuring the proper connections the project will operate correctly. To power the system the machine will function off of a single battery, a 12V rechargeable Li-ion battery [1] to control the RC motors and the Raspberry Pi. The Raspberry Pi will supply it is connected components with necessary power, turning on the sensor used to scan the collected balls and the display to show the number of scanned balls. The 12V battery will also supply power to the vibration motor used on the main body directly, causing the battery to have multiple connections. 
+The function of the Power Supply Subsystem is to detail the ways each component will be powered, and the steps needed to recreate the power system. Powering the system properly is important in running the entire project together, by ensuring the proper connections the project will operate correctly. To power the system the machine will function off of two batteries, both being a 12V rechargeable Li-ion battery [1] to control the RC motors and the Raspberry Pi. The Raspberry Pi will supply it is connected components with necessary power, turning on the sensor used to scan the collected balls and the display to show the number of scanned balls. The 12V battery will also supply power to the vibration motor used on the main body directly, causing the battery to have multiple connections. 
 
 
 ## Specifications and Constraints
